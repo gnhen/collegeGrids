@@ -89,8 +89,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         // Make a guess for the first empty cell
         for (let row = 0; row < 3; row++) {
             for (let col = 0; col < 3; col++) {
-                const cell = document.getElementById(`cell-${row}-${col}`);
-                if (!cell.classList.contains('correct') && !cell.classList.contains('incorrect')) {
+                const cellKey = `${row}_${col}`;
+                if (!game.currentGuesses[cellKey]) {
                     game.makeGuess(player.id, row, col);
                     playerInput.value = '';
                     return;

@@ -6,11 +6,12 @@
 class GridGame {
     constructor() {
         this.dataManager = new DataManager();
-        this.currentGuesses = [];
+        this.currentGuesses = {};  // cell_key -> player_id
         this.guessCount = 0;
         this.correctGuesses = 0;
         this.gameComplete = false;
         this.maxGuesses = 9;
+        this.currentCell = null;  // Track which cell is being guessed
     }
 
     /**
@@ -83,9 +84,39 @@ class GridGame {
                 cell.appendChild(categoryLabel);
                 cell.appendChild(answer);
                 cell.appendChild(status);
+                
+                // Add click handler for this cell
+                cell.addEventListener('click', () => {
+                    this.selectCell(row, col);
+                });
+                
                 gridBody.appendChild(cell);
             }
         }
+    }
+
+    /**
+     * Select a cell to make a guess
+     */
+    selectCell(rowIndex, colIndex) {
+        const cellKey = `${rowIndex}_${colIndex}`;
+        
+        // Check if cell is already filled
+        if (this.currentGuesses[cellKey]) {
+            return;
+        }
+        
+        // Highlight selected cell
+        document.querySelectorAll('.grid-cell').forEach(cell => {
+            cell.style.borderColor = '';
+            cell.style.boxShadow = '';
+        });
+        
+        const selectedCell = document.getElementById(`cell-${rowIndex}-${colIndex}`);
+        selectedCell.style.borderColor = '#3b82f6';
+        selectedCell.style.boxShadow = '0 0 0 3px rgba(59, 130, 246, 0.3)';
+        
+        this.currentCell = { rowIndex, colIndex, cellKey };
     }
 
     /**
@@ -95,14 +126,22 @@ class GridGame {
         if (this.gameComplete) return;
         if (this.guessCount >= this.maxGuesses) return;
         
+        const cellKey = `${rowIndex}_${colIndex}`;
+        
         // Check if player is already guessed
-        if (this.currentGuesses.includes(playerId)) {
+        if (Object.values(this.currentGuesses).includes(playerId)) {
             alert('You already guessed this player!');
             return;
         }
         
+        // Check if cell is already filled
+        if (this.currentGuesses[cellKey]) {
+            alert('This cell is already filled!');
+            return;
+        }
+        
         // Add guess
-        this.currentGuesses.push(playerId);
+        this.currentGuesses[cellKey] = playerId;
         this.guessCount++;
         
         // Check if correct
@@ -173,10 +212,11 @@ class GridGame {
      * Reset the game
      */
     reset() {
-        this.currentGuesses = [];
+        this.currentGuesses = {};
         this.guessCount = 0;
         this.correctGuesses = 0;
         this.gameComplete = false;
+        this.currentCell = null;
         this.renderGrid();
         this.updateStats();
     }

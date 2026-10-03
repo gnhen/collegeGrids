@@ -9,7 +9,7 @@ Usage:
     Example:
     python ingest_boxscores.py 20240907 20241005
     
-    If no dates provided, crawls the last 4 weeks of the current season.
+    If no dates provided, crawls the last 30 days.
 """
 
 import json
@@ -133,35 +133,113 @@ def process_game(event):
     
     return eid, data
 
-def extract_player_data(boxscore_data):
-    """Extract player data from box score."""
-    players = []
-    boxscore = boxscore_data.get('boxscore', {})
+def build_player_database():
+    """Build a comprehensive player database from raw box scores."""
+    print("\n--- Building Player Database ---")
     
-    for team_data in boxscore.get('players', []):
-        team_info = team_data.get('team', {})
-        team_id = team_info.get('id')
-        team_name = team_info.get('displayName', team_info.get('name', ''))
+    players = {}
+    player_schools = defaultdict(set)  # player_id -> set of schools
+    player_seasons = defaultdict(lambda: defaultdict(dict))  # player_id -> year -> {stat: value}
+    player_transfers = defaultdict(set)  # player_id -> set of team_ids (for transfer detection)
+    
+    # Load all raw box scores
+    if not os.path.exists(RAW_DATA_DIR):
+        print("[!] No raw data directory found.")
+        return {}, {}, {}
+    
+    boxscore_files = [f for f in os.listdir(RAW_DATA_DIR) if f.endswith('.json')]
+    print(f"Found {len(boxscore_files)} box score files.")
+    
+    for filename in boxscore_files:
+        filepath = os.path.join(RAW_DATA_DIR, filename)
+        try:
+            with open(filepath, 'r') as f:
+                data = json.load(f)
+        except Exception as e:
+            print(f"  [!] Error reading {filename}: {e}")
+            continue
         
-        for stat_category in team_data.get('statistics', []):
-            category_name = stat_category.get('name', '')
-            athletes = stat_category.get('athletes', [])
+        boxscore = data.get('boxscore', {})
+        for team_data in boxscore.get('players', []):
+            team_info = team_data.get('team', {})
+            team_id = team_info.get('id')
+            team_name = team_info.get('displayName', team_info.get('name', ''))
             
-            for athlete_data in athletes:
-                athlete = athlete_data.get('athlete', {})
-                stats = athlete_data.get('stats', [])
+            for stat_category in team_data.get('statistics', []):
+                category_name = stat_category.get('name', '')
+                athletes = stat_category.get('athletes', [])
                 
-                player = {
-                    "athlete_id": athlete.get('id'),
-                    "athlete_name": athlete.get('displayName', ''),
-                    "team_id": team_id,
-                    "team_name": team_name,
-                    "category": category_name,
-                    "stats": stats
-                }
-                players.append(player)
+                for athlete_data in athletes:
+                    athlete = athlete_data.get('athlete', {})
+                    stats = athlete_data.get('stats', [])
+                    
+                    player_id = athlete.get('id')
+                    player_name = athlete.get('displayName', '')
+                    
+                    if not player_id or not player_name:
+                        continue
+                    
+                    # Initialize player record if needed
+                    if player_id not in players:
+                        players[player_id] = {
+                            "id": player_id,
+                            "name": player_name,
+                            "schools": [],
+                            "conferences": [],
+                            "season_stats": {},
+                            "career_stats": {},
+                            "awards": [],
+                            "transferred": False
+                        }
+                    
+                    # Track schools
+                    if team_name and team_name not in players[player_id]["schools"]:
+                        players[player_id]["schools"].append(team_name)
+                    
+                    # Track transfers
+                    if team_id:
+                        player_transfers[player_id].add(team_id)
+                    
+                    # Accumulate stats
+                    if category_name == 'passing' and len(stats) >= 6:
+                        players[player_id]["season_stats"].setdefault("passing_yards", 0)
+                        # stats[1] is usually passing yards
+                        if len(stats) > 1 and stats[1]:
+                            try:
+                                players[player_id]["season_stats"]["passing_yards"] += int(stats[1])
+                            except (ValueError, TypeError):
+                                pass
+                    
+                    elif category_name == 'rushing' and len(stats) >= 5:
+                        players[player_id]["season_stats"].setdefault("rushing_yards", 0)
+                        # stats[1] is usually rushing yards
+                        if len(stats) > 1 and stats[1]:
+                            try:
+                                players[player_id]["rushing_yards"] += int(stats[1])
+                            except (ValueError, TypeError):
+                                pass
+                    
+                    elif category_name == 'receiving' and len(stats) >= 5:
+                        players[player_id]["season_stats"].setdefault("receiving_yards", 0)
+                        # stats[1] is usually receiving yards
+                        if len(stats) > 1 and stats[1]:
+                            try:
+                                players[player_id]["receiving_yards"] += int(stats[1])
+                            except (ValueError, TypeError):
+                                pass
+        
+        # Update transfer status
+        for player_id, teams in player_transfers.items():
+            if len(teams) > 1:
+                players[player_id]["transferred"] = True
     
-    return players
+    # Save player database
+    players_file = os.path.join(PROCESSED_DIR, "players.json")
+    with open(players_file, 'w') as f:
+        json.dump(players, f, indent=2)
+    
+    print(f"  [✓] Built player database with {len(players)} players")
+    return players, player_schools, player_seasons
 
 def main():
     """Main function to run the scraper."""
@@ -172,10 +250,10 @@ def main():
         start_date = sys.argv[1]
         end_date = sys.argv[2]
     else:
-        # Default: last 4 weeks of current season
+        # Default: last 30 days
         today = datetime.datetime.now()
         end_date = today.strftime("%Y%m%d")
-        start_date = (today - datetime.timedelta(weeks=4)).strftime("%Y%m%d")
+        start_date = (today - datetime.timedelta(days=30)).strftime("%Y%m%d")
     
     print(f"Starting scraper for dates: {start_date} to {end_date}")
     
@@ -215,6 +293,9 @@ def main():
         
         print(f"  [✓] Processed {len(newly_processed)} new games. Total: {total_processed}")
         time.sleep(1)  # Polite delay between dates
+    
+    # Build player database
+    players, player_schools, player_seasons = build_player_database()
     
     print(f"\n[✓] Scraper complete. Total games processed: {total_processed}")
 
