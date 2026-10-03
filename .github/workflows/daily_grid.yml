@@ -6,50 +6,53 @@ on:
     - cron: '0 5 * * *'
   workflow_dispatch:  # Allow manual triggers
 
+permissions:
+  contents: write
+
 jobs:
   generate-grid:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
-      
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r scraper/requirements.txt
-      
-      - name: Set timezone
+
+      - name: Set timezone to Eastern
         run: |
+          sudo timedatectl set-timezone America/New_York || true
           echo "TZ=America/New_York" >> $GITHUB_ENV
-          ln -snf /usr/share/zoneinfo/America/New_York /etc/localtime && echo "America/New_York" > /etc/timezone
-      
+
       - name: Get today's date
         id: date
         run: echo "TODAY=$(date +%Y-%m-%d)" >> $GITHUB_OUTPUT
-      
+
       - name: Run box score scraper (last 30 days)
         run: |
           cd scraper
           python ingest_boxscores.py $(date -d "30 days ago" +%Y%m%d) $(date +%Y%m%d)
         env:
           TZ: America/New_York
-      
+
       - name: Run awards fetcher
         run: |
           cd scraper
           python fetch_awards.py $(date +%Y)
         env:
           TZ: America/New_York
-      
+
       - name: Generate grid for today
         id: grid
         run: |
@@ -62,21 +65,21 @@ jobs:
           fi
         env:
           TZ: America/New_York
-      
+
       - name: Check grid generation
         if: steps.grid.outputs.GRID_GENERATED != 'true'
         run: |
           echo "Warning: Grid generation failed for ${{ steps.date.outputs.TODAY }}"
           echo "Falling back to yesterday's grid"
           python scraper/generate_grids.py $(date -d "1 day ago" +%Y-%m-%d)
-      
+
       - name: Commit and push new grid
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           git add web/data/grids/
-          git add data/processed/
-          git add data/raw/
+          git add web/data/players.json
+          git add web/data/boxscores/
           git commit -m "Auto-generate grid: ${{ steps.date.outputs.TODAY }}" || echo "No changes to commit"
           git push
         env:

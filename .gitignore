@@ -40,10 +40,7 @@ yarn-error.log*
 .DS_Store
 Thumbs.db
 
-# Data (raw data can be regenerated)
-data/raw/
-
-# Checkpoint files
+# Scraper checkpoint (local state)
 scraper/.checkpoint.json
 
 # Logs

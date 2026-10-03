@@ -7,7 +7,7 @@ A daily college football trivia game inspired by Immaculate Grid, built as a sta
 - **Daily Grid**: A new accurate grid generated every day at 12 AM EST
 - **Real Data**: Powered by ESPN College Football API with live player statistics
 - **Player-to-School Tracking**: Accurate "played for" cells using stable athlete IDs
-- **Award Categories**: Includes Heisman, Davey O'Brien, Doak Walker, and more
+- **Award Categories**: Includes Heisman, Davey O'Brien, Doak Walker, and 28+ other awards
 - **Static Site**: No backend required - pure HTML/CSS/JS with GitHub Pages
 - **Mobile Responsive**: Works on all devices
 
@@ -16,21 +16,22 @@ A daily college football trivia game inspired by Immaculate Grid, built as a sta
 ### Daily Grid Generation
 1. **GitHub Actions** runs daily at 12 AM EST (5 AM UTC)
 2. **Scraper** crawls ESPN box scores from the last 30 days
-3. **Player Database** is built from box score data
+3. **Player Database** is built from box score data and written to `web/data/players.json`
 4. **Grid Generator** creates a playable 3x3 grid with real data
-5. **Static Files** are committed and pushed to the repository
+5. **Static Files** are committed to the repository
 6. **GitHub Pages** serves the latest grid to users
 
-### Data Sources
-- **Box Scores**: `site.api.espn.com/apis/site/v2/sports/football/college-football/summary`
+### ESPN API Endpoints Used
+- **Box scores**: `site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event={id}`
 - **Awards**: `sports.core.api.espn.com/v2/sports/football/leagues/college-football/seasons/{year}/awards`
-- **Scoreboard**: `site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard`
+- **Scoreboard**: `site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?dates={date}`
 
-### Key Technical Features
-- Athlete IDs are stable across transfers (critical for "played for" cells)
+### Key Technical Findings
+- Athlete IDs are stable across transfers (verified: same ID maps to multiple schools)
 - Box scores contain detailed player statistics (passing, rushing, receiving, defensive)
-- Awards endpoint returns Heisman, Davey O'Brien, Doak Walker, and 28+ other awards
+- Awards endpoint returns Heisman, Davey O'Brien, Doak Walker, Fred Biletnikoff, and 28+ other awards
 - All endpoints work without API keys
+- Box scores reach back to 2004; defensive stats only from 2023 onward
 - Resumable crawling with checkpoint system
 
 ## Game Rules
@@ -43,12 +44,12 @@ A daily college football trivia game inspired by Immaculate Grid, built as a sta
 
 ## Category Types
 
-- **School**: Player attended/played for this school
+- **School**: Player played for this school (at least one game)
 - **Conference**: Player played in this conference
-- **Season Stat**: Player achieved this stat in a specific season (e.g., 1000+ rushing yards)
+- **Season Stat**: Player achieved this stat in a season (e.g., 1000+ rushing yards)
 - **Career Stat**: Player achieved this stat over their career
 - **Award**: Winner of this award (Heisman, etc.)
-- **Transfer**: Player transferred between schools
+- **Transfer**: Player transferred between schools (2+ schools in same season)
 
 ## Setup
 
@@ -58,7 +59,7 @@ A daily college football trivia game inspired by Immaculate Grid, built as a sta
 git clone https://github.com/gnhen/collegeGrids.git
 cd collegeGrids
 
-# Run the scraper
+# Run the scraper for a date range
 cd scraper
 python ingest_boxscores.py 20240907 20241005
 python fetch_awards.py 2024
@@ -71,45 +72,38 @@ python -m http.server 8080
 
 ### GitHub Pages Deployment
 1. Enable GitHub Pages in repository settings
-2. Set source to "GitHub Actions" or "master branch"
-3. The daily_grid.yml workflow will automatically update data every day at 12 AM EST
-
-## Architecture
-
-### Data Flow
-```
-ESPN API → Scraper → Processed JSON → GitHub Actions → GitHub Pages → User
-```
-
-### Components
-- **scraper/**: Python scripts for data ingestion and grid generation
-- **web/**: Static HTML/CSS/JS frontend
-- **.github/workflows/**: Automated daily grid generation
-- **data/**: Processed player data and daily grids
+2. Set source to "master branch"
+3. The `daily_grid.yml` workflow will automatically update data every day at 12 AM EST
 
 ## Project Structure
 
 ```
 collegeGrids/
-├── .github/workflows/daily_grid.yml  # Daily grid generation
+├── .github/workflows/daily_grid.yml  # Daily grid generation (12 AM EST)
 ├── scraper/
 │   ├── ingest_boxscores.py           # ESPN box score crawler
 │   ├── fetch_awards.py               # Award winner fetcher
-│   ├── generate_grids.py             # Grid generator
-│   ├── categories.json               # Category definitions
+│   ├── generate_grids.py             # Grid generator (deterministic by date)
 │   └── requirements.txt              # Python dependencies
 ├── web/
 │   ├── index.html                    # Main game interface
 │   ├── css/style.css                 # Responsive styling
 │   ├── js/
-│   │   ├── data.js                   # Data management
-│   │   ├── game.js                   # Game logic
-│   │   └── main.js                   # App initialization
+│   │   ├── data.js                   # Data management (relative paths)
+│   │   ├── game.js                   # Game logic (cell selection, validation)
+│   │   └── main.js                   # App initialization (Eastern time)
 │   └── data/
-│       ├── players.json              # Player database
-│       └── grids/                    # Daily grids
+│       ├── players.json              # Player database (generated by scraper)
+│       ├── boxscores/                # Raw box score JSON files
+│       └── grids/                    # Daily grids (generated by grid generator)
 ├── README.md                         # This file
 └── .gitignore                        # Git ignore rules
+```
+
+## Data Flow
+
+```
+ESPN API → Scraper → web/data/players.json → Grid Generator → web/data/grids/ → GitHub Pages → User
 ```
 
 ## License
