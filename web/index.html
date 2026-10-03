@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Grid - Daily College Football Trivia</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>College Grid</h1>
+            <p class="subtitle">Daily College Football Trivia</p>
+            <div class="date-display" id="currentDate"></div>
+        </header>
+
+        <main>
+            <div class="grid-container">
+                <div class="grid-header">
+                    <div class="corner"></div>
+                    <div class="column-headers" id="columnHeaders"></div>
+                </div>
+                <div class="grid-body" id="gridBody"></div>
+                <div class="row-labels" id="rowLabels"></div>
+            </div>
+
+            <div class="guess-section">
+                <div class="input-group">
+                    <input type="text" id="playerInput" placeholder="Enter player name..." autocomplete="off">
+                    <button id="guessBtn" onclick="makeGuess()">Guess</button>
+                </div>
+                <div class="autocomplete-results" id="autocompleteResults"></div>
+            </div>
+
+            <div class="stats-section">
+                <div class="stat-card">
+                    <h3>Guesses</h3>
+                    <div class="stat-value" id="guessCount">0/9</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Correct</h3>
+                    <div class="stat-value" id="correctCount">0</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Score</h3>
+                    <div class="stat-value" id="score">0</div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Data provided by ESPN College Football API</p>
+            <p>Not affiliated with Sports Reference or Immaculate Grid</p>
+        </footer>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

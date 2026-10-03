@@ -1,0 +1,65 @@
+{
+  "schools": [
+    { "type": "school", "value": "Alabama Crimson Tide" },
+    { "type": "school", "value": "Ohio State Buckeyes" },
+    { "type": "school", "value": "Georgia Bulldogs" },
+    { "type": "school", "value": "Michigan Wolverines" },
+    { "type": "school", "value": "Texas Longhorns" },
+    { "type": "school", "value": "LSU Tigers" },
+    { "type": "school", "value": "Clemson Tigers" },
+    { "type": "school", "value": "Notre Dame Fighting Irish" },
+    { "type": "school", "value": "USC Trojans" },
+    { "type": "school", "value": "Oregon Ducks" }
+  ],
+  "conferences": [
+    { "type": "conference", "value": "SEC" },
+    { "type": "conference", "value": "Big Ten" },
+    { "type": "conference", "value": "ACC" },
+    { "type": "conference", "value": "Big 12" },
+    { "type": "conference", "value": "Pac-12" },
+    { "type": "conference", "value": "Big 12" },
+    { "type": "conference", "value": "American Athletic Conference" },
+    { "type": "conference", "value": "Mountain West" },
+    { "type": "conference", "value": "Sun Belt" },
+    { "type": "conference", "value": "Conference USA" }
+  ],
+  "season_stats": [
+    { "type": "season_stat", "stat_type": "passing_yards", "threshold": 3000, "season": "2024" },
+    { "type": "season_stat", "stat_type": "rushing_yards", "threshold": 1000, "season": "2024" },
+    { "type": "season_stat", "stat_type": "receiving_yards", "threshold": 1000, "season": "2024" },
+    { "type": "season_stat", "stat_type": "touchdowns", "threshold": 15, "season": "2024" },
+    { "type": "season_stat", "stat_type": "interceptions", "threshold": 5, "season": "2024" },
+    { "type": "season_stat", "stat_type": "sacks", "threshold": 10, "season": "2024" },
+    { "type": "season_stat", "stat_type": "tackles", "threshold": 100, "season": "2024" },
+    { "type": "season_stat", "stat_type": "passing_yards", "threshold": 2000, "season": "2023" },
+    { "type": "season_stat", "stat_type": "rushing_yards", "threshold": 500, "season": "2023" },
+    { "type": "season_stat", "stat_type": "receiving_yards", "threshold": 500, "season": "2023" }
+  ],
+  "career_stats": [
+    { "type": "career_stat", "stat_type": "passing_yards", "threshold": 10000 },
+    { "type": "career_stat", "stat_type": "rushing_yards", "threshold": 3000 },
+    { "type": "career_stat", "stat_type": "receiving_yards", "threshold": 3000 },
+    { "type": "career_stat", "stat_type": "touchdowns", "threshold": 50 },
+    { "type": "career_stat", "stat_type": "interceptions", "threshold": 20 },
+    { "type": "career_stat", "stat_type": "sacks", "threshold": 20 },
+    { "type": "career_stat", "stat_type": "tackles", "threshold": 200 },
+    { "type": "career_stat", "stat_type": "passing_touchdowns", "threshold": 75 },
+    { "type": "career_stat", "stat_type": "receptions", "threshold": 200 },
+    { "type": "career_stat", "stat_type": "rushing_touchdowns", "threshold": 30 }
+  ],
+  "awards": [
+    { "type": "award", "name": "Heisman Memorial Trophy", "year": 2024 },
+    { "type": "award", "name": "Maxwell Award", "year": 2024 },
+    { "type": "award", "name": "Davey O'Brien Award", "year": 2024 },
+    { "type": "award", "name": "Doak Walker Award", "year": 2024 },
+    { "type": "award", "name": "Fred Biletnikoff Award", "year": 2024 },
+    { "type": "award", "name": "John Mackey Award", "year": 2024 },
+    { "type": "award", "name": "Outland Trophy", "year": 2024 },
+    { "type": "award", "name": "Bronko Nagurski Trophy", "year": 2024 },
+    { "type": "award", "name": "Ray Guy Award", "year": 2024 },
+    { "type": "award", "name": "Lou Groza Award", "year": 2024 }
+  ],
+  "transfers": [
+    { "type": "transfer", "value": "Transferred schools" }
+  ]
+}

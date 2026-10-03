@@ -1,0 +1,363 @@
+/* College Grid - Styling */
+
+:root {
+    --primary-color: #1e3a8a;
+    --secondary-color: #3b82f6;
+    --accent-color: #f59e0b;
+    --success-color: #10b981;
+    --error-color: #ef4444;
+    --bg-color: #f8fafc;
+    --card-bg: #ffffff;
+    --text-color: #1e293b;
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    flex: 1;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.025em;
+}
+
+.subtitle {
+    font-size: 1.125rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+.date-display {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    background: var(--card-bg);
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+    display: inline-block;
+    box-shadow: var(--shadow);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 0.5rem;
+    margin-bottom: 3rem;
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-lg);
+}
+
+.grid-header {
+    display: contents;
+}
+
+.corner {
+    width: 80px;
+    height: 40px;
+    background: transparent;
+}
+
+.column-headers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+}
+
+.column-header {
+    text-align: center;
+    font-weight: 600;
+    color: var(--primary-color);
+    padding: 0.75rem;
+    background: var(--bg-color);
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.4;
+}
+
+.grid-body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+}
+
+.grid-cell {
+    min-height: 120px;
+    border: 2px solid var(--border-color);
+    border-radius: 0.75rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.2s ease;
+    background: var(--bg-color);
+}
+
+.grid-cell:hover {
+    border-color: var(--secondary-color);
+    box-shadow: var(--shadow);
+}
+
+.grid-cell.correct {
+    border-color: var(--success-color);
+    background: #f0fdf4;
+}
+
+.grid-cell.incorrect {
+    border-color: var(--error-color);
+    background: #fef2f2;
+}
+
+.grid-cell .cell-label {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.grid-cell .cell-answer {
+    font-weight: 700;
+    color: var(--text-color);
+    font-size: 1.125rem;
+    margin-bottom: 0.25rem;
+}
+
+.grid-cell .cell-status {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.grid-cell .cell-status.correct {
+    color: var(--success-color);
+}
+
+.grid-cell .cell-status.incorrect {
+    color: var(--error-color);
+}
+
+.row-labels {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0.5rem;
+}
+
+.row-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: var(--primary-color);
+    padding: 0.75rem;
+    background: var(--bg-color);
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.4;
+}
+
+.guess-section {
+    margin-bottom: 3rem;
+}
+
+.input-group {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#playerInput {
+    flex: 1;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 2px solid var(--border-color);
+    border-radius: 0.75rem;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+#playerInput:focus {
+    border-color: var(--secondary-color);
+}
+
+#guessBtn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#guessBtn:hover {
+    background: var(--secondary-color);
+}
+
+#guessBtn:disabled {
+    background: var(--text-muted);
+    cursor: not-allowed;
+}
+
+.autocomplete-results {
+    position: absolute;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 0.75rem;
+    box-shadow: var(--shadow-lg);
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 100;
+    display: none;
+}
+
+.autocomplete-result {
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.autocomplete-result:hover {
+    background: var(--bg-color);
+}
+
+.autocomplete-result .player-name {
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.autocomplete-result .player-school {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+
+.stats-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.stat-card {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+.stat-card h3 {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--primary-color);
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    border-top: 1px solid var(--border-color);
+    margin-top: auto;
+}
+
+footer p {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+    
+    .grid-body {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .column-headers {
+        display: none;
+    }
+    
+    .row-labels {
+        display: none;
+    }
+    
+    .grid-cell {
+        min-height: 100px;
+        padding: 0.75rem;
+    }
+    
+    .stats-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .grid-cell {
+        min-height: 80px;
+        padding: 0.5rem;
+    }
+    
+    .grid-cell .cell-label {
+        font-size: 0.75rem;
+    }
+    
+    .grid-cell .cell-answer {
+        font-size: 0.875rem;
+    }
+}
