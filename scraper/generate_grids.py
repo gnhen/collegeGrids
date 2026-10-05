@@ -14,6 +14,10 @@ Determinism:
     The generator seeds its random choice by date so the same date always
     produces the same grid.  This is important for reproducibility and for
     the frontend to know which grid belongs to which day.
+
+Guarantees:
+    Always produces a grid. If there's no real data, it falls back to
+    a "played in 2024" catch-all that includes every player.
 """
 
 import json
@@ -24,9 +28,10 @@ import datetime
 from collections import defaultdict
 
 # Configuration
-DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "web", "data")
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = os.path.join(os.path.dirname(SCRIPT_DIR), "web", "data")
 GRIDS_DIR = os.path.join(DATA_DIR, "grids")
-AWARDS_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "processed", "awards")
+AWARDS_DIR = os.path.join(os.path.dirname(SCRIPT_DIR), "data", "processed", "awards")
 
 
 def ensure_dirs():
@@ -71,6 +76,8 @@ def _cat_label(cat):
         return cat["name"]
     if cat["type"] == "transfer":
         return "Transfer"
+    if cat["type"] == "catch_all":
+        return cat.get("value", "Any player")
     return str(cat)
 
 
@@ -82,13 +89,20 @@ def _cat_key(cat):
         return (cat["type"], cat["stat_type"], cat["threshold"])
     if cat["type"] == "transfer":
         return ("transfer",)
+    if cat["type"] == "catch_all":
+        return ("catch_all", cat.get("value", ""))
     return (str(cat),)
 
 
 def generate_categories(players, awards, year):
-    """Generate a diverse set of categories from real data."""
+    """Generate a diverse set of categories from real data.
+
+    Always includes at least one "catch-all" category that uses all players,
+    so the grid generator can always find overlap.
+    """
     categories = []
     seen_keys = set()
+    all_player_ids = sorted(players.keys())
 
     def add_cat(cat):
         key = _cat_key(cat)
@@ -97,16 +111,24 @@ def generate_categories(players, awards, year):
         seen_keys.add(key)
         categories.append(cat)
 
+    # --- Catch-all (fallback: every player) ---
+    if len(all_player_ids) >= 3:
+        add_cat({
+            "type": "catch_all",
+            "value": f"Played {year}-present",
+            "player_ids": all_player_ids,
+        })
+
     # --- Schools (pick 5-6 with the most players) ---
     school_players = defaultdict(list)
     for pid, pdata in players.items():
         for school in pdata.get("schools", []):
             school_players[school].append(pid)
 
-    valid_schools = {k: v for k, v in school_players.items() if len(v) >= 5}
+    valid_schools = {k: v for k, v in school_players.items() if len(v) >= 3}
     top_schools = sorted(valid_schools.items(), key=lambda x: len(x[1]), reverse=True)[:10]
     for school, pids in top_schools:
-        add_cat({"type": "school", "value": school, "player_ids": pids})
+        add_cat({"type": "school", "value": school, "player_ids": sorted(pids)})
 
     # --- Conferences (deduplicated by name) ---
     conf_players = defaultdict(set)
@@ -114,16 +136,16 @@ def generate_categories(players, awards, year):
         for conf in pdata.get("conferences", []):
             conf_players[conf].add(pid)
 
-    valid_confs = {k: sorted(v) for k, v in conf_players.items() if len(v) >= 5}
+    valid_confs = {k: sorted(v) for k, v in conf_players.items() if len(v) >= 3}
     for conf, pids in sorted(valid_confs.items(), key=lambda x: len(x[1]), reverse=True)[:5]:
         add_cat({"type": "conference", "value": conf, "player_ids": pids})
 
     # --- Season stats (passing, rushing, receiving yards for current year) ---
     stat_types = ["passing_yards", "rushing_yards", "receiving_yards"]
     thresholds_map = {
-        "passing_yards": [1000, 2000, 3000, 4000],
-        "rushing_yards": [200, 500, 1000, 1500],
-        "receiving_yards": [200, 500, 1000, 1500],
+        "passing_yards": [500, 1000, 2000, 3000, 4000],
+        "rushing_yards": [100, 200, 500, 1000, 1500],
+        "receiving_yards": [100, 200, 500, 1000, 1500],
     }
 
     for stat_type in stat_types:
@@ -135,7 +157,7 @@ def generate_categories(players, awards, year):
             if total > 0:
                 player_totals[pid] = total
 
-        for threshold in thresholds_map.get(stat_type, [500]):
+        for threshold in thresholds_map.get(stat_type, [100]):
             pids = sorted([pid for pid, total in player_totals.items() if total >= threshold])
             if len(pids) >= 3:
                 add_cat({
@@ -164,6 +186,14 @@ def generate_categories(players, awards, year):
     if len(transfer_players) >= 3:
         add_cat({"type": "transfer", "value": "Transfer", "player_ids": transfer_players})
 
+    # Ensure we always have a catch-all in every row/col
+    if not any(c["type"] == "catch_all" for c in categories):
+        add_cat({
+            "type": "catch_all",
+            "value": "Any player",
+            "player_ids": all_player_ids,
+        })
+
     return categories
 
 
@@ -180,6 +210,7 @@ def _try_generate(categories, seed_str):
     stat_cats = [c for c in categories if c["type"] == "season_stat"]
     award_cats = [c for c in categories if c["type"] == "award"]
     transfer_cats = [c for c in categories if c["type"] == "transfer"]
+    catch_all_cats = [c for c in categories if c["type"] == "catch_all"]
 
     # Always pick at least one school and one stat for rows/cols
     row_cats = []
@@ -189,6 +220,8 @@ def _try_generate(categories, seed_str):
         row_cats.append(rng.choice(stat_cats))
     if conf_cats:
         row_cats.append(rng.choice(conf_cats))
+    if not row_cats and catch_all_cats:
+        row_cats.append(rng.choice(catch_all_cats))
 
     col_cats = []
     if school_cats:
@@ -197,9 +230,11 @@ def _try_generate(categories, seed_str):
         col_cats.append(rng.choice(stat_cats))
     if conf_cats:
         col_cats.append(rng.choice(conf_cats))
+    if not col_cats and catch_all_cats:
+        col_cats.append(rng.choice(catch_all_cats))
 
     # Fill remaining slots
-    all_cats = [c for c in categories if c not in row_cats]
+    all_cats = [c for c in categories if c not in row_cats and c not in col_cats]
     rng.shuffle(all_cats)
     for c in all_cats:
         if len(row_cats) >= 3 and len(col_cats) >= 3:
@@ -208,6 +243,18 @@ def _try_generate(categories, seed_str):
             row_cats.append(c)
         if len(col_cats) < 3 and c not in col_cats:
             col_cats.append(c)
+
+    # If we still don't have 3 of each, pad with catch-all
+    while len(row_cats) < 3:
+        if catch_all_cats:
+            row_cats.append(rng.choice(catch_all_cats))
+        else:
+            break
+    while len(col_cats) < 3:
+        if catch_all_cats:
+            col_cats.append(rng.choice(catch_all_cats))
+        else:
+            break
 
     grid = {}
     playable = True
@@ -228,13 +275,38 @@ def generate_grid(categories, players, date):
     """Generate a playable 3x3 grid for the given date.
 
     Uses the date as a seed so the same date always produces the same grid.
-    Tries multiple random draws until a playable grid is found (up to 20).
+    Tries multiple random draws until a playable grid is found (up to 50).
+    Falls back to a catch-all grid if nothing else works.
     """
     seed_str = f"college-grid-{date}"
-    for attempt in range(20):
+
+    # First try normal generation
+    for attempt in range(50):
         result = _try_generate(categories, seed_str + f"-{attempt}")
         if result:
             return result
+
+    # Fallback: use catch-all for everything
+    catch_all_cats = [c for c in categories if c["type"] == "catch_all"]
+    if catch_all_cats:
+        cat = catch_all_cats[0]
+        all_pids = sorted(cat["player_ids"])
+        return {
+            "row_categories": [cat, cat, cat],
+            "col_categories": [cat, cat, cat],
+            "grid": {
+                "0_0": all_pids,
+                "0_1": all_pids,
+                "0_2": all_pids,
+                "1_0": all_pids,
+                "1_1": all_pids,
+                "1_2": all_pids,
+                "2_0": all_pids,
+                "2_1": all_pids,
+                "2_2": all_pids,
+            },
+        }
+
     return None
 
 
@@ -279,7 +351,7 @@ def main():
             label = _cat_label(cat)
             print(f"    {i+1}. {label} ({len(cat['player_ids'])} players)")
     else:
-        print("[!] Failed to generate a playable grid after 20 attempts.")
+        print("[!] Failed to generate a grid even with fallback.")
 
 
 if __name__ == "__main__":

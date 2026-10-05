@@ -18,14 +18,15 @@ class DataManager {
         try {
             const response = await fetch(`./data/grids/${date}.json`);
             if (!response.ok) {
-                throw new Error(`Failed to load grid: ${response.status}`);
+                console.warn(`Grid not found for ${date}: ${response.status}`);
+                return null;
             }
             this.gridData = await response.json();
             console.log('Grid loaded:', this.gridData);
             return this.gridData;
         } catch (error) {
             console.error('Error loading grid:', error);
-            throw error;
+            return null;
         } finally {
             this.isLoading = false;
         }
@@ -77,6 +78,8 @@ class DataManager {
                 return category.name;
             case 'transfer':
                 return 'Transfer';
+            case 'catch_all':
+                return category.value || 'Any player';
             default:
                 return category.value || '';
         }

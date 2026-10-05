@@ -16,14 +16,18 @@ class GridGame {
 
     async init(date) {
         try {
-            await this.dataManager.loadGrid(date);
+            const gridLoaded = await this.dataManager.loadGrid(date);
+            if (!gridLoaded) {
+                return false;
+            }
             await this.dataManager.loadPlayers();
             this.renderGrid();
             this.updateStats();
             console.log('Game initialized');
+            return true;
         } catch (error) {
             console.error('Error initializing game:', error);
-            alert('Failed to load game data. Please try again later.');
+            return false;
         }
     }
 

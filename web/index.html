@@ -15,7 +15,13 @@
         </header>
 
         <main>
-            <div class="grid-container">
+            <div id="noGridMessage" style="display:none; text-align:center; padding:2rem;">
+                <h2>No grid available for this date.</h2>
+                <p>Try loading the latest grid instead:</p>
+                <button id="loadLatestBtn" onclick="loadLatestGrid()">Load Latest Grid</button>
+            </div>
+
+            <div class="grid-container" id="gridContainer">
                 <div class="grid-header">
                     <div class="corner"></div>
                     <div class="column-headers" id="columnHeaders"></div>
@@ -24,7 +30,7 @@
                 <div class="row-labels" id="rowLabels"></div>
             </div>
 
-            <div class="guess-section">
+            <div class="guess-section" id="guessSection">
                 <div class="input-group">
                     <input type="text" id="playerInput" placeholder="Enter player name..." autocomplete="off">
                     <button id="guessBtn" onclick="makeGuess()">Guess</button>

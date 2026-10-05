@@ -66,12 +66,17 @@ jobs:
         env:
           TZ: America/New_York
 
-      - name: Check grid generation
+      - name: Fallback and verify
         if: steps.grid.outputs.GRID_GENERATED != 'true'
         run: |
-          echo "Warning: Grid generation failed for ${{ steps.date.outputs.TODAY }}"
-          echo "Falling back to yesterday's grid"
-          python scraper/generate_grids.py $(date -d "1 day ago" +%Y-%m-%d)
+          LATEST=$(ls web/data/grids/*.json 2>/dev/null | sort | tail -n 1)
+          if [ -n "$LATEST" ]; then
+            cp "$LATEST" "web/data/grids/${{ steps.date.outputs.TODAY }}.json"
+            echo "Reused $LATEST for today"
+          else
+            echo "ERROR: No grid could be generated and no previous grid exists"
+            exit 1
+          fi
 
       - name: Commit and push new grid
         run: |

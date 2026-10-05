@@ -22,7 +22,14 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Initialize game
     const game = new GridGame();
-    await game.init(dateStr);
+    const gridLoaded = await game.init(dateStr);
+
+    if (!gridLoaded) {
+        // No grid for today, show fallback message
+        document.getElementById('gridContainer').style.display = 'none';
+        document.getElementById('noGridMessage').style.display = 'block';
+        document.getElementById('guessSection').style.display = 'none';
+    }
 
     // Setup input handling
     const playerInput = document.getElementById('playerInput');
@@ -132,3 +139,39 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     });
 });
+
+// Load the latest available grid
+async function loadLatestGrid() {
+    try {
+        const response = await fetch('./data/grids/');
+        if (!response.ok) {
+            alert('No grids available');
+            return;
+        }
+        const html = await response.text();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+        const links = doc.querySelectorAll('a[href$=".json"]');
+        if (links.length === 0) {
+            alert('No grids available');
+            return;
+        }
+        // Get the latest grid file
+        const latestFile = Array.from(links)
+            .filter(a => a.textContent.endsWith('.json'))
+            .sort((a, b) => b.textContent.localeCompare(a.textContent))[0];
+
+        if (latestFile) {
+            const dateStr = latestFile.textContent.replace('.json', '');
+            const game = new GridGame();
+            const gridLoaded = await game.init(dateStr);
+            if (gridLoaded) {
+                document.getElementById('gridContainer').style.display = 'grid';
+                document.getElementById('noGridMessage').style.display = 'none';
+                document.getElementById('guessSection').style.display = 'block';
+            }
+        }
+    } catch (error) {
+        alert('Failed to load latest grid: ' + error.message);
+    }
+}
