@@ -98,6 +98,23 @@ class DataManager {
 
         return results.slice(0, 10);
     }
+
+    getSchoolInfo(schoolName) {
+        if (!this.players || !schoolName) return null;
+        // Find any player who has this school and get their school_ids
+        for (const [id, player] of Object.entries(this.players)) {
+            const school_ids = player.school_ids || {};
+            if (school_ids[schoolName]) {
+                const tid = school_ids[schoolName];
+                return {
+                    name: schoolName,
+                    logo: `https://a.espncdn.com/i/teamlogos/ncaa/500/${tid}.png`,
+                    id: tid
+                };
+            }
+        }
+        return null;
+    }
 }
 
 if (typeof module !== 'undefined' && module.exports) {

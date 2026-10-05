@@ -105,6 +105,49 @@ def crawl_scoreboard(date_str):
     return events
 
 
+# ---------------------------------------------------------------------------
+# School ID mapping from ESPN teams endpoint
+# ---------------------------------------------------------------------------
+
+SCHOOL_ID_CACHE = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".school_ids.json")
+
+def load_school_id_cache():
+    if os.path.exists(SCHOOL_ID_CACHE):
+        with open(SCHOOL_ID_CACHE, "r") as f:
+            return json.load(f)
+    return {}
+
+def save_school_id_cache(cache):
+    with open(SCHOOL_ID_CACHE, "w") as f:
+        json.dump(cache, f, indent=2)
+
+def build_school_id_map():
+    """Fetch all FBS teams from ESPN and build school_name -> school_id mapping."""
+    cache = load_school_id_cache()
+    if len(cache) > 50:  # Already populated
+        return cache
+
+    print("\n--- Building School ID Map ---")
+    teams_url = f"{BASE_URL}/teams"
+    data = fetch_json(teams_url)
+    if not data:
+        print("  [!] Failed to fetch teams endpoint")
+        return cache
+
+    teams_list = data.get("sports", [{}])[0].get("leagues", [{}])[0].get("teams", [])
+    count = 0
+    for team_entry in teams_list:
+        team = team_entry.get("team", {})
+        name = team.get("displayName", "")
+        tid = team.get("id")
+        if name and tid:
+            cache[name] = str(tid)
+            count += 1
+    save_school_id_cache(cache)
+    print(f"  [✓] Mapped {count} teams")
+    return cache
+
+
 def process_game(event):
     eid = event.get("id")
     ename = event.get("name", "Unknown Event")
@@ -208,6 +251,9 @@ def build_player_database():
     """Build player records from raw box score JSON files."""
     print("\n--- Building Player Database ---")
 
+    # Build school name -> ID map
+    school_id_map = build_school_id_map()
+
     players = {}  # id -> player record
     # Track which (team, year) combos each player appeared in
     player_school_years = defaultdict(set)  # player_id -> set of (team_name, year)
@@ -253,6 +299,7 @@ def build_player_database():
                             "id": player_id,
                             "name": player_name,
                             "schools": [],
+                            "school_ids": {},  # school_name -> espn_team_id
                             "conferences": [],
                             "season_stats": {},
                             "career_stats": {},
@@ -260,9 +307,13 @@ def build_player_database():
                             "transferred": False,
                         }
 
-                    # Track unique schools
+                    # Track unique schools and their ESPN IDs
                     if team_name and team_name not in players[player_id]["schools"]:
                         players[player_id]["schools"].append(team_name)
+                        # Look up ESPN team ID
+                        espn_id = school_id_map.get(team_name)
+                        if espn_id:
+                            players[player_id]["school_ids"][team_name] = espn_id
 
                     # Track school+year combos for transfer detection
                     event_date = data.get("header", {}).get("date", "")

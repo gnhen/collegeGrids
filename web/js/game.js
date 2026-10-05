@@ -62,11 +62,21 @@ class GridGame {
          */
         for (let row = 0; row < 3; row++) {
 
-            // Row label
+            // Row label with school logo
             const label = document.createElement('div');
             label.className = 'row-label';
-            label.textContent =
-                this.dataManager.getCategoryLabel(row, 0, true);
+            const schoolName = this.dataManager.getCategoryLabel(row, 0, true);
+            // Build label with logo if available
+            const schoolInfo = this.dataManager.getSchoolInfo(schoolName);
+            if (schoolInfo && schoolInfo.logo) {
+                const img = document.createElement('img');
+                img.src = schoolInfo.logo;
+                img.alt = schoolName + ' logo';
+                img.className = 'school-logo';
+                img.onerror = () => { img.style.display = 'none'; };
+                label.appendChild(img);
+            }
+            label.appendChild(document.createTextNode(schoolName));
 
             gridBody.appendChild(label);
 
