@@ -68,96 +68,152 @@ h1 {
     box-shadow: var(--shadow);
 }
 
+/* =========================
+   GRID BOARD
+   ========================= */
+
 .grid-container {
     display: grid;
-    grid-template-columns: auto 1fr auto;
-    gap: 0.5rem;
-    margin-bottom: 3rem;
+    grid-template-columns: 180px repeat(3, minmax(0, 1fr));
+    grid-template-rows: 90px repeat(3, minmax(150px, 1fr));
+    gap: 8px;
+
     background: var(--card-bg);
-    padding: 1.5rem;
-    border-radius: 1rem;
+    padding: 24px;
+    border-radius: 16px;
     box-shadow: var(--shadow-lg);
+
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto 3rem;
 }
 
-.grid-header {
+/* Let these containers disappear so their children
+   participate directly in the main grid */
+.grid-header,
+.grid-body,
+.row-labels {
     display: contents;
 }
 
+/* Top-left empty corner */
 .corner {
-    width: 80px;
-    height: 40px;
-    background: transparent;
+    grid-column: 1;
+    grid-row: 1;
 }
 
+/* Column headers */
 .column-headers {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.5rem;
+    display: contents;
 }
 
 .column-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     text-align: center;
-    font-weight: 600;
+    font-weight: 700;
     color: var(--primary-color);
-    padding: 0.75rem;
-    background: var(--bg-color);
-    border-radius: 0.5rem;
-    font-size: 0.875rem;
-    line-height: 1.4;
+
+    background: #f8fafc;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+
+    padding: 12px;
+    font-size: 0.9rem;
+    line-height: 1.3;
 }
 
+/* Row labels */
+.row-labels {
+    display: contents;
+}
+
+.row-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    font-weight: 700;
+    color: var(--primary-color);
+
+    background: #f8fafc;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+
+    padding: 12px;
+    font-size: 0.9rem;
+    line-height: 1.3;
+}
+
+/* The actual 9 squares */
 .grid-body {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.5rem;
+    display: contents;
 }
 
 .grid-cell {
-    min-height: 120px;
+    min-width: 0;
+    min-height: 0;
+
     border: 2px solid var(--border-color);
-    border-radius: 0.75rem;
-    padding: 1rem;
+    border-radius: 10px;
+
+    padding: 16px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     text-align: center;
-    transition: all 0.2s ease;
-    background: var(--bg-color);
+
+    background: white;
+    cursor: pointer;
+
+    transition:
+        border-color 0.15s ease,
+        background-color 0.15s ease,
+        transform 0.15s ease,
+        box-shadow 0.15s ease;
 }
 
 .grid-cell:hover {
     border-color: var(--secondary-color);
-    box-shadow: var(--shadow);
-}
-
-.grid-cell.correct {
-    border-color: var(--success-color);
-    background: #f0fdf4;
-}
-
-.grid-cell.incorrect {
-    border-color: var(--error-color);
-    background: #fef2f2;
+    background: #f8fbff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(59, 130, 246, 0.12);
 }
 
 .grid-cell .cell-label {
     font-weight: 600;
     color: var(--primary-color);
-    margin-bottom: 0.5rem;
-    font-size: 0.875rem;
+    font-size: 0.8rem;
+    line-height: 1.35;
+    margin-bottom: 8px;
 }
 
 .grid-cell .cell-answer {
     font-weight: 700;
     color: var(--text-color);
-    font-size: 1.125rem;
-    margin-bottom: 0.25rem;
+    font-size: 1rem;
 }
 
 .grid-cell .cell-status {
     font-size: 0.75rem;
-    color: var(--text-muted);
+    margin-top: 4px;
+}
+
+/* Correct / incorrect */
+.grid-cell.correct {
+    border-color: var(--success-color);
+    background: #ecfdf5;
+}
+
+.grid-cell.incorrect {
+    border-color: var(--error-color);
+    background: #fef2f2;
 }
 
 .grid-cell .cell-status.correct {
@@ -166,25 +222,6 @@ h1 {
 
 .grid-cell .cell-status.incorrect {
     color: var(--error-color);
-}
-
-.row-labels {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    gap: 0.5rem;
-}
-
-.row-label {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 600;
-    color: var(--primary-color);
-    padding: 0.75rem;
-    background: var(--bg-color);
-    border-radius: 0.5rem;
-    font-size: 0.875rem;
-    line-height: 1.4;
 }
 
 .guess-section {
@@ -311,53 +348,61 @@ footer p {
     .container {
         padding: 1rem;
     }
-    
+
     h1 {
         font-size: 2.5rem;
     }
-    
+
     .grid-container {
-        grid-template-columns: 1fr;
-        gap: 0.5rem;
+        grid-template-columns: 90px repeat(3, minmax(0, 1fr));
+        grid-template-rows: 80px repeat(3, 120px);
+        gap: 5px;
+        padding: 10px;
     }
-    
-    .grid-body {
-        grid-template-columns: repeat(3, 1fr);
+
+    .column-header,
+    .row-label {
+        font-size: 0.7rem;
+        padding: 6px;
     }
-    
-    .column-headers {
-        display: none;
-    }
-    
-    .row-labels {
-        display: none;
-    }
-    
+
     .grid-cell {
-        min-height: 100px;
-        padding: 0.75rem;
+        padding: 6px;
+        border-width: 1px;
     }
-    
-    .stats-section {
-        grid-template-columns: 1fr;
+
+    .grid-cell .cell-label {
+        font-size: 0.65rem;
+        margin-bottom: 4px;
+    }
+
+    .grid-cell .cell-answer {
+        font-size: 0.8rem;
+    }
+
+    .grid-cell .cell-status {
+        font-size: 0.65rem;
     }
 }
 
 @media (max-width: 480px) {
-    h1 {
-        font-size: 2rem;
+    .grid-container {
+        grid-template-columns: 70px repeat(3, minmax(0, 1fr));
+        grid-template-rows: 70px repeat(3, 100px);
+        gap: 4px;
+        padding: 6px;
     }
-    
-    .grid-cell {
-        min-height: 80px;
-        padding: 0.5rem;
+
+    .column-header,
+    .row-label {
+        font-size: 0.6rem;
     }
-    
+
     .grid-cell .cell-label {
-        font-size: 0.75rem;
+        font-size: 0.55rem;
     }
-    
+
     .grid-cell .cell-answer {
-        font-size: 0.875rem;
+        font-size: 0.7rem;
     }
 }

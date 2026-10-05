@@ -40,24 +40,39 @@ class GridGame {
         rowLabels.innerHTML = '';
         gridBody.innerHTML = '';
 
-        // Column headers (index 0..2 into col_categories)
+        /*
+         * Column headers
+         */
         for (let j = 0; j < 3; j++) {
             const header = document.createElement('div');
             header.className = 'column-header';
-            header.textContent = this.dataManager.getCategoryLabel(0, j, false);
+            header.textContent =
+                this.dataManager.getCategoryLabel(0, j, false);
+
             columnHeaders.appendChild(header);
         }
 
-        // Row labels (index 0..2 into row_categories)
-        for (let i = 0; i < 3; i++) {
+        /*
+         * Build the board in row-major order:
+         *
+         * [corner] [col] [col] [col]
+         * [row]    [cell][cell][cell]
+         * [row]    [cell][cell][cell]
+         * [row]    [cell][cell][cell]
+         *
+         * Put row labels directly into the grid body.
+         */
+        for (let row = 0; row < 3; row++) {
+
+            // Row label
             const label = document.createElement('div');
             label.className = 'row-label';
-            label.textContent = this.dataManager.getCategoryLabel(i, 0, true);
-            rowLabels.appendChild(label);
-        }
+            label.textContent =
+                this.dataManager.getCategoryLabel(row, 0, true);
 
-        // Grid cells
-        for (let row = 0; row < 3; row++) {
+            gridBody.appendChild(label);
+
+            // Three cells for this row
             for (let col = 0; col < 3; col++) {
                 const cell = document.createElement('div');
                 cell.className = 'grid-cell';
@@ -66,7 +81,8 @@ class GridGame {
                 const categoryLabel = document.createElement('div');
                 categoryLabel.className = 'cell-label';
                 categoryLabel.textContent =
-                    this.dataManager.getCategoryLabel(row, 0, true) + ' + ' +
+                    this.dataManager.getCategoryLabel(row, 0, true) +
+                    ' + ' +
                     this.dataManager.getCategoryLabel(0, col, false);
 
                 const answer = document.createElement('div');
@@ -77,7 +93,6 @@ class GridGame {
                 const status = document.createElement('div');
                 status.className = 'cell-status';
                 status.id = `status-${row}-${col}`;
-                status.textContent = '';
 
                 cell.appendChild(categoryLabel);
                 cell.appendChild(answer);
