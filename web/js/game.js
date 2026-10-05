@@ -33,11 +33,9 @@ class GridGame {
 
     renderGrid() {
         const columnHeaders = document.getElementById('columnHeaders');
-        const rowLabels = document.getElementById('rowLabels');
         const gridBody = document.getElementById('gridBody');
 
         columnHeaders.innerHTML = '';
-        rowLabels.innerHTML = '';
         gridBody.innerHTML = '';
 
         /*
