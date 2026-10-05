@@ -1,0 +1,265 @@
+diff --git a/.github/workflows/daily_grid.yml b/.github/workflows/daily_grid.yml
+index a1a9625..03991d1 100644
+--- a/.github/workflows/daily_grid.yml
++++ b/.github/workflows/daily_grid.yml
+@@ -73,6 +73,7 @@ jobs:
+           if [ -n "$LATEST" ]; then
+             cp "$LATEST" "web/data/grids/${{ steps.date.outputs.TODAY }}.json"
+             echo "Reused $LATEST for today"
++            python -c "import sys; sys.path.insert(0, 'scraper'); import generate_grids; generate_grids.write_manifest()"
+           else
+             echo "ERROR: No grid could be generated and no previous grid exists"
+             exit 1
+diff --git a/scraper/generate_grids.py b/scraper/generate_grids.py
+index bbf0674..ee94bcc 100644
+--- a/scraper/generate_grids.py
++++ b/scraper/generate_grids.py
+@@ -31,6 +31,7 @@ from collections import defaultdict
+ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+ DATA_DIR = os.path.join(os.path.dirname(SCRIPT_DIR), "web", "data")
+ GRIDS_DIR = os.path.join(DATA_DIR, "grids")
++MIN_ANSWERS = 2  # every cell needs at least this many valid players
+ AWARDS_DIR = os.path.join(os.path.dirname(SCRIPT_DIR), "data", "processed", "awards")
+ 
+ 
+@@ -125,8 +126,8 @@ def generate_categories(players, awards, year):
+         for school in pdata.get("schools", []):
+             school_players[school].append(pid)
+ 
+-    valid_schools = {k: v for k, v in school_players.items() if len(v) >= 3}
+-    top_schools = sorted(valid_schools.items(), key=lambda x: len(x[1]), reverse=True)[:10]
++    valid_schools = {k: v for k, v in school_players.items() if len(v) >= 10}
++    top_schools = sorted(valid_schools.items(), key=lambda x: len(x[1]), reverse=True)
+     for school, pids in top_schools:
+         add_cat({"type": "school", "value": school, "player_ids": sorted(pids)})
+ 
+@@ -201,7 +202,7 @@ def generate_categories(players, awards, year):
+ # Grid generation
+ # ---------------------------------------------------------------------------
+ 
+-def _try_generate(categories, seed_str):
++def _try_generate(categories, seed_str, min_answers=MIN_ANSWERS):
+     """Try one random draw; return grid dict or None."""
+     rng = random.Random(seed_str)
+ 
+@@ -212,49 +213,22 @@ def _try_generate(categories, seed_str):
+     transfer_cats = [c for c in categories if c["type"] == "transfer"]
+     catch_all_cats = [c for c in categories if c["type"] == "catch_all"]
+ 
+-    # Always pick at least one school and one stat for rows/cols
+-    row_cats = []
+-    if school_cats:
+-        row_cats.append(rng.choice(school_cats))
+-    if stat_cats:
+-        row_cats.append(rng.choice(stat_cats))
+-    if conf_cats:
+-        row_cats.append(rng.choice(conf_cats))
+-    if not row_cats and catch_all_cats:
+-        row_cats.append(rng.choice(catch_all_cats))
+-
+-    col_cats = []
+-    if school_cats:
+-        col_cats.append(rng.choice(school_cats))
+-    if stat_cats:
+-        col_cats.append(rng.choice(stat_cats))
+-    if conf_cats:
+-        col_cats.append(rng.choice(conf_cats))
+-    if not col_cats and catch_all_cats:
+-        col_cats.append(rng.choice(catch_all_cats))
+-
+-    # Fill remaining slots
+-    all_cats = [c for c in categories if c not in row_cats and c not in col_cats]
+-    rng.shuffle(all_cats)
+-    for c in all_cats:
+-        if len(row_cats) < 3 and c not in row_cats:
+-            row_cats.append(c)
+-        if len(col_cats) < 3 and c not in col_cats:
+-            col_cats.append(c)
+-
+-    # If we still don't have 3 of each, pad with catch-all
+-    while len(row_cats) < 3:
+-        if catch_all_cats:
+-            row_cats.append(catch_all_cats[0])
+-        else:
+-            break
+-    while len(col_cats) < 3:
+-        if catch_all_cats:
+-            col_cats.append(catch_all_cats[0])
+-        else:
+-            break
++    # Players have exactly one school, so two schools on opposite axes can never
++    # overlap. Put schools (identity) on the rows and attributes (stats,
++    # conferences, transfers, awards) on the columns so cells have answers.
++    attr_cats = stat_cats + award_cats + transfer_cats  # conferences only fit one school, so skip
++
++    if len(school_cats) >= 3 and len(attr_cats) >= 3:
++        row_cats = rng.sample(school_cats, 3)
++        col_cats = rng.sample(attr_cats, 3)
++    else:
++        # Not enough variety: pad with catch-all so we still return something
++        row_cats = rng.sample(school_cats, min(3, len(school_cats)))
++        col_cats = rng.sample(attr_cats, min(3, len(attr_cats)))
++        while len(row_cats) < 3 and catch_all_cats:
++            row_cats.append(catch_all_cats[0])
++        while len(col_cats) < 3 and catch_all_cats:
++            col_cats.append(catch_all_cats[0])
+ 
+     grid = {}
+     playable = True
+@@ -263,7 +237,7 @@ def _try_generate(categories, seed_str):
+             cell_key = f"{i}_{j}"
+             valid = sorted(set(rc["player_ids"]) & set(cc["player_ids"]))
+             grid[cell_key] = valid
+-            if not valid:
++            if len(valid) < min_answers:
+                 playable = False
+ 
+     if playable:
+@@ -275,14 +249,16 @@ def generate_grid(categories, players, date):
+     """Generate a playable 3x3 grid for the given date.
+ 
+     Uses the date as a seed so the same date always produces the same grid.
+-    Tries multiple random draws until a playable grid is found (up to 50).
++    Tries multiple random draws until a playable grid is found (up to 1000).
+     Falls back to a catch-all grid if nothing else works.
+     """
+     seed_str = f"college-grid-{date}"
+ 
+     # First try normal generation
+-    for attempt in range(50):
+-        result = _try_generate(categories, seed_str + f"-{attempt}")
++    for attempt in range(1000):
++        # Prefer cells with 2+ answers; relax to 1 after 300 tries
++        need = MIN_ANSWERS if attempt < 300 else 1
++        result = _try_generate(categories, seed_str + f"-{attempt}", need)
+         if result:
+             return result
+ 
+@@ -310,6 +286,19 @@ def generate_grid(categories, players, date):
+     return None
+ 
+ 
++def write_manifest():
++    """Write grids/index.json listing every grid date.
++
++    GitHub Pages cannot list a directory, so the frontend reads this file
++    to find the latest grid.
++    """
++    dates = sorted(f[:-5] for f in os.listdir(GRIDS_DIR)
++                   if f.endswith(".json") and f != "index.json")
++    with open(os.path.join(GRIDS_DIR, "index.json"), "w") as f:
++        json.dump({"latest": dates[-1] if dates else None, "dates": dates}, f, indent=2)
++    print(f"  [✓] Manifest updated ({len(dates)} grids)")
++
++
+ def main():
+     ensure_dirs()
+ 
+@@ -340,6 +329,7 @@ def main():
+         with open(grid_file, "w") as f:
+             json.dump(grid, f, indent=2)
+         print(f"[✓] Grid generated and saved to {grid_file}")
++        write_manifest()
+ 
+         print("\nGrid Summary:")
+         print("  Rows:")
+diff --git a/web/js/main.js b/web/js/main.js
+index bdf3587..24afc5e 100644
+--- a/web/js/main.js
++++ b/web/js/main.js
+@@ -5,23 +5,25 @@
+  * Uses Eastern time for the date so the grid matches the daily schedule.
+  */
+ 
++let game = null;
++
+ document.addEventListener('DOMContentLoaded', async () => {
+     // Get today's date in Eastern time (not UTC)
+     const now = new Date();
+-    const eastern = now.toLocaleString('en-US', { timeZone: 'America/New_York' });
+-    const easternDate = new Date(eastern);
+-    const dateStr = easternDate.toISOString().split('T')[0];
++    // en-CA formats as YYYY-MM-DD; timeZone keeps it on Eastern time
++    const dateStr = now.toLocaleDateString('en-CA', { timeZone: 'America/New_York' });
+ 
+     // Display current date
+-    document.getElementById('currentDate').textContent = easternDate.toLocaleDateString('en-US', {
+-        weekday: 'long',
+-        year: 'numeric',
+-        month: "long",
+-        day: 'numeric'
+-    });
++    document.getElementById('currentDate').textContent =
++        new Date(dateStr + 'T12:00:00').toLocaleDateString('en-US', {
++            weekday: 'long',
++            year: 'numeric',
++            month: 'long',
++            day: 'numeric'
++        });
+ 
+     // Initialize game
+-    const game = new GridGame();
++    game = new GridGame();
+     const gridLoaded = await game.init(dateStr);
+ 
+     if (!gridLoaded) {
+@@ -140,38 +142,36 @@ document.addEventListener('DOMContentLoaded', async () => {
+     });
+ });
+ 
+-// Load the latest available grid
++// Load the latest available grid.
++// GitHub Pages cannot list a directory, so read the manifest written by
++// scraper/generate_grids.py (web/data/grids/index.json).
+ async function loadLatestGrid() {
+     try {
+-        const response = await fetch('./data/grids/');
++        const response = await fetch('./data/grids/index.json', { cache: 'no-store' });
+         if (!response.ok) {
+-            alert('No grids available');
++            alert('No grids available yet');
+             return;
+         }
+-        const html = await response.text();
+-        const parser = new DOMParser();
+-        const doc = parser.parseFromString(html, 'text/html');
+-        const links = doc.querySelectorAll('a[href$=".json"]');
+-        if (links.length === 0) {
+-            alert('No grids available');
++        const manifest = await response.json();
++        if (!manifest.latest) {
++            alert('No grids available yet');
++            return;
++        }
++
++        game = new GridGame();
++        const gridLoaded = await game.init(manifest.latest);
++        if (gridLoaded) {
++            document.getElementById('currentDate').textContent =
++                new Date(manifest.latest + 'T12:00:00').toLocaleDateString('en-US', {
++                    weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
++                });
++            document.getElementById('gridContainer').style.display = 'grid';
++            document.getElementById('noGridMessage').style.display = 'none';
++            document.getElementById('guessSection').style.display = 'block';
++        } else {
++            alert('Could not load grid ' + manifest.latest);
+         }
+-        // Get the latest grid file
+-        const latestFile = Array.from(links)
+-            .filter(a => a.textContent.endsWith('.json'))
+-            .sort((a, b) => b.textContent.localeCompare(a.textContent))[0];
+-
+-        if (latestFile) {
+-            const dateStr = latestFile.textContent.replace('.json', '');
+-            const game = new GridGame();
+-            const gridLoaded = await game.init(dateStr);
+-            if (gridLoaded) {
+-                document.getElementById('gridContainer').style.display = 'grid';
+-        }
+     } catch (error) {
+         alert('Failed to load latest grid: ' + error.message);
+     }
+-}
+\ No newline at end of file
++}

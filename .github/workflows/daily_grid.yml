@@ -73,6 +73,7 @@ jobs:
           if [ -n "$LATEST" ]; then
             cp "$LATEST" "web/data/grids/${{ steps.date.outputs.TODAY }}.json"
             echo "Reused $LATEST for today"
+            python -c "import sys; sys.path.insert(0, 'scraper'); import generate_grids; generate_grids.write_manifest()"
           else
             echo "ERROR: No grid could be generated and no previous grid exists"
             exit 1

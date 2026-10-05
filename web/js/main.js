@@ -5,23 +5,25 @@
  * Uses Eastern time for the date so the grid matches the daily schedule.
  */
 
+let game = null;
+
 document.addEventListener('DOMContentLoaded', async () => {
     // Get today's date in Eastern time (not UTC)
     const now = new Date();
-    const eastern = now.toLocaleString('en-US', { timeZone: 'America/New_York' });
-    const easternDate = new Date(eastern);
-    const dateStr = easternDate.toISOString().split('T')[0];
+    // en-CA formats as YYYY-MM-DD; timeZone keeps it on Eastern time
+    const dateStr = now.toLocaleDateString('en-CA', { timeZone: 'America/New_York' });
 
     // Display current date
-    document.getElementById('currentDate').textContent = easternDate.toLocaleDateString('en-US', {
-        weekday: 'long',
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric'
-    });
+    document.getElementById('currentDate').textContent =
+        new Date(dateStr + 'T12:00:00').toLocaleDateString('en-US', {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
 
     // Initialize game
-    const game = new GridGame();
+    game = new GridGame();
     const gridLoaded = await game.init(dateStr);
 
     if (!gridLoaded) {
@@ -140,36 +142,34 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
 });
 
-// Load the latest available grid
+// Load the latest available grid.
+// GitHub Pages cannot list a directory, so read the manifest written by
+// scraper/generate_grids.py (web/data/grids/index.json).
 async function loadLatestGrid() {
     try {
-        const response = await fetch('./data/grids/');
+        const response = await fetch('./data/grids/index.json', { cache: 'no-store' });
         if (!response.ok) {
-            alert('No grids available');
+            alert('No grids available yet');
             return;
         }
-        const html = await response.text();
-        const parser = new DOMParser();
-        const doc = parser.parseFromString(html, 'text/html');
-        const links = doc.querySelectorAll('a[href$=".json"]');
-        if (links.length === 0) {
-            alert('No grids available');
+        const manifest = await response.json();
+        if (!manifest.latest) {
+            alert('No grids available yet');
             return;
         }
-        // Get the latest grid file
-        const latestFile = Array.from(links)
-            .filter(a => a.textContent.endsWith('.json'))
-            .sort((a, b) => b.textContent.localeCompare(a.textContent))[0];
 
-        if (latestFile) {
-            const dateStr = latestFile.textContent.replace('.json', '');
-            const game = new GridGame();
-            const gridLoaded = await game.init(dateStr);
-            if (gridLoaded) {
-                document.getElementById('gridContainer').style.display = 'grid';
-                document.getElementById('noGridMessage').style.display = 'none';
-                document.getElementById('guessSection').style.display = 'block';
-            }
+        game = new GridGame();
+        const gridLoaded = await game.init(manifest.latest);
+        if (gridLoaded) {
+            document.getElementById('currentDate').textContent =
+                new Date(manifest.latest + 'T12:00:00').toLocaleDateString('en-US', {
+                    weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+                });
+            document.getElementById('gridContainer').style.display = 'grid';
+            document.getElementById('noGridMessage').style.display = 'none';
+            document.getElementById('guessSection').style.display = 'block';
+        } else {
+            alert('Could not load grid ' + manifest.latest);
         }
     } catch (error) {
         alert('Failed to load latest grid: ' + error.message);
