@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 // scraper/generate_grids.py (web/data/grids/index.json).
 async function loadLatestGrid() {
     try {
-        const response = await fetch('./web/data/grids/index.json', { cache: 'no-store' });
+        const response = await fetch('./data/grids/index.json', { cache: 'no-store' });
         if (!response.ok) {
             alert('No grids available yet');
             return;
