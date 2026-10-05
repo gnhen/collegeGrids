@@ -16,7 +16,7 @@ class DataManager {
     async loadGrid(date) {
         this.isLoading = true;
         try {
-            const response = await fetch(`./data/grids/${date}.json`);
+            const response = await fetch(`./web/data/grids/${date}.json`);
             if (!response.ok) {
                 console.warn(`Grid not found for ${date}: ${response.status}`);
                 return null;
@@ -34,7 +34,7 @@ class DataManager {
 
     async loadPlayers() {
         try {
-            const response = await fetch('./data/players.json');
+            const response = await fetch('./web/data/players.json');
             if (!response.ok) {
                 throw new Error(`Failed to load players: ${response.status}`);
             }
