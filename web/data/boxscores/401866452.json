@@ -1,0 +1,5089 @@
+{
+  "boxscore": {
+    "teams": [
+      {
+        "team": {
+          "id": "189",
+          "uid": "s:20~l:23~t:189",
+          "slug": "bowling-green-falcons",
+          "location": "Bowling Green",
+          "name": "Falcons",
+          "abbreviation": "BGSU",
+          "displayName": "Bowling Green Falcons",
+          "shortDisplayName": "Bowling Green",
+          "color": "fd5000",
+          "alternateColor": "4f2c1d",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/189.png"
+        },
+        "statistics": [
+          {
+            "name": "totalPointsPerGame",
+            "displayValue": "18.8",
+            "label": "Points Per Game"
+          },
+          {
+            "name": "yardsPerGame",
+            "displayValue": "287.8",
+            "label": "Total Yards"
+          },
+          {
+            "name": "passingYardsPerGame",
+            "displayValue": "179.8",
+            "label": "Yards Passing"
+          },
+          {
+            "name": "rushingYardsPerGame",
+            "displayValue": "108.0",
+            "label": "Yards Rushing"
+          },
+          {
+            "name": "totalPointsPerGameAllowed",
+            "displayValue": "29.8",
+            "label": "Points Allowed Per Game"
+          },
+          {
+            "name": "yardsPerGameAllowed",
+            "displayValue": "383.1",
+            "label": "Yards Allowed"
+          },
+          {
+            "name": "passingYardsPerGameAllowed",
+            "displayValue": "168.4",
+            "label": "Pass Yards Allowed"
+          },
+          {
+            "name": "rushingYardsPerGameAllowed",
+            "displayValue": "214.8",
+            "label": "Rush Yards Allowed"
+          }
+        ],
+        "displayOrder": 1,
+        "homeAway": "away"
+      },
+      {
+        "team": {
+          "id": "2711",
+          "uid": "s:20~l:23~t:2711",
+          "slug": "western-michigan-broncos",
+          "location": "Western Michigan",
+          "name": "Broncos",
+          "abbreviation": "WMU",
+          "displayName": "Western Michigan Broncos",
+          "shortDisplayName": "W Michigan",
+          "color": "532e1f",
+          "alternateColor": "f1c500",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2711.png"
+        },
+        "statistics": [
+          {
+            "name": "totalPointsPerGame",
+            "displayValue": "26.6",
+            "label": "Points Per Game"
+          },
+          {
+            "name": "yardsPerGame",
+            "displayValue": "325.9",
+            "label": "Total Yards"
+          },
+          {
+            "name": "passingYardsPerGame",
+            "displayValue": "163.8",
+            "label": "Yards Passing"
+          },
+          {
+            "name": "rushingYardsPerGame",
+            "displayValue": "162.1",
+            "label": "Yards Rushing"
+          },
+          {
+            "name": "totalPointsPerGameAllowed",
+            "displayValue": "20.4",
+            "label": "Points Allowed Per Game"
+          },
+          {
+            "name": "yardsPerGameAllowed",
+            "displayValue": "368.6",
+            "label": "Yards Allowed"
+          },
+          {
+            "name": "passingYardsPerGameAllowed",
+            "displayValue": "216.4",
+            "label": "Pass Yards Allowed"
+          },
+          {
+            "name": "rushingYardsPerGameAllowed",
+            "displayValue": "152.3",
+            "label": "Rush Yards Allowed"
+          }
+        ],
+        "displayOrder": 2,
+        "homeAway": "home"
+      }
+    ]
+  },
+  "format": {
+    "regulation": {
+      "periods": 4,
+      "displayName": "Quarter",
+      "slug": "quarter",
+      "clock": 900.0
+    },
+    "overtime": {
+      "displayName": "untimed",
+      "slug": "untimed"
+    },
+    "suddenDeath": {
+      "periods": 0
+    }
+  },
+  "gameInfo": {
+    "venue": {
+      "id": "3980",
+      "guid": "6f745f16-c96a-39c8-99ba-5c3bbd903ef8",
+      "fullName": "Waldo Stadium",
+      "address": {
+        "city": "Kalamazoo",
+        "state": "MI",
+        "zipCode": "49008",
+        "country": "USA"
+      },
+      "grass": false,
+      "images": [
+        {
+          "href": "https://a.espncdn.com/i/venues/college-football/day/interior/3980.jpg",
+          "width": 2000,
+          "height": 1125,
+          "alt": "",
+          "rel": [
+            "full",
+            "day",
+            "interior"
+          ]
+        }
+      ]
+    },
+    "weather": {
+      "temperature": 56,
+      "highTemperature": 56,
+      "lowTemperature": 56,
+      "conditionId": "7",
+      "gust": 12,
+      "precipitation": 9,
+      "link": {
+        "language": "en-US",
+        "rel": [
+          "49008"
+        ],
+        "href": "http://www.accuweather.com/en/us/waldo-stadium-mi/49007/hourly-weather-forecast/53595_poi?day=1&hbhhour=12&lang=en-us",
+        "text": "Weather",
+        "shortText": "Weather",
+        "isExternal": true,
+        "isPremium": false
+      }
+    }
+  },
+  "lastFiveGames": [
+    {
+      "displayOrder": 2,
+      "team": {
+        "id": "2711",
+        "uid": "s:20~l:23~t:2711",
+        "displayName": "Western Michigan Broncos",
+        "abbreviation": "WMU",
+        "links": [
+          {
+            "href": "https://www.espn.com/college-football/team/_/id/2711/western-michigan-broncos",
+            "text": "Clubhouse"
+          },
+          {
+            "href": "https://www.espn.com/college-football/team/schedule/_/id/2711",
+            "text": "Schedule"
+          }
+        ],
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2711.png",
+        "logos": [
+          {
+            "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2711.png",
+            "width": 500,
+            "height": 500,
+            "alt": "",
+            "rel": [
+              "full",
+              "default"
+            ],
+            "lastUpdated": "2025-12-24T20:19Z"
+          },
+          {
+            "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2711.png",
+            "width": 500,
+            "height": 500,
+            "alt": "",
+            "rel": [
+              "full",
+              "dark"
+            ],
+            "lastUpdated": "2025-12-24T20:19Z"
+          }
+        ]
+      },
+      "events": [
+        {
+          "id": "401860897",
+          "links": [
+            {
+              "href": "https://www.espn.com/college-football/game/_/gameId/401860897/boise-st-w-michigan",
+              "text": "Gamecast"
+            }
+          ],
+          "week": 4,
+          "atVs": "vs",
+          "gameDate": "2026-09-26T19:30Z",
+          "score": "32-7",
+          "homeTeamId": "2711",
+          "awayTeamId": "68",
+          "homeTeamScore": "7",
+          "awayTeamScore": "32",
+          "homeAggregateScore": "0",
+          "awayAggregateScore": "0",
+          "homeShootoutScore": "0",
+          "awayShootoutScore": "0",
+          "gameResult": "L",
+          "leagueName": "NCAA - Football",
+          "leagueAbbreviation": "NCAAF",
+          "opponent": {
+            "id": "68",
+            "uid": "s:20~l:23~t:68",
+            "displayName": "Boise State Broncos",
+            "abbreviation": "BOIS",
+            "links": [
+              {
+                "href": "https://www.espn.com/college-football/team/_/id/68/boise-state-broncos",
+                "text": "Clubhouse"
+              },
+              {
+                "href": "https://www.espn.com/college-football/team/schedule/_/id/68",
+                "text": "Schedule"
+              }
+            ],
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/68.png",
+            "logos": [
+              {
+                "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/68.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                  "full",
+                  "default"
+                ],
+                "lastUpdated": "2026-07-01T04:35Z"
+              },
+              {
+                "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/68.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                  "full",
+                  "dark"
+                ],
+                "lastUpdated": "2026-07-01T04:34Z"
+              }
+            ],
+            "curatedRank": {
+              "current": 99
+            }
+          },
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/68.png"
+        },
+        {
+          "id": "401866432",
+          "links": [
+            {
+              "href": "https://www.espn.com/college-football/game/_/gameId/401866432/w-michigan-buffalo",
+              "text": "Gamecast"
+            }
+          ],
+          "week": 5,
+          "atVs": "@",
+          "gameDate": "2026-10-03T17:00Z",
+          "score": "20-17",
+          "homeTeamId": "2084",
+          "awayTeamId": "2711",
+          "homeTeamScore": "17",
+          "awayTeamScore": "20",
+          "homeAggregateScore": "0",
+          "awayAggregateScore": "0",
+          "homeShootoutScore": "0",
+          "awayShootoutScore": "0",
+          "gameResult": "W",
+          "leagueName": "NCAA - Football",
+          "leagueAbbreviation": "NCAAF",
+          "opponent": {
+            "id": "2084",
+            "uid": "s:20~l:23~t:2084",
+            "displayName": "Buffalo Bulls",
+            "abbreviation": "BUFF",
+            "links": [
+              {
+                "href": "https://www.espn.com/college-football/team/_/id/2084/buffalo-bulls",
+                "text": "Clubhouse"
+              },
+              {
+                "href": "https://www.espn.com/college-football/team/schedule/_/id/2084",
+                "text": "Schedule"
+              }
+            ],
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2084.png",
+            "logos": [
+              {
+                "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2084.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                  "full",
+                  "default"
+                ],
+                "lastUpdated": "2025-12-24T20:19Z"
+              },
+              {
+                "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2084.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                  "full",
+                  "dark"
+                ],
+                "lastUpdated": "2026-01-07T21:56Z"
+              }
+            ],
+            "curatedRank": {
+              "current": 99
+            }
+          },
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2084.png"
+        },
+        {
+          "id": "401866439",
+          "links": [
+            {
+              "href": "https://www.espn.com/college-football/game/_/gameId/401866439/kent-state-w-michigan",
+              "text": "Gamecast"
+            }
+          ],
+          "week": 6,
+          "atVs": "vs",
+          "gameDate": "2026-10-10T19:30Z",
+          "score": "38-7",
+          "homeTeamId": "2711",
+          "awayTeamId": "2309",
+          "homeTeamScore": "38",
+          "awayTeamScore": "7",
+          "homeAggregateScore": "0",
+          "awayAggregateScore": "0",
+          "homeShootoutScore": "0",
+          "awayShootoutScore": "0",
+          "gameResult": "W",
+          "leagueName": "NCAA - Football",
+          "leagueAbbreviation": "NCAAF",
+          "opponent": {
+            "id": "2309",
+            "uid": "s:20~l:23~t:2309",
+            "displayName": "Kent State Golden Flashes",
+            "abbreviation": "KENT",
+            "links": [
+              {
+                "href": "https://www.espn.com/college-football/team/_/id/2309/kent-state-golden-flashes",
+                "text": "Clubhouse"
+              },
+              {
+                "href": "https://www.espn.com/college-football/team/schedule/_/id/2309",
+                "text": "Schedule"
+              }
+            ],
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2309.png",
+            "logos": [
+              {
+                "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2309.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                  "full",
+                  "default"
+                ],
+                "lastUpdated": "2025-12-24T20:19Z"
+              },
+              {
+                "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2309.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                  "full",
+                  "dark"
+                ],
+                "lastUpdated": "2025-12-24T20:18Z"
+              }
+            ],
+            "curatedRank": {
+              "current": 99
+            }
+          },
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2309.png"
+        },
+        {
+          "id": "401866443",
+          "links": [
+            {
+              "href": "https://www.espn.com/college-football/game/_/gameId/401866443/w-michigan-c-michigan",
+              "text": "Gamecast"
+            }
+          ],
+          "week": 7,
+          "atVs": "@",
+          "gameDate": "2026-10-17T17:30Z",
+          "score": "21-14",
+          "homeTeamId": "2117",
+          "awayTeamId": "2711",
+          "homeTeamScore": "14",
+          "awayTeamScore": "21",
+          "homeAggregateScore": "0",
+          "awayAggregateScore": "0",
+          "homeShootoutScore": "0",
+          "awayShootoutScore": "0",
+          "gameResult": "W",
+          "opponent": {
+            "id": "2117",
+            "uid": "s:20~l:23~t:2117",
+            "displayName": "Central Michigan Chippewas",
+            "abbreviation": "CMU",
+            "links": [
+              {
+                "href": "https://www.espn.com/college-football/team/_/id/2117/central-michigan-chippewas",
+                "text": "Clubhouse"
+              },
+              {
+                "href": "https://www.espn.com/college-football/team/schedule/_/id/2117",
+                "text": "Schedule"
+              }
+            ],
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2117.png",
+            "logos": [
+              {
+                "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2117.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                  "full",
+                  "default"
+                ],
+                "lastUpdated": "2025-12-24T20:19Z"
+              },
+              {
+                "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2117.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                  "full",
+                  "dark"
+                ],
+                "lastUpdated": "2025-12-24T20:18Z"
+              }
+            ],
+            "curatedRank": {
+              "current": 99
+            }
+          },
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2117.png",
+          "leagueName": "NCAA - Football",
+          "leagueAbbreviation": "NCAAF"
+        },
+        {
+          "id": "401866450",
+          "links": [
+            {
+              "href": "https://www.espn.com/college-football/game/_/gameId/401866450/w-michigan-toledo",
+              "text": "Gamecast"
+            }
+          ],
+          "week": 8,
+          "atVs": "@",
+          "gameDate": "2026-10-24T16:00Z",
+          "score": "45-38",
+          "homeTeamId": "2649",
+          "awayTeamId": "2711",
+          "homeTeamScore": "45",
+          "awayTeamScore": "38",
+          "homeAggregateScore": "0",
+          "awayAggregateScore": "0",
+          "homeShootoutScore": "0",
+          "awayShootoutScore": "0",
+          "gameResult": "L",
+          "leagueName": "NCAA - Football",
+          "leagueAbbreviation": "NCAAF",
+          "opponent": {
+            "id": "2649",
+            "uid": "s:20~l:23~t:2649",
+            "displayName": "Toledo Rockets",
+            "abbreviation": "TOL",
+            "links": [
+              {
+                "href": "https://www.espn.com/college-football/team/_/id/2649/toledo-rockets",
+                "text": "Clubhouse"
+              },
+              {
+                "href": "https://www.espn.com/college-football/team/schedule/_/id/2649",
+                "text": "Schedule"
+              }
+            ],
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2649.png",
+            "logos": [
+              {
+                "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2649.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                  "full",
+                  "default"
+                ],
+                "lastUpdated": "2025-12-24T20:19Z"
+              },
+              {
+                "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2649.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                  "full",
+                  "dark"
+                ],
+                "lastUpdated": "2025-12-24T20:18Z"
+              }
+            ],
+            "curatedRank": {
+              "current": 99
+            }
+          },
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2649.png"
+        }
+      ]
+    },
+    {
+      "displayOrder": 1,
+      "team": {
+        "id": "189",
+        "uid": "s:20~l:23~t:189",
+        "displayName": "Bowling Green Falcons",
+        "abbreviation": "BGSU",
+        "links": [
+          {
+            "href": "https://www.espn.com/college-football/team/_/id/189/bowling-green-falcons",
+            "text": "Clubhouse"
+          },
+          {
+            "href": "https://www.espn.com/college-football/team/schedule/_/id/189",
+            "text": "Schedule"
+          }
+        ],
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/189.png",
+        "logos": [
+          {
+            "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/189.png",
+            "width": 500,
+            "height": 500,
+            "alt": "",
+            "rel": [
+              "full",
+              "default"
+            ],
+            "lastUpdated": "2025-12-24T20:19Z"
+          },
+          {
+            "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/189.png",
+            "width": 500,
+            "height": 500,
+            "alt": "",
+            "rel": [
+              "full",
+              "dark"
+            ],
+            "lastUpdated": "2025-12-24T20:18Z"
+          }
+        ]
+      },
+      "events": [
+        {
+          "id": "401862785",
+          "links": [
+            {
+              "href": "https://www.espn.com/college-football/game/_/gameId/401862785/south-florida-bowling-green",
+              "text": "Gamecast"
+            }
+          ],
+          "week": 4,
+          "atVs": "vs",
+          "gameDate": "2026-09-26T21:00Z",
+          "score": "14-6",
+          "homeTeamId": "189",
+          "awayTeamId": "58",
+          "homeTeamScore": "6",
+          "awayTeamScore": "14",
+          "homeAggregateScore": "0",
+          "awayAggregateScore": "0",
+          "homeShootoutScore": "0",
+          "awayShootoutScore": "0",
+          "gameResult": "L",
+          "leagueName": "NCAA - Football",
+          "leagueAbbreviation": "NCAAF",
+          "opponent": {
+            "id": "58",
+            "uid": "s:20~l:23~t:58",
+            "displayName": "South Florida Bulls",
+            "abbreviation": "USF",
+            "links": [
+              {
+                "href": "https://www.espn.com/college-football/team/_/id/58/south-florida-bulls",
+                "text": "Clubhouse"
+              },
+              {
+                "href": "https://www.espn.com/college-football/team/schedule/_/id/58",
+                "text": "Schedule"
+              }
+            ],
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/58.png",
+            "logos": [
+              {
+                "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/58.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                  "full",
+                  "default"
+                ],
+                "lastUpdated": "2026-07-01T04:35Z"
+              },
+              {
+                "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/58.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                  "full",
+                  "dark"
+                ],
+                "lastUpdated": "2026-07-01T04:34Z"
+              }
+            ],
+            "curatedRank": {
+              "current": 99
+            }
+          },
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/58.png"
+        },
+        {
+          "id": "401866477",
+          "links": [
+            {
+              "href": "https://www.espn.com/college-football/game/_/gameId/401866477/bowling-green-miami-oh",
+              "text": "Gamecast"
+            }
+          ],
+          "week": 5,
+          "atVs": "@",
+          "gameDate": "2026-10-03T19:30Z",
+          "score": "24-20",
+          "homeTeamId": "193",
+          "awayTeamId": "189",
+          "homeTeamScore": "20",
+          "awayTeamScore": "24",
+          "homeAggregateScore": "0",
+          "awayAggregateScore": "0",
+          "homeShootoutScore": "0",
+          "awayShootoutScore": "0",
+          "gameResult": "W",
+          "leagueName": "NCAA - Football",
+          "leagueAbbreviation": "NCAAF",
+          "opponent": {
+            "id": "193",
+            "uid": "s:20~l:23~t:193",
+            "displayName": "Miami (OH) RedHawks",
+            "abbreviation": "M-OH",
+            "links": [
+              {
+                "href": "https://www.espn.com/college-football/team/_/id/193/miami-oh-redhawks",
+                "text": "Clubhouse"
+              },
+              {
+                "href": "https://www.espn.com/college-football/team/schedule/_/id/193",
+                "text": "Schedule"
+              }
+            ],
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/193.png",
+            "logos": [
+              {
+                "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/193.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                  "full",
+                  "default"
+                ],
+                "lastUpdated": "2025-12-24T20:19Z"
+              },
+              {
+                "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/193.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                  "full",
+                  "dark"
+                ],
+                "lastUpdated": "2025-12-24T20:18Z"
+              }
+            ],
+            "curatedRank": {
+              "current": 99
+            }
+          },
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/193.png"
+        },
+        {
+          "id": "401866436",
+          "links": [
+            {
+              "href": "https://www.espn.com/college-football/game/_/gameId/401866436/sacramento-st-bowling-green",
+              "text": "Gamecast"
+            }
+          ],
+          "week": 6,
+          "atVs": "vs",
+          "gameDate": "2026-10-10T16:00Z",
+          "score": "38-10",
+          "homeTeamId": "189",
+          "awayTeamId": "16",
+          "homeTeamScore": "38",
+          "awayTeamScore": "10",
+          "homeAggregateScore": "0",
+          "awayAggregateScore": "0",
+          "homeShootoutScore": "0",
+          "awayShootoutScore": "0",
+          "gameResult": "W",
+          "leagueName": "NCAA - Football",
+          "leagueAbbreviation": "NCAAF",
+          "opponent": {
+            "id": "16",
+            "uid": "s:20~l:23~t:16",
+            "displayName": "Sacramento State Hornets",
+            "abbreviation": "SAC",
+            "links": [
+              {
+                "href": "https://www.espn.com/college-football/team/_/id/16/sacramento-state-hornets",
+                "text": "Clubhouse"
+              },
+              {
+                "href": "https://www.espn.com/college-football/team/schedule/_/id/16",
+                "text": "Schedule"
+              }
+            ],
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/16.png",
+            "logos": [
+              {
+                "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/16.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                  "full",
+                  "default"
+                ],
+                "lastUpdated": "2018-06-05T12:08Z"
+              },
+              {
+                "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/16.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                  "full",
+                  "dark"
+                ],
+                "lastUpdated": "2018-06-05T12:08Z"
+              }
+            ],
+            "curatedRank": {
+              "current": 99
+            }
+          },
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/16.png"
+        },
+        {
+          "id": "401866441",
+          "links": [
+            {
+              "href": "https://www.espn.com/college-football/game/_/gameId/401866441/ball-state-bowling-green",
+              "text": "Gamecast"
+            }
+          ],
+          "week": 7,
+          "atVs": "vs",
+          "gameDate": "2026-10-17T16:00Z",
+          "score": "32-31 OT",
+          "homeTeamId": "189",
+          "awayTeamId": "2050",
+          "homeTeamScore": "31",
+          "awayTeamScore": "32",
+          "homeAggregateScore": "0",
+          "awayAggregateScore": "0",
+          "homeShootoutScore": "0",
+          "awayShootoutScore": "0",
+          "gameResult": "L",
+          "leagueName": "NCAA - Football",
+          "leagueAbbreviation": "NCAAF",
+          "opponent": {
+            "id": "2050",
+            "uid": "s:20~l:23~t:2050",
+            "displayName": "Ball State Cardinals",
+            "abbreviation": "BALL",
+            "links": [
+              {
+                "href": "https://www.espn.com/college-football/team/_/id/2050/ball-state-cardinals",
+                "text": "Clubhouse"
+              },
+              {
+                "href": "https://www.espn.com/college-football/team/schedule/_/id/2050",
+                "text": "Schedule"
+              }
+            ],
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2050.png",
+            "logos": [
+              {
+                "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2050.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                  "full",
+                  "default"
+                ],
+                "lastUpdated": "2025-12-24T20:19Z"
+              },
+              {
+                "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2050.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                  "full",
+                  "dark"
+                ],
+                "lastUpdated": "2025-12-24T20:18Z"
+              }
+            ],
+            "curatedRank": {
+              "current": 99
+            }
+          },
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2050.png"
+        },
+        {
+          "id": "401866448",
+          "links": [
+            {
+              "href": "https://www.espn.com/college-football/game/_/gameId/401866448/bowling-green-buffalo",
+              "text": "Gamecast"
+            }
+          ],
+          "week": 8,
+          "atVs": "@",
+          "gameDate": "2026-10-24T19:30Z",
+          "score": "31-24",
+          "homeTeamId": "2084",
+          "awayTeamId": "189",
+          "homeTeamScore": "31",
+          "awayTeamScore": "24",
+          "homeAggregateScore": "0",
+          "awayAggregateScore": "0",
+          "homeShootoutScore": "0",
+          "awayShootoutScore": "0",
+          "gameResult": "L",
+          "opponent": {
+            "id": "2084",
+            "uid": "s:20~l:23~t:2084",
+            "displayName": "Buffalo Bulls",
+            "abbreviation": "BUFF",
+            "links": [
+              {
+                "href": "https://www.espn.com/college-football/team/_/id/2084/buffalo-bulls",
+                "text": "Clubhouse"
+              },
+              {
+                "href": "https://www.espn.com/college-football/team/schedule/_/id/2084",
+                "text": "Schedule"
+              }
+            ],
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2084.png",
+            "logos": [
+              {
+                "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2084.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                  "full",
+                  "default"
+                ],
+                "lastUpdated": "2025-12-24T20:19Z"
+              },
+              {
+                "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2084.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                  "full",
+                  "dark"
+                ],
+                "lastUpdated": "2026-01-07T21:56Z"
+              }
+            ],
+            "curatedRank": {
+              "current": 99
+            }
+          },
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2084.png",
+          "leagueName": "NCAA - Football",
+          "leagueAbbreviation": "NCAAF"
+        }
+      ]
+    }
+  ],
+  "leaders": [
+    {
+      "team": {
+        "id": "2711",
+        "uid": "s:20~l:23~t:2711",
+        "displayName": "Western Michigan Broncos",
+        "abbreviation": "WMU",
+        "links": [
+          {
+            "href": "https://www.espn.com/college-football/team/_/id/2711/western-michigan-broncos",
+            "text": "Clubhouse"
+          },
+          {
+            "href": "https://www.espn.com/college-football/team/schedule/_/id/2711",
+            "text": "Schedule"
+          }
+        ],
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2711.png",
+        "logos": [
+          {
+            "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2711.png",
+            "width": 500,
+            "height": 500,
+            "alt": "",
+            "rel": [
+              "full",
+              "default"
+            ],
+            "lastUpdated": "2025-12-24T20:19Z"
+          },
+          {
+            "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2711.png",
+            "width": 500,
+            "height": 500,
+            "alt": "",
+            "rel": [
+              "full",
+              "dark"
+            ],
+            "lastUpdated": "2025-12-24T20:19Z"
+          }
+        ]
+      },
+      "leaders": [
+        {
+          "name": "passingYards",
+          "displayName": "Passing Yards",
+          "leaders": [
+            {
+              "displayValue": "112/176, 1,251 YDS, 10 TD, 3 INT",
+              "value": 1251.0,
+              "athlete": {
+                "id": "5074245",
+                "uid": "s:20~l:23~a:5074245",
+                "guid": "5168e1b1-00a2-309c-b0c4-0b9ed7bcada6",
+                "lastName": "Lowry",
+                "fullName": "Broc Lowry",
+                "displayName": "Broc Lowry",
+                "shortName": "B. Lowry",
+                "links": [
+                  {
+                    "rel": [
+                      "playercard",
+                      "desktop",
+                      "athlete"
+                    ],
+                    "href": "https://www.espn.com/college-football/player/_/id/5074245/broc-lowry",
+                    "text": "Player Card"
+                  }
+                ],
+                "headshot": {
+                  "href": "https://a.espncdn.com/i/headshots/college-football/players/full/5074245.png",
+                  "alt": "Broc Lowry"
+                },
+                "jersey": "12",
+                "position": {
+                  "name": "Quarterback",
+                  "displayName": "Quarterback",
+                  "abbreviation": "QB"
+                },
+                "status": {
+                  "id": "1",
+                  "name": "Active",
+                  "type": "active",
+                  "abbreviation": "Active"
+                }
+              },
+              "mainStat": {
+                "value": "1,251",
+                "label": "YDS"
+              },
+              "summary": "112/176, 10 TD, 3 INT"
+            }
+          ]
+        },
+        {
+          "name": "rushingYards",
+          "displayName": "Rushing Yards",
+          "leaders": [
+            {
+              "displayValue": "120 CAR, 634 YDS, 8 TD",
+              "value": 634.0,
+              "athlete": {
+                "id": "5085006",
+                "uid": "s:20~l:23~a:5085006",
+                "guid": "8ce37c88-7135-3141-83bd-9aeffd6c4a4e",
+                "lastName": "Buckley",
+                "fullName": "Jalen Buckley",
+                "displayName": "Jalen Buckley",
+                "shortName": "J. Buckley",
+                "links": [
+                  {
+                    "rel": [
+                      "playercard",
+                      "desktop",
+                      "athlete"
+                    ],
+                    "href": "https://www.espn.com/college-football/player/_/id/5085006/jalen-buckley",
+                    "text": "Player Card"
+                  }
+                ],
+                "headshot": {
+                  "href": "https://a.espncdn.com/i/headshots/college-football/players/full/5085006.png",
+                  "alt": "Jalen Buckley"
+                },
+                "jersey": "6",
+                "position": {
+                  "name": "Running Back",
+                  "displayName": "Running Back",
+                  "abbreviation": "RB"
+                },
+                "status": {
+                  "id": "1",
+                  "name": "Active",
+                  "type": "active",
+                  "abbreviation": "Active"
+                }
+              },
+              "mainStat": {
+                "value": "634",
+                "label": "YDS"
+              },
+              "summary": "120 CAR, 8 TD"
+            }
+          ]
+        },
+        {
+          "name": "receivingYards",
+          "displayName": "Receiving Yards",
+          "leaders": [
+            {
+              "displayValue": "28 REC, 431 YDS, 2 TD",
+              "value": 431.0,
+              "athlete": {
+                "id": "5164351",
+                "uid": "s:20~l:23~a:5164351",
+                "guid": "8285a1b8-39fe-3fca-b2ba-0fe8836f70f0",
+                "lastName": "Chenault",
+                "fullName": "Aveion Chenault",
+                "displayName": "Aveion Chenault",
+                "shortName": "A. Chenault",
+                "links": [
+                  {
+                    "rel": [
+                      "playercard",
+                      "desktop",
+                      "athlete"
+                    ],
+                    "href": "https://www.espn.com/college-football/player/_/id/5164351/aveion-chenault",
+                    "text": "Player Card"
+                  }
+                ],
+                "headshot": {
+                  "href": "https://a.espncdn.com/i/headshots/college-football/players/full/5164351.png",
+                  "alt": "Aveion Chenault"
+                },
+                "jersey": "2",
+                "position": {
+                  "name": "Wide Receiver",
+                  "displayName": "Wide Receiver",
+                  "abbreviation": "WR"
+                },
+                "status": {
+                  "id": "1",
+                  "name": "Active",
+                  "type": "active",
+                  "abbreviation": "Active"
+                }
+              },
+              "mainStat": {
+                "value": "431",
+                "label": "YDS"
+              },
+              "summary": "28 REC, 2 TD"
+            }
+          ]
+        },
+        {
+          "name": "sacks",
+          "displayName": "Sacks",
+          "leaders": [
+            {
+              "displayValue": "4",
+              "value": 4.0,
+              "athlete": {
+                "id": "5232069",
+                "uid": "s:20~l:23~a:5232069",
+                "guid": "b69f8a33-a11f-3d98-b0e6-595996bea852",
+                "lastName": "Gardner Jr.",
+                "fullName": "Scoop Gardner Jr.",
+                "displayName": "Scoop Gardner Jr.",
+                "shortName": "S. Gardner Jr.",
+                "links": [
+                  {
+                    "rel": [
+                      "playercard",
+                      "desktop",
+                      "athlete"
+                    ],
+                    "href": "https://www.espn.com/college-football/player/_/id/5232069/scoop-gardner-jr",
+                    "text": "Player Card"
+                  }
+                ],
+                "headshot": {
+                  "href": "https://a.espncdn.com/i/headshots/college-football/players/full/5232069.png",
+                  "alt": "Scoop Gardner Jr."
+                },
+                "jersey": "2",
+                "position": {
+                  "name": "Defensive End",
+                  "displayName": "Defensive End",
+                  "abbreviation": "DE"
+                },
+                "status": {
+                  "id": "1",
+                  "name": "Active",
+                  "type": "active",
+                  "abbreviation": "Active"
+                }
+              },
+              "mainStat": {
+                "value": "4",
+                "label": "SACKS"
+              },
+              "summary": ""
+            }
+          ]
+        },
+        {
+          "name": "totalTackles",
+          "displayName": "Tackles",
+          "leaders": [
+            {
+              "displayValue": "58",
+              "value": 58.0,
+              "athlete": {
+                "id": "5394435",
+                "uid": "s:20~l:23~a:5394435",
+                "guid": "61883f80-d9c3-341a-ba99-2cd7f2ccdee5",
+                "lastName": "Betts",
+                "fullName": "Justyce Betts",
+                "displayName": "Justyce Betts",
+                "shortName": "J. Betts",
+                "links": [
+                  {
+                    "rel": [
+                      "playercard",
+                      "desktop",
+                      "athlete"
+                    ],
+                    "href": "https://www.espn.com/college-football/player/_/id/5394435/justyce-betts",
+                    "text": "Player Card"
+                  }
+                ],
+                "jersey": "10",
+                "position": {
+                  "name": "Linebacker",
+                  "displayName": "Linebacker",
+                  "abbreviation": "LB"
+                },
+                "status": {
+                  "id": "1",
+                  "name": "Active",
+                  "type": "active",
+                  "abbreviation": "Active"
+                }
+              },
+              "mainStat": {
+                "value": "58",
+                "label": "TOT"
+              },
+              "summary": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "team": {
+        "id": "189",
+        "uid": "s:20~l:23~t:189",
+        "displayName": "Bowling Green Falcons",
+        "abbreviation": "BGSU",
+        "links": [
+          {
+            "href": "https://www.espn.com/college-football/team/_/id/189/bowling-green-falcons",
+            "text": "Clubhouse"
+          },
+          {
+            "href": "https://www.espn.com/college-football/team/schedule/_/id/189",
+            "text": "Schedule"
+          }
+        ],
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/189.png",
+        "logos": [
+          {
+            "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/189.png",
+            "width": 500,
+            "height": 500,
+            "alt": "",
+            "rel": [
+              "full",
+              "default"
+            ],
+            "lastUpdated": "2025-12-24T20:19Z"
+          },
+          {
+            "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/189.png",
+            "width": 500,
+            "height": 500,
+            "alt": "",
+            "rel": [
+              "full",
+              "dark"
+            ],
+            "lastUpdated": "2025-12-24T20:18Z"
+          }
+        ]
+      },
+      "leaders": [
+        {
+          "name": "passingYards",
+          "displayName": "Passing Yards",
+          "leaders": [
+            {
+              "displayValue": "130/194, 1,418 YDS, 10 TD, 6 INT",
+              "value": 1418.0,
+              "athlete": {
+                "id": "5385753",
+                "uid": "s:20~l:23~a:5385753",
+                "guid": "086ea1d9-35f8-3d65-9c17-13b2acc4ef1d",
+                "lastName": "Kastantin",
+                "fullName": "Jay Kastantin",
+                "displayName": "Jay Kastantin",
+                "shortName": "J. Kastantin",
+                "links": [
+                  {
+                    "rel": [
+                      "playercard",
+                      "desktop",
+                      "athlete"
+                    ],
+                    "href": "https://www.espn.com/college-football/player/_/id/5385753/jay-kastantin",
+                    "text": "Player Card"
+                  }
+                ],
+                "headshot": {
+                  "href": "https://a.espncdn.com/i/headshots/college-football/players/full/5385753.png",
+                  "alt": "Jay Kastantin"
+                },
+                "jersey": "17",
+                "position": {
+                  "name": "Quarterback",
+                  "displayName": "Quarterback",
+                  "abbreviation": "QB"
+                },
+                "status": {
+                  "id": "1",
+                  "name": "Active",
+                  "type": "active",
+                  "abbreviation": "Active"
+                }
+              },
+              "mainStat": {
+                "value": "1,418",
+                "label": "YDS"
+              },
+              "summary": "130/194, 10 TD, 6 INT"
+            }
+          ]
+        },
+        {
+          "name": "rushingYards",
+          "displayName": "Rushing Yards",
+          "leaders": [
+            {
+              "displayValue": "104 CAR, 371 YDS, 4 TD",
+              "value": 371.0,
+              "athlete": {
+                "id": "5147347",
+                "uid": "s:20~l:23~a:5147347",
+                "guid": "7bfd97ea-9f0f-3741-b993-783376989709",
+                "lastName": "Dendy",
+                "fullName": "Austyn Dendy",
+                "displayName": "Austyn Dendy",
+                "shortName": "A. Dendy",
+                "links": [
+                  {
+                    "rel": [
+                      "playercard",
+                      "desktop",
+                      "athlete"
+                    ],
+                    "href": "https://www.espn.com/college-football/player/_/id/5147347/austyn-dendy",
+                    "text": "Player Card"
+                  }
+                ],
+                "headshot": {
+                  "href": "https://a.espncdn.com/i/headshots/college-football/players/full/5147347.png",
+                  "alt": "Austyn Dendy"
+                },
+                "jersey": "1",
+                "position": {
+                  "name": "Running Back",
+                  "displayName": "Running Back",
+                  "abbreviation": "RB"
+                },
+                "status": {
+                  "id": "1",
+                  "name": "Active",
+                  "type": "active",
+                  "abbreviation": "Active"
+                }
+              },
+              "mainStat": {
+                "value": "371",
+                "label": "YDS"
+              },
+              "summary": "104 CAR, 4 TD"
+            }
+          ]
+        },
+        {
+          "name": "receivingYards",
+          "displayName": "Receiving Yards",
+          "leaders": [
+            {
+              "displayValue": "25 REC, 305 YDS, 1 TD",
+              "value": 305.0,
+              "athlete": {
+                "id": "5193284",
+                "uid": "s:20~l:23~a:5193284",
+                "guid": "202a62d1-6b99-3ff2-bb76-eb59189224d3",
+                "lastName": "Sharp",
+                "fullName": "Winn Sharp",
+                "displayName": "Winn Sharp",
+                "shortName": "W. Sharp",
+                "links": [
+                  {
+                    "rel": [
+                      "playercard",
+                      "desktop",
+                      "athlete"
+                    ],
+                    "href": "https://www.espn.com/college-football/player/_/id/5193284/winn-sharp",
+                    "text": "Player Card"
+                  }
+                ],
+                "headshot": {
+                  "href": "https://a.espncdn.com/i/headshots/college-football/players/full/5193284.png",
+                  "alt": "Winn Sharp"
+                },
+                "jersey": "18",
+                "position": {
+                  "name": "Wide Receiver",
+                  "displayName": "Wide Receiver",
+                  "abbreviation": "WR"
+                },
+                "status": {
+                  "id": "1",
+                  "name": "Active",
+                  "type": "active",
+                  "abbreviation": "Active"
+                }
+              },
+              "mainStat": {
+                "value": "305",
+                "label": "YDS"
+              },
+              "summary": "25 REC, 1 TD"
+            }
+          ]
+        },
+        {
+          "name": "sacks",
+          "displayName": "Sacks",
+          "leaders": [
+            {
+              "displayValue": "8",
+              "value": 8.0,
+              "athlete": {
+                "id": "5093334",
+                "uid": "s:20~l:23~a:5093334",
+                "guid": "1ff4a3a3-4e71-3e0f-b371-ef8692bf5d3d",
+                "lastName": "Bradley",
+                "fullName": "Myles Bradley",
+                "displayName": "Myles Bradley",
+                "shortName": "M. Bradley",
+                "links": [
+                  {
+                    "rel": [
+                      "playercard",
+                      "desktop",
+                      "athlete"
+                    ],
+                    "href": "https://www.espn.com/college-football/player/_/id/5093334/myles-bradley",
+                    "text": "Player Card"
+                  }
+                ],
+                "headshot": {
+                  "href": "https://a.espncdn.com/i/headshots/college-football/players/full/5093334.png",
+                  "alt": "Myles Bradley"
+                },
+                "jersey": "23",
+                "position": {
+                  "name": "Defensive End",
+                  "displayName": "Defensive End",
+                  "abbreviation": "DE"
+                },
+                "status": {
+                  "id": "1",
+                  "name": "Active",
+                  "type": "active",
+                  "abbreviation": "Active"
+                }
+              },
+              "mainStat": {
+                "value": "8",
+                "label": "SACKS"
+              },
+              "summary": ""
+            }
+          ]
+        },
+        {
+          "name": "totalTackles",
+          "displayName": "Tackles",
+          "leaders": [
+            {
+              "displayValue": "74",
+              "value": 74.0,
+              "athlete": {
+                "id": "5193283",
+                "uid": "s:20~l:23~a:5193283",
+                "guid": "5b3bc503-3b03-3b2c-98b6-9f96d758fa5e",
+                "lastName": "Pringle",
+                "fullName": "Dorian Pringle",
+                "displayName": "Dorian Pringle",
+                "shortName": "D. Pringle",
+                "links": [
+                  {
+                    "rel": [
+                      "playercard",
+                      "desktop",
+                      "athlete"
+                    ],
+                    "href": "https://www.espn.com/college-football/player/_/id/5193283/dorian-pringle",
+                    "text": "Player Card"
+                  }
+                ],
+                "headshot": {
+                  "href": "https://a.espncdn.com/i/headshots/college-football/players/full/5193283.png",
+                  "alt": "Dorian Pringle"
+                },
+                "jersey": "3",
+                "position": {
+                  "name": "Linebacker",
+                  "displayName": "Linebacker",
+                  "abbreviation": "LB"
+                },
+                "status": {
+                  "id": "1",
+                  "name": "Active",
+                  "type": "active",
+                  "abbreviation": "Active"
+                }
+              },
+              "mainStat": {
+                "value": "74",
+                "label": "TOT"
+              },
+              "summary": ""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "broadcasts": [],
+  "pickcenter": [
+    {
+      "provider": {
+        "id": "100",
+        "name": "DraftKings",
+        "priority": 1,
+        "logos": [
+          {
+            "href": "https://a.espncdn.com/i/betting/Draftkings_Light.svg",
+            "rel": [
+              "light"
+            ]
+          },
+          {
+            "href": "https://a.espncdn.com/i/betting/Draftkings_Dark.svg",
+            "rel": [
+              "dark"
+            ]
+          }
+        ]
+      },
+      "details": "WMU -14",
+      "overUnder": 44.5,
+      "spread": -14.0,
+      "overOdds": -115.0,
+      "underOdds": -105.0,
+      "awayTeamOdds": {
+        "favorite": false,
+        "underdog": true,
+        "moneyLine": 440,
+        "spreadOdds": -112.0,
+        "team": {
+          "$ref": "http://sports.core.api.espn.pvt/v2/sports/football/leagues/college-football/seasons/2026/teams/189?lang=en&region=us"
+        },
+        "teamId": "189",
+        "favoriteAtOpen": false
+      },
+      "homeTeamOdds": {
+        "favorite": true,
+        "underdog": false,
+        "moneyLine": -600,
+        "spreadOdds": -108.0,
+        "team": {
+          "$ref": "http://sports.core.api.espn.pvt/v2/sports/football/leagues/college-football/seasons/2026/teams/2711?lang=en&region=us"
+        },
+        "teamId": "2711",
+        "favoriteAtOpen": true
+      },
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "home",
+            "desktop",
+            "bets",
+            "draftkings"
+          ],
+          "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34876678%3Foutcomes%3D0ML86864965_1",
+          "text": "Home Bet",
+          "shortText": "Home Bet",
+          "isExternal": true,
+          "isPremium": false,
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401866452,
+              "betSide": "home",
+              "betType": "straight"
+            }
+          }
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "away",
+            "desktop",
+            "bets",
+            "draftkings"
+          ],
+          "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34876678%3Foutcomes%3D0ML86864965_3",
+          "text": "Away Bet",
+          "shortText": "Away Bet",
+          "isExternal": true,
+          "isPremium": false,
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401866452,
+              "betSide": "away",
+              "betType": "straight"
+            }
+          }
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "homeSpread",
+            "desktop",
+            "bets"
+          ],
+          "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34876678%3Foutcomes%3D0HC86864965N1400_1",
+          "text": "Home Point Spread",
+          "shortText": "Home Point Spread",
+          "isExternal": true,
+          "isPremium": false,
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401866452,
+              "betSide": "none",
+              "betType": "straight",
+              "betDetails": "Spread:WMU-14"
+            }
+          }
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "awaySpread",
+            "desktop",
+            "bets"
+          ],
+          "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34876678%3Foutcomes%3D0HC86864965P1400_3",
+          "text": "Away Point Spread",
+          "shortText": "Away Point Spread",
+          "isExternal": true,
+          "isPremium": false,
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401866452,
+              "betSide": "none",
+              "betType": "straight",
+              "betDetails": "Spread:BGSU+14"
+            }
+          }
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "over",
+            "desktop",
+            "bets"
+          ],
+          "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34876678%3Foutcomes%3D0OU86864965O4450_1",
+          "text": "Over Odds",
+          "shortText": "Over Odds",
+          "isExternal": true,
+          "isPremium": false,
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401866452,
+              "betSide": "over",
+              "betType": "straight",
+              "betDetails": "Over:44.5"
+            }
+          }
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "under",
+            "desktop",
+            "bets"
+          ],
+          "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34876678%3Foutcomes%3D0OU86864965U4450_3",
+          "text": "Under Odds",
+          "shortText": "Under Odds",
+          "isExternal": true,
+          "isPremium": false,
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401866452,
+              "betSide": "under",
+              "betType": "straight",
+              "betDetails": "Under:44.5"
+            }
+          }
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "game",
+            "desktop",
+            "bets"
+          ],
+          "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34876678",
+          "text": "See More Odds",
+          "shortText": "Game",
+          "isExternal": true,
+          "isPremium": false,
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401866452,
+              "betSide": "none",
+              "betType": "straight"
+            }
+          }
+        }
+      ],
+      "moneyline": {
+        "displayName": "Moneyline",
+        "shortDisplayName": "ML",
+        "home": {
+          "close": {
+            "odds": "-600",
+            "link": {
+              "language": "en-US",
+              "rel": [
+                "home",
+                "desktop",
+                "bets",
+                "draftkings"
+              ],
+              "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34876678%3Foutcomes%3D0ML86864965_1",
+              "text": "Home Bet",
+              "shortText": "Home Bet",
+              "isExternal": true,
+              "isPremium": false,
+              "tracking": {
+                "campaign": "betting-integrations",
+                "tags": {
+                  "league": "college-football",
+                  "sport": "football",
+                  "gameId": 401866452,
+                  "betSide": "home",
+                  "betType": "straight"
+                }
+              }
+            }
+          },
+          "open": {
+            "odds": "-750"
+          }
+        },
+        "away": {
+          "close": {
+            "odds": "+440",
+            "link": {
+              "language": "en-US",
+              "rel": [
+                "away",
+                "desktop",
+                "bets",
+                "draftkings"
+              ],
+              "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34876678%3Foutcomes%3D0ML86864965_3",
+              "text": "Away Bet",
+              "shortText": "Away Bet",
+              "isExternal": true,
+              "isPremium": false,
+              "tracking": {
+                "campaign": "betting-integrations",
+                "tags": {
+                  "league": "college-football",
+                  "sport": "football",
+                  "gameId": 401866452,
+                  "betSide": "away",
+                  "betType": "straight"
+                }
+              }
+            }
+          },
+          "open": {
+            "odds": "+525"
+          }
+        }
+      },
+      "pointSpread": {
+        "displayName": "Spread",
+        "shortDisplayName": "Spread",
+        "home": {
+          "close": {
+            "line": "-14",
+            "odds": "-108",
+            "link": {
+              "language": "en-US",
+              "rel": [
+                "homeSpread",
+                "desktop",
+                "bets"
+              ],
+              "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34876678%3Foutcomes%3D0HC86864965N1400_1",
+              "text": "Home Point Spread",
+              "shortText": "Home Point Spread",
+              "isExternal": true,
+              "isPremium": false,
+              "tracking": {
+                "campaign": "betting-integrations",
+                "tags": {
+                  "league": "college-football",
+                  "sport": "football",
+                  "gameId": 401866452,
+                  "betSide": "none",
+                  "betType": "straight",
+                  "betDetails": "Spread:WMU-14"
+                }
+              }
+            }
+          },
+          "open": {
+            "line": "-15.5",
+            "odds": "-110"
+          }
+        },
+        "away": {
+          "close": {
+            "line": "+14",
+            "odds": "-112",
+            "link": {
+              "language": "en-US",
+              "rel": [
+                "awaySpread",
+                "desktop",
+                "bets"
+              ],
+              "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34876678%3Foutcomes%3D0HC86864965P1400_3",
+              "text": "Away Point Spread",
+              "shortText": "Away Point Spread",
+              "isExternal": true,
+              "isPremium": false,
+              "tracking": {
+                "campaign": "betting-integrations",
+                "tags": {
+                  "league": "college-football",
+                  "sport": "football",
+                  "gameId": 401866452,
+                  "betSide": "none",
+                  "betType": "straight",
+                  "betDetails": "Spread:BGSU+14"
+                }
+              }
+            }
+          },
+          "open": {
+            "line": "+15.5",
+            "odds": "-110"
+          }
+        }
+      },
+      "total": {
+        "displayName": "Total",
+        "shortDisplayName": "Total",
+        "over": {
+          "close": {
+            "line": "o44.5",
+            "odds": "-115",
+            "link": {
+              "language": "en-US",
+              "rel": [
+                "over",
+                "desktop",
+                "bets"
+              ],
+              "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34876678%3Foutcomes%3D0OU86864965O4450_1",
+              "text": "Over Odds",
+              "shortText": "Over Odds",
+              "isExternal": true,
+              "isPremium": false,
+              "tracking": {
+                "campaign": "betting-integrations",
+                "tags": {
+                  "league": "college-football",
+                  "sport": "football",
+                  "gameId": 401866452,
+                  "betSide": "over",
+                  "betType": "straight",
+                  "betDetails": "Over:44.5"
+                }
+              }
+            }
+          },
+          "open": {
+            "line": "o43.5",
+            "odds": "-110"
+          }
+        },
+        "under": {
+          "close": {
+            "line": "u44.5",
+            "odds": "-105",
+            "link": {
+              "language": "en-US",
+              "rel": [
+                "under",
+                "desktop",
+                "bets"
+              ],
+              "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34876678%3Foutcomes%3D0OU86864965U4450_3",
+              "text": "Under Odds",
+              "shortText": "Under Odds",
+              "isExternal": true,
+              "isPremium": false,
+              "tracking": {
+                "campaign": "betting-integrations",
+                "tags": {
+                  "league": "college-football",
+                  "sport": "football",
+                  "gameId": 401866452,
+                  "betSide": "under",
+                  "betType": "straight",
+                  "betDetails": "Under:44.5"
+                }
+              }
+            }
+          },
+          "open": {
+            "line": "u43.5",
+            "odds": "-110"
+          }
+        }
+      },
+      "link": {
+        "language": "en-US",
+        "rel": [
+          "game",
+          "desktop",
+          "bets"
+        ],
+        "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34876678",
+        "text": "See More Odds",
+        "shortText": "Game",
+        "isExternal": true,
+        "isPremium": false,
+        "tracking": {
+          "campaign": "betting-integrations",
+          "tags": {
+            "league": "college-football",
+            "sport": "football",
+            "gameId": 401866452,
+            "betSide": "none",
+            "betType": "straight"
+          }
+        }
+      },
+      "header": {
+        "logo": {
+          "dark": "https://a.espncdn.com/i/espnbet/dark/espn-bet-square-off.svg",
+          "light": "https://a.espncdn.com/i/espnbet/espn-bet-square-off.svg",
+          "exclusivesLogoDark": "https://a.espncdn.com/i/espnbet/espn-bet-square-mint.svg",
+          "exclusivesLogoLight": "https://a.espncdn.com/i/espnbet/espn-bet-square-mint.svg"
+        },
+        "text": "Game Odds"
+      },
+      "footer": {
+        "disclaimer": "GAMBLING PROBLEM? CALL 1-800-GAMBLER or 1-800-MY-RESET, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY). Call 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD), 1-800-981-0023 (PR). 21+ and present in most states. (18+ DC/KY/NH/PR/WY). Void in ONT. Eligibility restrictions apply. Terms: draftkings.com/sportsbook. On behalf of Boot Hill Casino (KS). Pass-thru of per wager tax may apply in IL."
+      }
+    }
+  ],
+  "odds": [],
+  "againstTheSpread": [
+    {
+      "team": {
+        "id": "189",
+        "uid": "s:20~l:23~t:189",
+        "displayName": "Bowling Green Falcons",
+        "abbreviation": "BGSU",
+        "links": [
+          {
+            "href": "https://www.espn.com/college-football/team/_/id/189/bowling-green-falcons",
+            "text": "Clubhouse"
+          },
+          {
+            "href": "https://www.espn.com/college-football/team/schedule/_/id/189",
+            "text": "Schedule"
+          }
+        ],
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/189.png",
+        "logos": [
+          {
+            "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/189.png",
+            "width": 500,
+            "height": 500,
+            "alt": "",
+            "rel": [
+              "full",
+              "default"
+            ],
+            "lastUpdated": "2025-12-24T20:19Z"
+          },
+          {
+            "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/189.png",
+            "width": 500,
+            "height": 500,
+            "alt": "",
+            "rel": [
+              "full",
+              "dark"
+            ],
+            "lastUpdated": "2025-12-24T20:18Z"
+          }
+        ]
+      },
+      "records": []
+    },
+    {
+      "team": {
+        "id": "2711",
+        "uid": "s:20~l:23~t:2711",
+        "displayName": "Western Michigan Broncos",
+        "abbreviation": "WMU",
+        "links": [
+          {
+            "href": "https://www.espn.com/college-football/team/_/id/2711/western-michigan-broncos",
+            "text": "Clubhouse"
+          },
+          {
+            "href": "https://www.espn.com/college-football/team/schedule/_/id/2711",
+            "text": "Schedule"
+          }
+        ],
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2711.png",
+        "logos": [
+          {
+            "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2711.png",
+            "width": 500,
+            "height": 500,
+            "alt": "",
+            "rel": [
+              "full",
+              "default"
+            ],
+            "lastUpdated": "2025-12-24T20:19Z"
+          },
+          {
+            "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2711.png",
+            "width": 500,
+            "height": 500,
+            "alt": "",
+            "rel": [
+              "full",
+              "dark"
+            ],
+            "lastUpdated": "2025-12-24T20:19Z"
+          }
+        ]
+      },
+      "records": []
+    }
+  ],
+  "winprobability": [],
+  "predictor": {
+    "header": "Matchup Predictor",
+    "homeTeam": {
+      "id": "2711",
+      "gameProjection": "88.1"
+    },
+    "awayTeam": {
+      "id": "189",
+      "gameProjection": "11.9"
+    }
+  },
+  "news": {
+    "header": "NCAAF News",
+    "link": {
+      "language": "en",
+      "rel": [
+        "index",
+        "desktop",
+        "league"
+      ],
+      "href": "https://www.espn.com/college-football/",
+      "text": "All NCAAF News",
+      "shortText": "All News",
+      "isExternal": false,
+      "isPremium": false
+    },
+    "articles": [
+      {
+        "id": 50333716,
+        "nowId": "1-50333716",
+        "contentKey": "50333716-1-293-1",
+        "dataSourceIdentifier": "5a0bf0aca22ed",
+        "type": "Media",
+        "headline": "Kent State Golden Flashes vs. Sacramento State Hornets: Full Highlights",
+        "description": "Kent State Golden Flashes vs. Sacramento State Hornets: Full Highlights",
+        "lastModified": "2026-10-31T06:28:08Z",
+        "published": "2026-10-31T06:28:08Z",
+        "images": [
+          {
+            "name": "Kent State Golden Flashes vs. Sacramento State Hornets: Full Highlights",
+            "caption": "Kent State Golden Flashes vs. Sacramento State Hornets: Full Highlights",
+            "alt": "",
+            "height": 324,
+            "width": 576,
+            "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1031/19b38436-18f2-47b7-b60c-3c3bc2d19a7f/19b38436-18f2-47b7-b60c-3c3bc2d19a7f.jpg"
+          }
+        ],
+        "categories": [
+          {
+            "id": 1136,
+            "type": "team",
+            "uid": "s:20~l:23~t:2309",
+            "guid": "fc40f1a0-dec2-2c11-7e0a-ad793f6ab9e9",
+            "description": "Kent State Golden Flashes",
+            "sportId": 23,
+            "teamId": 2309,
+            "team": {
+              "id": 2309,
+              "description": "Kent State Golden Flashes",
+              "abbreviation": "KENT",
+              "shortDisplayName": "Kent State",
+              "links": {
+                "mobile": {
+                  "teams": {
+                    "href": "https://www.espn.com/college-football/team/_/id/2309/kent-state-golden-flashes"
+                  }
+                },
+                "web": {
+                  "teams": {
+                    "href": "https://www.espn.com/college-football/team/_/id/2309/kent-state-golden-flashes"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "id": 2309,
+            "type": "team",
+            "guid": "132f630e-33ed-3a89-9bac-d650fe529423",
+            "description": "Kent State University",
+            "sportId": 3170,
+            "teamId": 2309,
+            "team": {
+              "id": 2309,
+              "description": "Kent State University",
+              "abbreviation": "Kent State",
+              "shortDisplayName": "Kent State"
+            }
+          },
+          {
+            "id": 1186,
+            "type": "team",
+            "uid": "s:20~l:23~t:16",
+            "guid": "2bcff5f8-a7ac-73b2-b5ff-dfbef2fa679c",
+            "description": "Sacramento State Hornets",
+            "sportId": 23,
+            "teamId": 16,
+            "team": {
+              "id": 16,
+              "description": "Sacramento State Hornets",
+              "abbreviation": "SAC",
+              "shortDisplayName": "Sacramento St",
+              "links": {
+                "mobile": {
+                  "teams": {
+                    "href": "https://www.espn.com/college-football/team/_/id/16/sacramento-state-hornets"
+                  }
+                },
+                "web": {
+                  "teams": {
+                    "href": "https://www.espn.com/college-football/team/_/id/16/sacramento-state-hornets"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "id": 16,
+            "type": "team",
+            "guid": "791687de-1bbe-36fc-900b-95c61782d9dc",
+            "description": "Cal State University-Sacramento",
+            "sportId": 3170,
+            "teamId": 16,
+            "team": {
+              "id": 16,
+              "description": "Cal State University-Sacramento",
+              "abbreviation": "Sacramento State",
+              "shortDisplayName": "Sacramento State"
+            }
+          },
+          {
+            "id": 9571,
+            "type": "league",
+            "uid": "s:20~l:23",
+            "guid": "0f8e3d42-fa27-3f60-9e8d-276e4892f50e",
+            "description": "NCAA Football",
+            "sportId": 23,
+            "leagueId": 23,
+            "league": {
+              "id": 23,
+              "description": "NCAA Football",
+              "abbreviation": "NCAAF",
+              "links": {
+                "mobile": {
+                  "leagues": {
+                    "href": "https://www.espn.com/college-football/"
+                  }
+                },
+                "web": {
+                  "leagues": {
+                    "href": "https://www.espn.com/college-football/"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "id": 614330,
+            "type": "athlete",
+            "uid": "s:20~l:23~a:5119841",
+            "guid": "78f27f43-12fc-34d1-8697-15a80e5614f8",
+            "description": "Dru DeShields",
+            "sportId": 23,
+            "athleteId": 5119841,
+            "athlete": {
+              "id": 5119841,
+              "description": "Dru DeShields",
+              "links": {
+                "mobile": {
+                  "athletes": {
+                    "href": "https://www.espn.com/college-football/player/_/id/5119841/dru-deshields"
+                  }
+                },
+                "web": {
+                  "athletes": {
+                    "href": "https://www.espn.com/college-football/player/_/id/5119841/dru-deshields"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "id": 539054,
+            "type": "athlete",
+            "uid": "s:20~l:23~a:4916957",
+            "guid": "c30d7912-1545-364f-ad90-e8d6caddc992",
+            "description": "Donovan Turner",
+            "sportId": 23,
+            "athleteId": 4916957,
+            "athlete": {
+              "id": 4916957,
+              "description": "Donovan Turner",
+              "links": {
+                "mobile": {
+                  "athletes": {
+                    "href": "https://www.espn.com/college-football/player/_/id/4916957/donovan-turner"
+                  }
+                },
+                "web": {
+                  "athletes": {
+                    "href": "https://www.espn.com/college-football/player/_/id/4916957/donovan-turner"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "id": 711821,
+            "type": "editorialindicator",
+            "guid": "f3e05446-8d07-3064-a239-c10c32884ea2",
+            "description": "SC4U - Full Highlight"
+          },
+          {
+            "id": 711824,
+            "type": "editorialindicator",
+            "guid": "d348c764-47d9-3e31-bd75-d39dfde52c26",
+            "description": "SC4U  - Eligible"
+          },
+          {
+            "id": 803378,
+            "type": "athlete",
+            "uid": "s:20~l:23~a:5161820",
+            "guid": "3d59d1df-7fb2-3a78-885b-3b29a5390366",
+            "description": "Isaiah Ene",
+            "sportId": 23,
+            "athleteId": 5161820,
+            "athlete": {
+              "id": 5161820,
+              "description": "Isaiah Ene",
+              "links": {
+                "mobile": {
+                  "athletes": {
+                    "href": "https://www.espn.com/college-football/player/_/id/5161820/isaiah-ene"
+                  }
+                },
+                "web": {
+                  "athletes": {
+                    "href": "https://www.espn.com/college-football/player/_/id/5161820/isaiah-ene"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "id": 539319,
+            "type": "athlete",
+            "uid": "s:20~l:23~a:5082587",
+            "guid": "26f683d5-c613-3288-8d24-a4e5ee70ee44",
+            "description": "Matt Coleman",
+            "sportId": 23,
+            "athleteId": 5082587,
+            "athlete": {
+              "id": 5082587,
+              "description": "Matt Coleman",
+              "links": {
+                "mobile": {
+                  "athletes": {
+                    "href": "https://www.espn.com/college-football/player/_/id/5082587/matt-coleman"
+                  }
+                },
+                "web": {
+                  "athletes": {
+                    "href": "https://www.espn.com/college-football/player/_/id/5082587/matt-coleman"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "id": 711829,
+            "type": "editorialindicator",
+            "guid": "15a3cfd2-9d4c-3833-a9b4-ae142bef330c",
+            "description": "5 Star Rating"
+          },
+          {
+            "type": "event",
+            "uid": "s:20~l:23~e:401866451",
+            "guid": "f30d4ead-ee36-3909-84ae-fda4ce132986",
+            "description": "Kent State Golden Flashes @ Sacramento State Hornets",
+            "eventId": 401866451,
+            "event": {
+              "id": 401866451,
+              "sport": "football",
+              "league": "college-football",
+              "description": "Kent State Golden Flashes @ Sacramento State Hornets",
+              "links": {
+                "mobile": {
+                  "event": {
+                    "href": "https://www.espn.com/college-football/game/_/gameId/401866451"
+                  }
+                },
+                "web": {
+                  "event": {
+                    "href": "https://www.espn.com/college-football/game/_/gameId/401866451"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "links": {
+          "api": {
+            "artwork": {
+              "href": "https://artwork.api.espn.com/artwork/collections/media/8e9bc2e0-e38b-4804-978b-f6ececd4a55d"
+            },
+            "self": {
+              "href": "https://content.core.api.espn.com/v1/video/clips/50333716"
+            }
+          },
+          "sportscenter": {
+            "href": "sportscenter://x-callback-url/showVideo?videoID=50333716&videoDSI=5a0bf0aca22ed"
+          },
+          "web": {
+            "href": "https://www.espn.com/video/clip/_/id/50333716/full-highlights",
+            "self": {
+              "href": "https://www.espn.com/video/clip/_/id/50333716/full-highlights",
+              "dsi": {
+                "href": "https://www.espn.com/video/clip?id=5a0bf0aca22ed"
+              }
+            }
+          }
+        },
+        "premium": false
+      },
+      {
+        "id": 50333713,
+        "nowId": "1-50333713",
+        "contentKey": "50333713-1-21-1",
+        "dataSourceIdentifier": "880a325029cc0",
+        "type": "Recap",
+        "headline": "Isaiah Ene helps Sacramento State beat Kent State 31-10 for first MAC win",
+        "description": "\u2014 Freshman Isaiah Ene had a career-high 107 yards rushing and two touchdowns on 19 carries, Donovan Turner returned an interception 36-yards for a score and Sacramento State beat Kent State on Friday night to win its first Mid-American Conference game.",
+        "lastModified": "2026-10-31T06:26:46Z",
+        "published": "2026-10-31T06:26:46Z",
+        "images": [
+          {
+            "type": "stitcher",
+            "name": "espn.applewatch.awayhome.1",
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401866451.png?templateId=espn.applewatch.awayhome.1"
+          },
+          {
+            "type": "stitcher",
+            "name": "espn.applewatch.homeaway.1",
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401866451.png?templateId=espn.applewatch.homeaway.1"
+          },
+          {
+            "type": "stitcher",
+            "name": "espn.all.awayhome.16x9.1",
+            "ratio": "16x9",
+            "height": 173,
+            "width": 308,
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401866451.png?templateId=espn.all.awayhome.16x9.1"
+          },
+          {
+            "type": "stitcher",
+            "name": "espn.all.homeaway.16x9.1",
+            "ratio": "16x9",
+            "height": 173,
+            "width": 308,
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401866451.png?templateId=espn.all.homeaway.16x9.1"
+          },
+          {
+            "type": "stitcher",
+            "name": "espn.all.awayhome.1x1.1",
+            "ratio": "1x1",
+            "height": 308,
+            "width": 308,
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401866451.png?templateId=espn.all.awayhome.1x1.1"
+          },
+          {
+            "type": "stitcher",
+            "name": "espn.all.homeaway.1x1.1",
+            "ratio": "1x1",
+            "height": 308,
+            "width": 308,
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401866451.png?templateId=espn.all.homeaway.1x1.1"
+          },
+          {
+            "type": "stitcher",
+            "name": "espn.all.awayhome.5x2.1",
+            "ratio": "5x2",
+            "height": 124,
+            "width": 308,
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401866451.png?templateId=espn.all.awayhome.5x2.1"
+          },
+          {
+            "type": "stitcher",
+            "name": "espn.all.homeaway.5x2.1",
+            "ratio": "5x2",
+            "height": 124,
+            "width": 308,
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401866451.png?templateId=espn.all.homeaway.5x2.1"
+          },
+          {
+            "type": "stitcher",
+            "name": "espn.all.awayhome.16x9.2",
+            "ratio": "16x9",
+            "height": 353,
+            "width": 628,
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401866451.png?templateId=espn.all.awayhome.16x9.2"
+          },
+          {
+            "type": "stitcher",
+            "name": "espn.all.homeaway.16x9.2",
+            "ratio": "16x9",
+            "height": 353,
+            "width": 628,
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401866451.png?templateId=espn.all.homeaway.16x9.2"
+          },
+          {
+            "type": "stitcher",
+            "name": "espn.all.awayhome.5x2.2",
+            "ratio": "5x2",
+            "height": 251,
+            "width": 628,
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401866451.png?templateId=espn.all.awayhome.5x2.2"
+          },
+          {
+            "type": "stitcher",
+            "name": "espn.all.homeaway.5x2.2",
+            "ratio": "5x2",
+            "height": 251,
+            "width": 628,
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401866451.png?templateId=espn.all.homeaway.5x2.2"
+          },
+          {
+            "type": "Media",
+            "name": "Kent State Golden Flashes vs. Sacramento State Hornets: Full Highlights",
+            "caption": "Kent State Golden Flashes vs. Sacramento State Hornets: Full Highlights",
+            "height": 324,
+            "width": 576,
+            "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1031/19b38436-18f2-47b7-b60c-3c3bc2d19a7f/19b38436-18f2-47b7-b60c-3c3bc2d19a7f.jpg"
+          }
+        ],
+        "categories": [
+          {
+            "id": 9571,
+            "type": "league",
+            "uid": "s:20~l:23",
+            "guid": "0f8e3d42-fa27-3f60-9e8d-276e4892f50e",
+            "description": "NCAA Football",
+            "sportId": 23,
+            "leagueId": 23,
+            "league": {
+              "id": 23,
+              "description": "NCAA Football",
+              "abbreviation": "NCAAF",
+              "links": {
+                "mobile": {
+                  "leagues": {
+                    "href": "https://www.espn.com/college-football/"
+                  }
+                },
+                "web": {
+                  "leagues": {
+                    "href": "https://www.espn.com/college-football/"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "id": 1186,
+            "type": "team",
+            "uid": "s:20~l:23~t:16",
+            "guid": "2bcff5f8-a7ac-73b2-b5ff-dfbef2fa679c",
+            "description": "Sacramento State Hornets",
+            "sportId": 23,
+            "teamId": 16,
+            "team": {
+              "id": 16,
+              "description": "Sacramento State Hornets",
+              "abbreviation": "SAC",
+              "shortDisplayName": "Sacramento St",
+              "links": {
+                "mobile": {
+                  "teams": {
+                    "href": "https://www.espn.com/college-football/team/_/id/16/sacramento-state-hornets"
+                  }
+                },
+                "web": {
+                  "teams": {
+                    "href": "https://www.espn.com/college-football/team/_/id/16/sacramento-state-hornets"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "id": 16,
+            "type": "team",
+            "guid": "791687de-1bbe-36fc-900b-95c61782d9dc",
+            "description": "Cal State University-Sacramento",
+            "sportId": 3170,
+            "teamId": 16,
+            "team": {
+              "id": 16,
+              "description": "Cal State University-Sacramento",
+              "abbreviation": "Sacramento State",
+              "shortDisplayName": "Sacramento State"
+            }
+          },
+          {
+            "id": 1136,
+            "type": "team",
+            "uid": "s:20~l:23~t:2309",
+            "guid": "fc40f1a0-dec2-2c11-7e0a-ad793f6ab9e9",
+            "description": "Kent State Golden Flashes",
+            "sportId": 23,
+            "teamId": 2309,
+            "team": {
+              "id": 2309,
+              "description": "Kent State Golden Flashes",
+              "abbreviation": "KENT",
+              "shortDisplayName": "Kent State",
+              "links": {
+                "mobile": {
+                  "teams": {
+                    "href": "https://www.espn.com/college-football/team/_/id/2309/kent-state-golden-flashes"
+                  }
+                },
+                "web": {
+                  "teams": {
+                    "href": "https://www.espn.com/college-football/team/_/id/2309/kent-state-golden-flashes"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "id": 2309,
+            "type": "team",
+            "guid": "132f630e-33ed-3a89-9bac-d650fe529423",
+            "description": "Kent State University",
+            "sportId": 3170,
+            "teamId": 2309,
+            "team": {
+              "id": 2309,
+              "description": "Kent State University",
+              "abbreviation": "Kent State",
+              "shortDisplayName": "Kent State"
+            }
+          },
+          {
+            "type": "event",
+            "uid": "s:20~l:23~e:401866451",
+            "guid": "f30d4ead-ee36-3909-84ae-fda4ce132986",
+            "description": "Kent State Golden Flashes @ Sacramento State Hornets",
+            "eventId": 401866451,
+            "event": {
+              "id": 401866451,
+              "sport": "football",
+              "league": "college-football",
+              "description": "Kent State Golden Flashes @ Sacramento State Hornets",
+              "links": {
+                "mobile": {
+                  "event": {
+                    "href": "https://www.espn.com/college-football/game/_/gameId/401866451"
+                  }
+                },
+                "web": {
+                  "event": {
+                    "href": "https://www.espn.com/college-football/game/_/gameId/401866451"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "links": {
+          "api": {
+            "self": {
+              "href": "https://content.core.api.espn.com/v1/sports/news/50333713"
+            }
+          },
+          "app": {
+            "sportscenter": {
+              "href": "sportscenter://x-callback-url/showStory?uid=50333713"
+            }
+          },
+          "mobile": {
+            "href": "http://m.espn.go.com/ncf/story?storyId=50333713"
+          },
+          "web": {
+            "href": "http://www.espn.com/ncf/recap?gameId=401866451"
+          }
+        },
+        "premium": false
+      },
+      {
+        "id": 50333537,
+        "nowId": "1-50333537",
+        "contentKey": "50333537-1-5-1",
+        "dataSourceIdentifier": "6086f6a5143c5",
+        "type": "HeadlineNews",
+        "headline": "Baylor bounces back, wins Joe Klanderman's first game as interim coach",
+        "description": "In Joe Klanderman's first game as interim coach, Baylor improved to 5-3 overall, 3-2 in the Big 12, with a 41-9 rout of UCF on Friday night, a convincing Bears' victory that snapped the Knights' four-game home winning streak.",
+        "lastModified": "2026-10-31T05:53:58Z",
+        "published": "2026-10-31T05:53:58Z",
+        "images": [
+          {
+            "dataSourceIdentifier": "a20bee6a6805f",
+            "id": 50333520,
+            "type": "header",
+            "name": "Joe Klanderman [600x600]",
+            "credit": "Imagn Images",
+            "height": 600,
+            "width": 600,
+            "url": "https://a.espncdn.com/photo/2026/1031/r1738853_600x600_1-1.jpg"
+          }
+        ],
+        "categories": [
+          {
+            "id": 9571,
+            "type": "league",
+            "uid": "s:20~l:23",
+            "guid": "0f8e3d42-fa27-3f60-9e8d-276e4892f50e",
+            "description": "NCAA Football",
+            "sportId": 23,
+            "leagueId": 23,
+            "league": {
+              "id": 23,
+              "description": "NCAA Football",
+              "abbreviation": "NCAAF",
+              "links": {
+                "mobile": {
+                  "leagues": {
+                    "href": "https://www.espn.com/college-football/"
+                  }
+                },
+                "web": {
+                  "leagues": {
+                    "href": "https://www.espn.com/college-football/"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "id": 1135,
+            "type": "team",
+            "uid": "s:20~l:23~t:2116",
+            "guid": "c9803f48-33e7-2ff2-03ef-ca6c319e1787",
+            "description": "UCF Knights",
+            "sportId": 23,
+            "teamId": 2116,
+            "team": {
+              "id": 2116,
+              "description": "UCF Knights",
+              "abbreviation": "UCF",
+              "shortDisplayName": "UCF",
+              "links": {
+                "mobile": {
+                  "teams": {
+                    "href": "https://www.espn.com/college-football/team/_/id/2116/ucf-knights"
+                  }
+                },
+                "web": {
+                  "teams": {
+                    "href": "https://www.espn.com/college-football/team/_/id/2116/ucf-knights"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "id": 2116,
+            "type": "team",
+            "guid": "baa2c521-0759-3c08-915c-f3724f383540",
+            "description": "University of Central Florida",
+            "sportId": 3170,
+            "teamId": 2116,
+            "team": {
+              "id": 2116,
+              "description": "University of Central Florida",
+              "abbreviation": "UCF",
+              "shortDisplayName": "UCF"
+            }
+          },
+          {
+            "id": 1075,
+            "type": "team",
+            "uid": "s:20~l:23~t:239",
+            "guid": "f09699d9-0894-3cf9-c5e4-cb392dfb72b8",
+            "description": "Baylor Bears",
+            "sportId": 23,
+            "teamId": 239,
+            "team": {
+              "id": 239,
+              "description": "Baylor Bears",
+              "abbreviation": "BAY",
+              "shortDisplayName": "Baylor",
+              "links": {
+                "mobile": {
+                  "teams": {
+                    "href": "https://www.espn.com/college-football/team/_/id/239/baylor-bears"
+                  }
+                },
+                "web": {
+                  "teams": {
+                    "href": "https://www.espn.com/college-football/team/_/id/239/baylor-bears"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "id": 239,
+            "type": "team",
+            "guid": "8f0deb82-f6b1-34ef-b835-d95f4f6689ec",
+            "description": "Baylor University",
+            "sportId": 3170,
+            "teamId": 239,
+            "team": {
+              "id": 239,
+              "description": "Baylor University",
+              "abbreviation": "Baylor",
+              "shortDisplayName": "Baylor"
+            }
+          }
+        ],
+        "links": {
+          "api": {
+            "self": {
+              "href": "https://content.core.api.espn.com/v1/sports/news/50333537"
+            }
+          },
+          "app": {
+            "sportscenter": {
+              "href": "sportscenter://x-callback-url/showStory?uid=50333537"
+            }
+          },
+          "mobile": {
+            "href": "http://m.espn.go.com/ncf/story?storyId=50333537"
+          },
+          "web": {
+            "href": "https://www.espn.com/college-football/story/_/id/50333537/baylor-races-ucf-joe-klanderman-debut-interim"
+          }
+        },
+        "premium": false
+      },
+      {
+        "id": 50333238,
+        "nowId": "1-50333238",
+        "contentKey": "50333238-1-5-1",
+        "dataSourceIdentifier": "1c76707401651",
+        "type": "HeadlineNews",
+        "headline": "Oregon freshman WR Messiah Hampton arrested in connection with high-speed chase",
+        "description": "Oregon freshman WR Messiah Hampton is facing charges of attempting to elude police and reckless driving in connection with an Oct. 18 high-speed chase.",
+        "lastModified": "2026-10-31T05:35:12Z",
+        "published": "2026-10-31T05:35:12Z",
+        "images": [
+          {
+            "dataSourceIdentifier": "7a280359f1ca1",
+            "id": 50333225,
+            "type": "header",
+            "name": "Messiah Hampton [600x400]",
+            "credit": "Photo by Jordon Kelly/Icon Sportswire",
+            "height": 400,
+            "width": 600,
+            "url": "https://a.espncdn.com/photo/2026/1031/r1738847_600x400_3-2.jpg"
+          }
+        ],
+        "categories": [
+          {
+            "id": 9571,
+            "type": "league",
+            "uid": "s:20~l:23",
+            "guid": "0f8e3d42-fa27-3f60-9e8d-276e4892f50e",
+            "description": "NCAA Football",
+            "sportId": 23,
+            "leagueId": 23,
+            "league": {
+              "id": 23,
+              "description": "NCAA Football",
+              "abbreviation": "NCAAF",
+              "links": {
+                "mobile": {
+                  "leagues": {
+                    "href": "https://www.espn.com/college-football/"
+                  }
+                },
+                "web": {
+                  "leagues": {
+                    "href": "https://www.espn.com/college-football/"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "id": 1111,
+            "type": "team",
+            "uid": "s:20~l:23~t:2483",
+            "guid": "116d333f-cf1a-0c67-d450-36a834af56de",
+            "description": "Oregon Ducks",
+            "sportId": 23,
+            "teamId": 2483,
+            "team": {
+              "id": 2483,
+              "description": "Oregon Ducks",
+              "abbreviation": "ORE",
+              "shortDisplayName": "Oregon",
+              "links": {
+                "mobile": {
+                  "teams": {
+                    "href": "https://www.espn.com/college-football/team/_/id/2483/oregon-ducks"
+                  }
+                },
+                "web": {
+                  "teams": {
+                    "href": "https://www.espn.com/college-football/team/_/id/2483/oregon-ducks"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "id": 2483,
+            "type": "team",
+            "guid": "94cc8326-138d-3d76-8f6e-65e8744e6d92",
+            "description": "University of Oregon",
+            "sportId": 3170,
+            "teamId": 2483,
+            "team": {
+              "id": 2483,
+              "description": "University of Oregon",
+              "abbreviation": "Oregon",
+              "shortDisplayName": "Oregon"
+            }
+          },
+          {
+            "id": 794003,
+            "type": "athlete",
+            "uid": "s:20~l:23~a:5211889",
+            "guid": "8f903223-e4d7-3665-99ec-fbc44691c922",
+            "description": "Messiah Hampton",
+            "sportId": 23,
+            "athleteId": 5211889,
+            "athlete": {
+              "id": 5211889,
+              "description": "Messiah Hampton",
+              "links": {
+                "mobile": {
+                  "athletes": {
+                    "href": "https://www.espn.com/college-football/player/_/id/5211889/messiah-hampton"
+                  }
+                },
+                "web": {
+                  "athletes": {
+                    "href": "https://www.espn.com/college-football/player/_/id/5211889/messiah-hampton"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "id": 696276,
+            "type": "contributor",
+            "guid": "7c8f349e-356b-3b31-af19-d6cd17e7d304",
+            "description": "Paolo Uggetti",
+            "slug": "paolo-uggetti",
+            "contributor": {
+              "id": 3887,
+              "description": "Paolo Uggetti"
+            }
+          }
+        ],
+        "byline": "Paolo Uggetti",
+        "links": {
+          "api": {
+            "self": {
+              "href": "https://content.core.api.espn.com/v1/sports/news/50333238"
+            }
+          },
+          "app": {
+            "sportscenter": {
+              "href": "sportscenter://x-callback-url/showStory?uid=50333238"
+            }
+          },
+          "mobile": {
+            "href": "http://m.espn.go.com/ncf/story?storyId=50333238"
+          },
+          "web": {
+            "href": "https://www.espn.com/college-football/story/_/id/50333238/oregon-hampton-arrested-connection-high-speed-chase"
+          }
+        },
+        "premium": false
+      },
+      {
+        "id": 50333159,
+        "nowId": "1-50333159",
+        "contentKey": "50333159-1-293-1",
+        "dataSourceIdentifier": "b815f55ead8b5",
+        "type": "Media",
+        "headline": "What will be deciding factor for Florida vs. Georgia?",
+        "description": "With the No. 17 Gators set to face the No. 3 Bulldogs, the SEC Nation crew breaks down the components on both sides of the ball that could decide the matchup.",
+        "lastModified": "2026-10-31T03:58:58Z",
+        "published": "2026-10-31T03:58:58Z",
+        "images": [
+          {
+            "name": "What will be deciding factor for Florida vs. Georgia?",
+            "caption": "With the No. 17 Gators set to face the No. 3 Bulldogs, the SEC Nation crew breaks down the components on both sides of the ball that could decide the matchup.",
+            "alt": "",
+            "height": 324,
+            "width": 576,
+            "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1030/dm_261030_SEC_NCF_Analysis_Nation_UGA_UF_261030/dm_261030_SEC_NCF_Analysis_Nation_UGA_UF_261030.jpg"
+          }
+        ],
+        "categories": [
+          {
+            "id": 1090,
+            "type": "team",
+            "uid": "s:20~l:23~t:57",
+            "guid": "fe74bfd9-c15e-7b3a-ab25-ff4e5636282e",
+            "description": "Florida Gators",
+            "sportId": 23,
+            "teamId": 57,
+            "team": {
+              "id": 57,
+              "description": "Florida Gators",
+              "abbreviation": "FLA",
+              "shortDisplayName": "Florida",
+              "links": {
+                "mobile": {
+                  "teams": {
+                    "href": "https://www.espn.com/college-football/team/_/id/57/florida-gators"
+                  }
+                },
+                "web": {
+                  "teams": {
+                    "href": "https://www.espn.com/college-football/team/_/id/57/florida-gators"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "id": 57,
+            "type": "team",
+            "guid": "97faef39-d222-37b0-94fc-9944321184e4",
+            "description": "University of Florida",
+            "sportId": 3170,
+            "teamId": 57,
+            "team": {
+              "id": 57,
+              "description": "University of Florida",
+              "abbreviation": "Florida",
+              "shortDisplayName": "Florida"
+            }
+          },
+          {
+            "id": 1091,
+            "type": "team",
+            "uid": "s:20~l:23~t:61",
+            "guid": "4351fef8-fe69-53b1-ea57-72684b36ec35",
+            "description": "Georgia Bulldogs",
+            "sportId": 23,
+            "teamId": 61,
+            "team": {
+              "id": 61,
+              "description": "Georgia Bulldogs",
+              "abbreviation": "UGA",
+              "shortDisplayName": "Georgia",
+              "links": {
+                "mobile": {
+                  "teams": {
+                    "href": "https://www.espn.com/college-football/team/_/id/61/georgia-bulldogs"
+                  }
+                },
+                "web": {
+                  "teams": {
+                    "href": "https://www.espn.com/college-football/team/_/id/61/georgia-bulldogs"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "id": 61,
+            "type": "team",
+            "guid": "429cd0c4-212a-3660-9508-9e74776b5442",
+            "description": "University of Georgia",
+            "sportId": 3170,
+            "teamId": 61,
+            "team": {
+              "id": 61,
+              "description": "University of Georgia",
+              "abbreviation": "Georgia",
+              "shortDisplayName": "Georgia"
+            }
+          },
+          {
+            "id": 9571,
+            "type": "league",
+            "uid": "s:20~l:23",
+            "guid": "0f8e3d42-fa27-3f60-9e8d-276e4892f50e",
+            "description": "NCAA Football",
+            "sportId": 23,
+            "leagueId": 23,
+            "league": {
+              "id": 23,
+              "description": "NCAA Football",
+              "abbreviation": "NCAAF",
+              "links": {
+                "mobile": {
+                  "leagues": {
+                    "href": "https://www.espn.com/college-football/"
+                  }
+                },
+                "web": {
+                  "leagues": {
+                    "href": "https://www.espn.com/college-football/"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "id": 126329,
+            "type": "topic",
+            "guid": "78632891-79dd-a9ab-c720-008c86f843de",
+            "description": "sec network",
+            "sportId": 0,
+            "topicId": 89
+          },
+          {
+            "type": "event",
+            "uid": "s:20~l:23~e:401856734",
+            "guid": "a0be1706-10fe-3bd2-94f0-74ee42e683cb",
+            "description": "Florida Gators @ Georgia Bulldogs",
+            "eventId": 401856734,
+            "event": {
+              "id": 401856734,
+              "sport": "football",
+              "league": "college-football",
+              "description": "Florida Gators @ Georgia Bulldogs"
+            }
+          }
+        ],
+        "links": {
+          "api": {
+            "artwork": {
+              "href": "https://artwork.api.espn.com/artwork/collections/media/69dff218-d9b0-42b5-b355-df5449919c0d"
+            },
+            "self": {
+              "href": "https://content.core.api.espn.com/v1/video/clips/50333159"
+            }
+          },
+          "sportscenter": {
+            "href": "sportscenter://x-callback-url/showVideo?videoID=50333159&videoDSI=b815f55ead8b5"
+          },
+          "web": {
+            "href": "https://www.espn.com/video/clip/_/id/50333159/what-deciding-factor-florida-vs-georgia",
+            "self": {
+              "href": "https://www.espn.com/video/clip/_/id/50333159/what-deciding-factor-florida-vs-georgia",
+              "dsi": {
+                "href": "https://www.espn.com/video/clip?id=b815f55ead8b5"
+              }
+            }
+          }
+        },
+        "premium": false
+      },
+      {
+        "id": 50333073,
+        "nowId": "1-50333073",
+        "contentKey": "50333073-1-21-1",
+        "dataSourceIdentifier": "a120a53439f91",
+        "type": "Recap",
+        "headline": "Lagway throws for 4 TDs as Baylor wins Klanderman's first game as interim coach, beating UCF 41-9",
+        "description": "\u2014 DJ Lagway threw for 319 yards and four touchdowns to lead Baylor to a 41-9 rout of UCF on Friday night in Joe Klanderman's first game as interim head coach.",
+        "lastModified": "2026-10-31T04:15:46Z",
+        "published": "2026-10-31T04:15:46Z",
+        "images": [
+          {
+            "type": "stitcher",
+            "name": "espn.applewatch.awayhome.1",
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401856844.png?templateId=espn.applewatch.awayhome.1"
+          },
+          {
+            "type": "stitcher",
+            "name": "espn.applewatch.homeaway.1",
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401856844.png?templateId=espn.applewatch.homeaway.1"
+          },
+          {
+            "type": "stitcher",
+            "name": "espn.all.awayhome.16x9.1",
+            "ratio": "16x9",
+            "height": 173,
+            "width": 308,
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401856844.png?templateId=espn.all.awayhome.16x9.1"
+          },
+          {
+            "type": "stitcher",
+            "name": "espn.all.homeaway.16x9.1",
+            "ratio": "16x9",
+            "height": 173,
+            "width": 308,
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401856844.png?templateId=espn.all.homeaway.16x9.1"
+          },
+          {
+            "type": "stitcher",
+            "name": "espn.all.awayhome.1x1.1",
+            "ratio": "1x1",
+            "height": 308,
+            "width": 308,
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401856844.png?templateId=espn.all.awayhome.1x1.1"
+          },
+          {
+            "type": "stitcher",
+            "name": "espn.all.homeaway.1x1.1",
+            "ratio": "1x1",
+            "height": 308,
+            "width": 308,
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401856844.png?templateId=espn.all.homeaway.1x1.1"
+          },
+          {
+            "type": "stitcher",
+            "name": "espn.all.awayhome.5x2.1",
+            "ratio": "5x2",
+            "height": 124,
+            "width": 308,
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401856844.png?templateId=espn.all.awayhome.5x2.1"
+          },
+          {
+            "type": "stitcher",
+            "name": "espn.all.homeaway.5x2.1",
+            "ratio": "5x2",
+            "height": 124,
+            "width": 308,
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401856844.png?templateId=espn.all.homeaway.5x2.1"
+          },
+          {
+            "type": "stitcher",
+            "name": "espn.all.awayhome.16x9.2",
+            "ratio": "16x9",
+            "height": 353,
+            "width": 628,
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401856844.png?templateId=espn.all.awayhome.16x9.2"
+          },
+          {
+            "type": "stitcher",
+            "name": "espn.all.homeaway.16x9.2",
+            "ratio": "16x9",
+            "height": 353,
+            "width": 628,
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401856844.png?templateId=espn.all.homeaway.16x9.2"
+          },
+          {
+            "type": "stitcher",
+            "name": "espn.all.awayhome.5x2.2",
+            "ratio": "5x2",
+            "height": 251,
+            "width": 628,
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401856844.png?templateId=espn.all.awayhome.5x2.2"
+          },
+          {
+            "type": "stitcher",
+            "name": "espn.all.homeaway.5x2.2",
+            "ratio": "5x2",
+            "height": 251,
+            "width": 628,
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401856844.png?templateId=espn.all.homeaway.5x2.2"
+          },
+          {
+            "type": "Media",
+            "name": "Gavin Freeman takes it 77 yards to the crib for a Baylor TD",
+            "caption": "Gavin Freeman takes it 77 yards to the crib for a Baylor TD",
+            "height": 324,
+            "width": 576,
+            "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1031/ff839d6a-510f-4688-a74a-664a40a2bf9d/ff839d6a-510f-4688-a74a-664a40a2bf9d.jpg"
+          }
+        ],
+        "categories": [
+          {
+            "id": 9571,
+            "type": "league",
+            "uid": "s:20~l:23",
+            "guid": "0f8e3d42-fa27-3f60-9e8d-276e4892f50e",
+            "description": "NCAA Football",
+            "sportId": 23,
+            "leagueId": 23,
+            "league": {
+              "id": 23,
+              "description": "NCAA Football",
+              "abbreviation": "NCAAF",
+              "links": {
+                "mobile": {
+                  "leagues": {
+                    "href": "https://www.espn.com/college-football/"
+                  }
+                },
+                "web": {
+                  "leagues": {
+                    "href": "https://www.espn.com/college-football/"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "id": 1135,
+            "type": "team",
+            "uid": "s:20~l:23~t:2116",
+            "guid": "c9803f48-33e7-2ff2-03ef-ca6c319e1787",
+            "description": "UCF Knights",
+            "sportId": 23,
+            "teamId": 2116,
+            "team": {
+              "id": 2116,
+              "description": "UCF Knights",
+              "abbreviation": "UCF",
+              "shortDisplayName": "UCF",
+              "links": {
+                "mobile": {
+                  "teams": {
+                    "href": "https://www.espn.com/college-football/team/_/id/2116/ucf-knights"
+                  }
+                },
+                "web": {
+                  "teams": {
+                    "href": "https://www.espn.com/college-football/team/_/id/2116/ucf-knights"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "id": 2116,
+            "type": "team",
+            "guid": "baa2c521-0759-3c08-915c-f3724f383540",
+            "description": "University of Central Florida",
+            "sportId": 3170,
+            "teamId": 2116,
+            "team": {
+              "id": 2116,
+              "description": "University of Central Florida",
+              "abbreviation": "UCF",
+              "shortDisplayName": "UCF"
+            }
+          },
+          {
+            "id": 1075,
+            "type": "team",
+            "uid": "s:20~l:23~t:239",
+            "guid": "f09699d9-0894-3cf9-c5e4-cb392dfb72b8",
+            "description": "Baylor Bears",
+            "sportId": 23,
+            "teamId": 239,
+            "team": {
+              "id": 239,
+              "description": "Baylor Bears",
+              "abbreviation": "BAY",
+              "shortDisplayName": "Baylor",
+              "links": {
+                "mobile": {
+                  "teams": {
+                    "href": "https://www.espn.com/college-football/team/_/id/239/baylor-bears"
+                  }
+                },
+                "web": {
+                  "teams": {
+                    "href": "https://www.espn.com/college-football/team/_/id/239/baylor-bears"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "id": 239,
+            "type": "team",
+            "guid": "8f0deb82-f6b1-34ef-b835-d95f4f6689ec",
+            "description": "Baylor University",
+            "sportId": 3170,
+            "teamId": 239,
+            "team": {
+              "id": 239,
+              "description": "Baylor University",
+              "abbreviation": "Baylor",
+              "shortDisplayName": "Baylor"
+            }
+          },
+          {
+            "type": "event",
+            "uid": "s:20~l:23~e:401856844",
+            "guid": "7246fc26-cc63-3c47-bee0-a71c29c19e2e",
+            "description": "Baylor Bears @ UCF Knights",
+            "eventId": 401856844,
+            "event": {
+              "id": 401856844,
+              "sport": "football",
+              "league": "college-football",
+              "description": "Baylor Bears @ UCF Knights",
+              "links": {
+                "mobile": {
+                  "event": {
+                    "href": "https://www.espn.com/college-football/game/_/gameId/401856844"
+                  }
+                },
+                "web": {
+                  "event": {
+                    "href": "https://www.espn.com/college-football/game/_/gameId/401856844"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "links": {
+          "api": {
+            "self": {
+              "href": "https://content.core.api.espn.com/v1/sports/news/50333073"
+            }
+          },
+          "app": {
+            "sportscenter": {
+              "href": "sportscenter://x-callback-url/showStory?uid=50333073"
+            }
+          },
+          "mobile": {
+            "href": "http://m.espn.go.com/ncf/story?storyId=50333073"
+          },
+          "web": {
+            "href": "http://www.espn.com/ncf/recap?gameId=401856844"
+          }
+        },
+        "premium": false
+      }
+    ]
+  },
+  "ticketsInfo": {
+    "tickets": [
+      {
+        "ticketName": "All College Football Tickets",
+        "ticketLink": "https://www.vividseats.com/ncaaf/?wsUser=717",
+        "type": "league"
+      },
+      {
+        "ticketName": "All Western Michigan Broncos Tickets",
+        "ticketLink": "https://www.vividseats.com/western-michigan-broncos-football-tickets--sports-ncaa-football/performer/1352?wsUser=717",
+        "type": "team"
+      },
+      {
+        "ticketName": "10/31 vs Bowling Green Falcons 378 tickets left",
+        "ticketLink": "https://www.vividseats.com/western-michigan-broncos-football-tickets-waldo-stadium-10-24-2026--sports-ncaa-football/production/6823567?wsUser=717",
+        "type": "event"
+      },
+      {
+        "ticketName": "11/10 @ Akron Zips 271 tickets left",
+        "ticketLink": "https://www.vividseats.com/akron-zips-football-tickets-infocision-stadium---summa-field-11-10-2026--sports-ncaa-football/production/6823285?wsUser=717",
+        "type": "event"
+      },
+      {
+        "ticketName": "11/17 vs Eastern Michigan Eagles 366 tickets left",
+        "ticketLink": "https://www.vividseats.com/western-michigan-broncos-football-tickets-waldo-stadium-11-17-2026--sports-ncaa-football/production/6823577?wsUser=717",
+        "type": "event"
+      },
+      {
+        "ticketName": "11/24 vs Miami (OH) RedHawks 1180 tickets left",
+        "ticketLink": "https://www.vividseats.com/western-michigan-broncos-football-tickets-waldo-stadium-11-24-2026--sports-ncaa-football/production/6823583?wsUser=717",
+        "type": "event"
+      }
+    ],
+    "seatSituation": {
+      "opponentTeamName": "Bowling Green Falcons",
+      "currentTeamName": "Western Michigan Broncos",
+      "venueName": "Waldo Stadium",
+      "summary": "Tickets as low as $15",
+      "date": "2026-10-31T16:00Z",
+      "dateDay": "Sat",
+      "homeAway": "home",
+      "eventLink": "https://www.vividseats.com/western-michigan-broncos-football-tickets-waldo-stadium-10-24-2026--sports-ncaa-football/production/6823567?wsUser=717",
+      "venueLink": "https://www.vividseats.com/venues/waldo-stadium-tickets.html?wsUser=717",
+      "genericLink": "https://www.vividseats.com/?wsUser=717",
+      "teamLink": "https://www.vividseats.com/western-michigan-broncos-football-tickets--sports-ncaa-football/performer/1352?wsUser=717",
+      "timeValid": true
+    }
+  },
+  "article": {
+    "id": 50279393,
+    "nowId": "1-50279393",
+    "contentKey": "50279393-1-22-1",
+    "dataSourceIdentifier": "35b604b882fe4",
+    "publishedkey": "ncf401866452",
+    "type": "Preview",
+    "gameId": "401866452",
+    "headline": "Western Michigan hosts Bowling Green in MAC play",
+    "description": "Bowling Green (2-6) at Western Michigan (5-3), Oct. 31 at 12 p.m. EDT.",
+    "title": "Western Michigan hosts Bowling Green in MAC play",
+    "linkText": "Western Michigan hosts Bowling Green in MAC play",
+    "categorized": "2026-10-25T19:43:14Z",
+    "originallyPosted": "2026-10-25T19:43:12Z",
+    "lastModified": "2026-10-25T19:43:13Z",
+    "published": "2026-10-25T19:43:12Z",
+    "root": "ncf",
+    "section": "College Football",
+    "source": "Data Skrive",
+    "images": [],
+    "video": [],
+    "categories": [
+      {
+        "id": 9571,
+        "type": "league",
+        "uid": "s:20~l:23",
+        "guid": "0f8e3d42-fa27-3f60-9e8d-276e4892f50e",
+        "description": "NCAA Football",
+        "sportId": 23,
+        "leagueId": 23,
+        "league": {
+          "id": 23,
+          "description": "NCAA Football",
+          "abbreviation": "NCAAF",
+          "links": {
+            "mobile": {
+              "leagues": {
+                "href": "https://www.espn.com/college-football/"
+              }
+            },
+            "web": {
+              "leagues": {
+                "href": "https://www.espn.com/college-football/"
+              }
+            }
+          }
+        }
+      },
+      {
+        "id": 1143,
+        "type": "team",
+        "uid": "s:20~l:23~t:2711",
+        "guid": "dc3e4fdc-c679-36f9-323c-75330c120fed",
+        "description": "Western Michigan Broncos",
+        "sportId": 23,
+        "teamId": 2711,
+        "team": {
+          "id": 2711,
+          "description": "Western Michigan Broncos",
+          "abbreviation": "WMU",
+          "shortDisplayName": "W Michigan",
+          "links": {
+            "mobile": {
+              "teams": {
+                "href": "https://www.espn.com/college-football/team/_/id/2711/western-michigan-broncos"
+              }
+            },
+            "web": {
+              "teams": {
+                "href": "https://www.espn.com/college-football/team/_/id/2711/western-michigan-broncos"
+              }
+            }
+          }
+        }
+      },
+      {
+        "id": 2711,
+        "type": "team",
+        "guid": "f96429e4-de05-3168-930b-390084bf89a1",
+        "description": "Western Michigan University",
+        "sportId": 3170,
+        "teamId": 2711,
+        "team": {
+          "id": 2711,
+          "description": "Western Michigan University",
+          "abbreviation": "Western Michigan",
+          "shortDisplayName": "Western Michigan"
+        }
+      },
+      {
+        "id": 1137,
+        "type": "team",
+        "uid": "s:20~l:23~t:189",
+        "guid": "bd2c9085-0c46-7f7d-4b18-8ee8ae1bf970",
+        "description": "Bowling Green Falcons",
+        "sportId": 23,
+        "teamId": 189,
+        "team": {
+          "id": 189,
+          "description": "Bowling Green Falcons",
+          "abbreviation": "BGSU",
+          "shortDisplayName": "Bowling Green",
+          "links": {
+            "mobile": {
+              "teams": {
+                "href": "https://www.espn.com/college-football/team/_/id/189/bowling-green-falcons"
+              }
+            },
+            "web": {
+              "teams": {
+                "href": "https://www.espn.com/college-football/team/_/id/189/bowling-green-falcons"
+              }
+            }
+          }
+        }
+      },
+      {
+        "id": 189,
+        "type": "team",
+        "guid": "bbb10e85-2db8-3d59-998f-901f6866a1a5",
+        "description": "Bowling Green State University",
+        "sportId": 3170,
+        "teamId": 189,
+        "team": {
+          "id": 189,
+          "description": "Bowling Green State University",
+          "abbreviation": "Bowling Green",
+          "shortDisplayName": "Bowling Green"
+        }
+      },
+      {
+        "type": "event",
+        "uid": "s:20~l:23~e:401866452",
+        "guid": "d0465858-4c1c-3a3e-b8c1-bc069b501a1d",
+        "description": "Bowling Green Falcons @ Western Michigan Broncos",
+        "eventId": 401866452,
+        "event": {
+          "id": 401866452,
+          "sport": "football",
+          "league": "college-football",
+          "description": "Bowling Green Falcons @ Western Michigan Broncos"
+        }
+      }
+    ],
+    "keywords": [
+      "NCAA Football",
+      "Western Michigan Broncos",
+      "Western Michigan University",
+      "Bowling Green Falcons",
+      "Bowling Green State University",
+      "Bowling Green Falcons @ Western Michigan Broncos"
+    ],
+    "story": "Bowling Green (2-6) at Western Michigan (5-3), Oct. 31 at 12 p.m. EDT.\n\n\r\n              Opening Line: Western Michigan by 14.5. Against the spread: Western Michigan 3-5, Bowling Green 3-5.\n\n\r\n              How to watch: CBS Sports Network\n\n\r\n              \r\n                <em>Key stats</em>\r\n              \n\n\r\n              Western Michigan Offense\n\n\r\n              Overall: 325.9 yards per game (124th in FBS)\n\n\r\n              Passing: 163.8 yards per game (128th)\n\n\r\n              Rushing: 162.1 yards per game (60th)\n\n\r\n              Scoring: 26.6 points per game (83rd)\n\n\r\n              Western Michigan Defense\n\n\r\n              Overall: 368.6 yards per game (79th in FBS)\n\n\r\n              Passing: 216.4 yards per game (79th)\n\n\r\n              Rushing: 152.3 yards per game (87th)\n\n\r\n              Scoring: 20.4 points per game (35th)\n\n\r\n              Bowling Green Offense\n\n\r\n              Overall: 288.0 yards per game (135th in FBS)\n\n\r\n              Passing: 179.8 yards per game (118th)\n\n\r\n              Rushing: 108.3 yards per game (126th)\n\n\r\n              Scoring: 18.8 points per game (131st)\n\n\r\n              Bowling Green Defense\n\n\r\n              Overall: 386.4 yards per game (103rd in FBS)\n\n\r\n              Passing: 171.6 yards per game (16th)\n\n\r\n              Rushing: 214.8 yards per game (133rd)\n\n\r\n              Scoring: 29.8 points per game (109th)\n\n\r\n              Bowling Green is 87th in the FBS with a -2 turnover margin, compared to Western Michigan's 36th-ranked +3 margin.\n\n\r\n              Bowling Green is 132nd in FBS in red zone defense, allowing opponents to score on 96.0% of trips. Western Michigan's red zone offense ranks 37th, scoring on 89.3% of red zone opportunities.\n\n\r\n              \r\n                \r\n                  <em>Team leaders</em>\r\n                \n\n\r\n              \n\n\r\n              Western Michigan\n\n\r\n              Passing: <a href=\"http://www.espn.com/college-football/player/_/id/5074245/broc-lowry\" target=\"_new\">Broc Lowry</a>, 1,251 yards, 10 TDs, 3 INTs, 63.6 completion percentage\n\n\r\n              Rushing: <a href=\"http://www.espn.com/college-football/player/_/id/5085006/jalen-buckley\" target=\"_new\">Jalen Buckley</a>, 634 yards on 120 carries, 8 TDs\n\n\r\n              Receiving: <a href=\"http://www.espn.com/college-football/player/_/id/5164351/aveion-chenault\" target=\"_new\">Aveion Chenault</a>, 431 yards on 28 catches, 2 TDs\n\n\r\n              Bowling Green\n\n\r\n              Passing: <a href=\"http://www.espn.com/college-football/player/_/id/5385753/jay-kastantin\" target=\"_new\">Jay Kastantin</a>, 1,418 yards, 10 TDs, 6 INTs, 67.0 completion percentage\n\n\r\n              Rushing: <a href=\"http://www.espn.com/college-football/player/_/id/5147347/austyn-dendy\" target=\"_new\">Austyn Dendy</a>, 371 yards on 104 carries, 4 TDs\n\n\r\n              Receiving: <a href=\"http://www.espn.com/college-football/player/_/id/5193284/winn-sharp\" target=\"_new\">Winn Sharp</a>, 305 yards on 25 catches, 1 TD\n\n\r\n              \r\n                \r\n                  <em>Last game</em>\r\n                \n\n\r\n              \n\n\r\n              Western Michigan was defeated by Toledo 45-38 on Oct. 24. Lowry led Western Michigan with 207 yards on 12-of-29 passing (41.4%) for two touchdowns and two interceptions. He also carried the ball eight times for 17 yards and one rushing touchdown. Buckley had 92 rushing yards on 18 carries and one touchdown. Chenault put up 105 yards on six catches with one touchdown.\n\n\r\n              Bowling Green was beaten by Buffalo 31-24 on Oct. 24. Kastantin passed for 217 yards on 19-of-27 attempts (70.4%) with three touchdowns and two interceptions. He also carried the ball 14 times for 34 yards. Dendy carried the ball 10 times for 39 yards, adding three receptions for three yards. Sharp put up 50 yards on five catches.\n\n\r\n              \r\n                \r\n                  <em>Next game</em>\r\n                \n\n\r\n              \n\n\r\n              Western Michigan plays at Akron on Nov. 10. Bowling Green hosts Kent State on Nov. 10.",
+    "allowContentReactions": false,
+    "allowSearch": true,
+    "isLiveBlog": false,
+    "links": {
+      "api": {
+        "self": {
+          "href": "https://content.core.api.espn.com/v1/sports/news/50279393"
+        }
+      },
+      "app": {
+        "sportscenter": {
+          "href": "sportscenter://x-callback-url/showStory?uid=50279393"
+        }
+      },
+      "mobile": {
+        "href": "http://m.espn.go.com/ncf/story?storyId=50279393"
+      },
+      "web": {
+        "href": "http://www.espn.com/ncf/preview?gameId=401866452"
+      }
+    },
+    "premium": false
+  },
+  "header": {
+    "id": "401866452",
+    "uid": "s:20~l:23~e:401866452",
+    "season": {
+      "year": 2026,
+      "current": true,
+      "type": 2
+    },
+    "timeValid": true,
+    "competitions": [
+      {
+        "id": "401866452",
+        "uid": "s:20~l:23~e:401866452~c:401866452",
+        "date": "2026-10-31T16:00Z",
+        "dateValid": true,
+        "neutralSite": false,
+        "conferenceCompetition": true,
+        "boxscoreAvailable": false,
+        "commentaryAvailable": false,
+        "liveAvailable": false,
+        "onWatchESPN": false,
+        "recent": false,
+        "wallclockAvailable": false,
+        "boxscoreSource": "none",
+        "playByPlaySource": "none",
+        "competitors": [
+          {
+            "id": "2711",
+            "uid": "s:20~l:23~t:2711",
+            "order": 0,
+            "homeAway": "home",
+            "team": {
+              "id": "2711",
+              "guid": "dc3e4fdc-c679-36f9-323c-75330c120fed",
+              "uid": "s:20~l:23~t:2711",
+              "location": "Western Michigan",
+              "name": "Broncos",
+              "nickname": "W Michigan",
+              "abbreviation": "WMU",
+              "displayName": "Western Michigan Broncos",
+              "color": "532e1f",
+              "alternateColor": "f1c500",
+              "logos": [
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2711.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "default"
+                  ],
+                  "lastUpdated": "2025-12-24T20:19Z"
+                },
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2711.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "dark"
+                  ],
+                  "lastUpdated": "2025-12-24T20:19Z"
+                },
+                {
+                  "href": "https://a.espncdn.com/guid/dc3e4fdc-c679-36f9-323c-75330c120fed/logos/primary_logo_on_white_color.png",
+                  "width": 4096,
+                  "height": 4096,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "primary_logo_on_white_color"
+                  ],
+                  "lastUpdated": "2026-07-23T17:48Z"
+                },
+                {
+                  "href": "https://a.espncdn.com/guid/dc3e4fdc-c679-36f9-323c-75330c120fed/logos/primary_logo_on_black_color.png",
+                  "width": 4096,
+                  "height": 4096,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "primary_logo_on_black_color"
+                  ],
+                  "lastUpdated": "2026-07-23T17:48Z"
+                },
+                {
+                  "href": "https://a.espncdn.com/guid/dc3e4fdc-c679-36f9-323c-75330c120fed/logos/primary_logo_on_primary_color.png",
+                  "width": 4096,
+                  "height": 4096,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "primary_logo_on_primary_color"
+                  ],
+                  "lastUpdated": "2026-07-23T17:48Z"
+                },
+                {
+                  "href": "https://a.espncdn.com/guid/dc3e4fdc-c679-36f9-323c-75330c120fed/logos/primary_logo_on_secondary_color.png",
+                  "width": 4096,
+                  "height": 4096,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "primary_logo_on_secondary_color"
+                  ],
+                  "lastUpdated": "2026-07-23T17:48Z"
+                },
+                {
+                  "href": "https://a.espncdn.com/guid/dc3e4fdc-c679-36f9-323c-75330c120fed/logos/primary_logo_black.png",
+                  "width": 4096,
+                  "height": 4096,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "primary_logo_black"
+                  ],
+                  "lastUpdated": "2026-07-23T17:48Z"
+                },
+                {
+                  "href": "https://a.espncdn.com/guid/dc3e4fdc-c679-36f9-323c-75330c120fed/logos/primary_logo_white.png",
+                  "width": 4096,
+                  "height": 4096,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "primary_logo_white"
+                  ],
+                  "lastUpdated": "2026-07-23T17:48Z"
+                },
+                {
+                  "href": "https://a.espncdn.com/guid/dc3e4fdc-c679-36f9-323c-75330c120fed/logos/secondary_logo_on_white_color.png",
+                  "width": 4096,
+                  "height": 4096,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "secondary_logo_on_white_color"
+                  ],
+                  "lastUpdated": "2026-07-23T17:48Z"
+                },
+                {
+                  "href": "https://a.espncdn.com/guid/dc3e4fdc-c679-36f9-323c-75330c120fed/logos/secondary_logo_on_black_color.png",
+                  "width": 4096,
+                  "height": 4096,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "secondary_logo_on_black_color"
+                  ],
+                  "lastUpdated": "2026-07-23T17:48Z"
+                },
+                {
+                  "href": "https://a.espncdn.com/guid/dc3e4fdc-c679-36f9-323c-75330c120fed/logos/secondary_logo_on_primary_color.png",
+                  "width": 4096,
+                  "height": 4096,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "secondary_logo_on_primary_color"
+                  ],
+                  "lastUpdated": "2026-07-23T17:48Z"
+                },
+                {
+                  "href": "https://a.espncdn.com/guid/dc3e4fdc-c679-36f9-323c-75330c120fed/logos/secondary_logo_on_secondary_color.png",
+                  "width": 4096,
+                  "height": 4096,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "secondary_logo_on_secondary_color"
+                  ],
+                  "lastUpdated": "2026-07-23T17:48Z"
+                },
+                {
+                  "href": "https://a.espncdn.com/guid/dc3e4fdc-c679-36f9-323c-75330c120fed/logos/secondary_logo_black.png",
+                  "width": 4096,
+                  "height": 4096,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "secondary_logo_black"
+                  ],
+                  "lastUpdated": "2026-07-23T17:48Z"
+                },
+                {
+                  "href": "https://a.espncdn.com/guid/dc3e4fdc-c679-36f9-323c-75330c120fed/logos/secondary_logo_white.png",
+                  "width": 4096,
+                  "height": 4096,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "secondary_logo_white"
+                  ],
+                  "lastUpdated": "2026-07-23T17:48Z"
+                }
+              ],
+              "groups": {
+                "id": "15"
+              },
+              "links": [
+                {
+                  "rel": [
+                    "clubhouse",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/college-football/team/_/id/2711/western-michigan-broncos",
+                  "text": "Clubhouse"
+                }
+              ]
+            },
+            "record": [
+              {
+                "type": "total",
+                "summary": "5-3",
+                "displayValue": "5-3"
+              },
+              {
+                "type": "vsconf",
+                "summary": "3-1",
+                "displayValue": "3-1"
+              }
+            ],
+            "possession": false
+          },
+          {
+            "id": "189",
+            "uid": "s:20~l:23~t:189",
+            "order": 1,
+            "homeAway": "away",
+            "team": {
+              "id": "189",
+              "guid": "bd2c9085-0c46-7f7d-4b18-8ee8ae1bf970",
+              "uid": "s:20~l:23~t:189",
+              "location": "Bowling Green",
+              "name": "Falcons",
+              "nickname": "Bowling Green",
+              "abbreviation": "BGSU",
+              "displayName": "Bowling Green Falcons",
+              "color": "fd5000",
+              "alternateColor": "4f2c1d",
+              "logos": [
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/189.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "default"
+                  ],
+                  "lastUpdated": "2025-12-24T20:19Z"
+                },
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/189.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "dark"
+                  ],
+                  "lastUpdated": "2025-12-24T20:18Z"
+                },
+                {
+                  "href": "https://a.espncdn.com/guid/bd2c9085-0c46-7f7d-4b18-8ee8ae1bf970/logos/primary_logo_on_white_color.png",
+                  "width": 4096,
+                  "height": 4096,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "primary_logo_on_white_color"
+                  ],
+                  "lastUpdated": "2026-07-23T17:20Z"
+                },
+                {
+                  "href": "https://a.espncdn.com/guid/bd2c9085-0c46-7f7d-4b18-8ee8ae1bf970/logos/primary_logo_on_black_color.png",
+                  "width": 4096,
+                  "height": 4096,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "primary_logo_on_black_color"
+                  ],
+                  "lastUpdated": "2026-07-23T17:20Z"
+                },
+                {
+                  "href": "https://a.espncdn.com/guid/bd2c9085-0c46-7f7d-4b18-8ee8ae1bf970/logos/primary_logo_on_primary_color.png",
+                  "width": 4096,
+                  "height": 4096,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "primary_logo_on_primary_color"
+                  ],
+                  "lastUpdated": "2026-07-23T17:20Z"
+                },
+                {
+                  "href": "https://a.espncdn.com/guid/bd2c9085-0c46-7f7d-4b18-8ee8ae1bf970/logos/primary_logo_on_secondary_color.png",
+                  "width": 4096,
+                  "height": 4096,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "primary_logo_on_secondary_color"
+                  ],
+                  "lastUpdated": "2026-07-23T17:20Z"
+                },
+                {
+                  "href": "https://a.espncdn.com/guid/bd2c9085-0c46-7f7d-4b18-8ee8ae1bf970/logos/primary_logo_black.png",
+                  "width": 4096,
+                  "height": 4096,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "primary_logo_black"
+                  ],
+                  "lastUpdated": "2026-07-23T17:20Z"
+                },
+                {
+                  "href": "https://a.espncdn.com/guid/bd2c9085-0c46-7f7d-4b18-8ee8ae1bf970/logos/primary_logo_white.png",
+                  "width": 4096,
+                  "height": 4096,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "primary_logo_white"
+                  ],
+                  "lastUpdated": "2026-07-23T17:20Z"
+                },
+                {
+                  "href": "https://a.espncdn.com/guid/bd2c9085-0c46-7f7d-4b18-8ee8ae1bf970/logos/secondary_logo_on_white_color.png",
+                  "width": 4096,
+                  "height": 4096,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "secondary_logo_on_white_color"
+                  ],
+                  "lastUpdated": "2026-07-23T17:20Z"
+                },
+                {
+                  "href": "https://a.espncdn.com/guid/bd2c9085-0c46-7f7d-4b18-8ee8ae1bf970/logos/secondary_logo_on_black_color.png",
+                  "width": 4096,
+                  "height": 4096,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "secondary_logo_on_black_color"
+                  ],
+                  "lastUpdated": "2026-07-23T17:20Z"
+                },
+                {
+                  "href": "https://a.espncdn.com/guid/bd2c9085-0c46-7f7d-4b18-8ee8ae1bf970/logos/secondary_logo_on_primary_color.png",
+                  "width": 4096,
+                  "height": 4096,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "secondary_logo_on_primary_color"
+                  ],
+                  "lastUpdated": "2026-07-23T17:20Z"
+                },
+                {
+                  "href": "https://a.espncdn.com/guid/bd2c9085-0c46-7f7d-4b18-8ee8ae1bf970/logos/secondary_logo_on_secondary_color.png",
+                  "width": 4096,
+                  "height": 4096,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "secondary_logo_on_secondary_color"
+                  ],
+                  "lastUpdated": "2026-07-23T17:20Z"
+                },
+                {
+                  "href": "https://a.espncdn.com/guid/bd2c9085-0c46-7f7d-4b18-8ee8ae1bf970/logos/secondary_logo_black.png",
+                  "width": 4096,
+                  "height": 4096,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "secondary_logo_black"
+                  ],
+                  "lastUpdated": "2026-07-23T17:20Z"
+                },
+                {
+                  "href": "https://a.espncdn.com/guid/bd2c9085-0c46-7f7d-4b18-8ee8ae1bf970/logos/secondary_logo_white.png",
+                  "width": 4096,
+                  "height": 4096,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "secondary_logo_white"
+                  ],
+                  "lastUpdated": "2026-07-23T17:20Z"
+                }
+              ],
+              "groups": {
+                "id": "15"
+              },
+              "links": [
+                {
+                  "rel": [
+                    "clubhouse",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/college-football/team/_/id/189/bowling-green-falcons",
+                  "text": "Clubhouse"
+                }
+              ]
+            },
+            "record": [
+              {
+                "type": "total",
+                "summary": "2-6",
+                "displayValue": "2-6"
+              },
+              {
+                "type": "vsconf",
+                "summary": "2-2",
+                "displayValue": "2-2"
+              }
+            ],
+            "possession": false
+          }
+        ],
+        "status": {
+          "type": {
+            "id": "1",
+            "name": "STATUS_SCHEDULED",
+            "state": "pre",
+            "completed": false,
+            "description": "Scheduled",
+            "detail": "Sat, October 31st at 12:00 PM EDT",
+            "shortDetail": "10/31 - 12:00 PM EDT"
+          }
+        },
+        "broadcasts": [
+          {
+            "type": {
+              "id": "1",
+              "shortName": "TV"
+            },
+            "market": {
+              "id": "1",
+              "type": "National"
+            },
+            "media": {
+              "shortName": "CBSSN"
+            },
+            "lang": "en",
+            "region": "us",
+            "isNational": true
+          }
+        ],
+        "groups": {
+          "id": "15",
+          "name": "Mid-American Conference",
+          "abbreviation": "midam",
+          "shortName": "MAC",
+          "midsizeName": "Mid-American"
+        },
+        "boxscoreMinutes": false
+      }
+    ],
+    "links": [
+      {
+        "rel": [
+          "summary",
+          "desktop",
+          "event"
+        ],
+        "href": "https://www.espn.com/college-football/game/_/gameId/401866452/bowling-green-w-michigan",
+        "text": "Gamecast",
+        "shortText": "Summary",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "rel": [
+          "preview",
+          "desktop",
+          "event"
+        ],
+        "href": "https://www.espn.com/college-football/preview/_/gameId/401866452",
+        "text": "Preview",
+        "shortText": "Preview",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "rel": [
+          "tickets",
+          "desktop"
+        ],
+        "href": "https://www.vividseats.com/western-michigan-broncos-football-tickets-waldo-stadium-10-24-2026--sports-ncaa-football/production/6823567?wsUser=717",
+        "text": "Tickets",
+        "shortText": "Tickets",
+        "isExternal": true,
+        "isPremium": false
+      }
+    ],
+    "week": 9,
+    "league": {
+      "id": "23",
+      "uid": "s:20~l:23",
+      "name": "NCAA - Football",
+      "abbreviation": "NCAAF",
+      "shortName": "NCAA Football",
+      "midsizeName": "NCAA Football",
+      "slug": "college-football",
+      "isTournament": false,
+      "links": [
+        {
+          "rel": [
+            "index",
+            "desktop",
+            "league"
+          ],
+          "href": "https://www.espn.com/college-football/",
+          "text": "Index"
+        },
+        {
+          "rel": [
+            "index",
+            "sportscenter",
+            "app",
+            "league"
+          ],
+          "href": "sportscenter://x-callback-url/showClubhouse?uid=s:20~l:23",
+          "text": "Index"
+        },
+        {
+          "rel": [
+            "schedule",
+            "desktop",
+            "league"
+          ],
+          "href": "https://www.espn.com/college-football/schedule",
+          "text": "Schedule"
+        },
+        {
+          "rel": [
+            "schedule",
+            "sportscenter",
+            "app",
+            "league"
+          ],
+          "href": "sportscenter://x-callback-url/showClubhouse?uid=s:20~l:23&section=scores",
+          "text": "Schedule"
+        },
+        {
+          "rel": [
+            "standings",
+            "desktop",
+            "league"
+          ],
+          "href": "https://www.espn.com/college-football/standings",
+          "text": "Standings"
+        },
+        {
+          "rel": [
+            "standings",
+            "sportscenter",
+            "app",
+            "league"
+          ],
+          "href": "sportscenter://x-callback-url/showClubhouse?uid=s:20~l:23&section=standings",
+          "text": "Standings"
+        },
+        {
+          "rel": [
+            "rankings",
+            "desktop",
+            "league"
+          ],
+          "href": "https://www.espn.com/college-football/rankings",
+          "text": "Rankings"
+        },
+        {
+          "rel": [
+            "rankings",
+            "sportscenter",
+            "app",
+            "league"
+          ],
+          "href": "sportscenter://x-callback-url/showClubhouse?uid=s:20~l:23&section=rankings",
+          "text": "Rankings"
+        },
+        {
+          "rel": [
+            "scores",
+            "desktop",
+            "league"
+          ],
+          "href": "https://www.espn.com/college-football/scoreboard",
+          "text": "Scores"
+        },
+        {
+          "rel": [
+            "scores",
+            "sportscenter",
+            "app",
+            "league"
+          ],
+          "href": "sportscenter://x-callback-url/showClubhouse?uid=s:20~l:23&section=scores",
+          "text": "Scores"
+        },
+        {
+          "rel": [
+            "stats",
+            "desktop",
+            "league"
+          ],
+          "href": "https://www.espn.com/college-football/stats",
+          "text": "Stats"
+        },
+        {
+          "rel": [
+            "stats",
+            "sportscenter",
+            "app",
+            "league"
+          ],
+          "href": "sportscenter://x-callback-url/showClubhouse?uid=s:20~l:23&section=stats",
+          "text": "Stats"
+        },
+        {
+          "rel": [
+            "teams",
+            "desktop",
+            "league"
+          ],
+          "href": "https://www.espn.com/college-football/teams",
+          "text": "Teams"
+        },
+        {
+          "rel": [
+            "odds",
+            "desktop",
+            "league"
+          ],
+          "href": "https://www.espn.com/college-football/odds",
+          "text": "Odds"
+        },
+        {
+          "rel": [
+            "odds",
+            "sportscenter",
+            "app",
+            "league"
+          ],
+          "href": "sportscenter://x-callback-url/showClubhouse?uid=s:20~l:23&section=odds",
+          "text": "Odds"
+        }
+      ],
+      "logos": [
+        {
+          "href": "https://a.espncdn.com/redesign/assets/img/icons/NCAASports_Football.png",
+          "rel": [
+            "full",
+            "default"
+          ]
+        },
+        {
+          "href": "https://a.espncdn.com/redesign/assets/img/icons/NCAASports_Football.png",
+          "rel": [
+            "full",
+            "dark"
+          ]
+        }
+      ]
+    }
+  },
+  "wallclockAvailable": false,
+  "meta": {
+    "group": "15",
+    "gp_topic": "gp-football-college-football-401866452",
+    "gameSwitcherEnabled": true,
+    "picker_topic": "picker-football-college-football-15",
+    "gameState": "pre"
+  },
+  "standings": {
+    "fullViewLink": {
+      "text": "Full Standings",
+      "href": "https://www.espn.com/college-football/standings"
+    },
+    "header": "2026 Standings",
+    "groups": [
+      {
+        "standings": {
+          "entries": [
+            {
+              "team": "Ohio",
+              "link": "https://www.espn.com/college-football/team/_/id/195/ohio-bobcats",
+              "id": "195",
+              "uid": "s:20~l:23~t:195",
+              "stats": [
+                {
+                  "id": "0",
+                  "name": "overall",
+                  "abbreviation": "overall",
+                  "displayName": "Overall",
+                  "shortDisplayName": "OVER",
+                  "description": "Overall Record",
+                  "type": "total",
+                  "summary": "6-2",
+                  "displayValue": "6-2"
+                },
+                {
+                  "id": "9",
+                  "name": "vs. Conf.",
+                  "abbreviation": "CONF",
+                  "displayName": "vs. Conference",
+                  "shortDisplayName": "CONF",
+                  "description": "Conference Record",
+                  "type": "vsconf",
+                  "summary": "4-0",
+                  "displayValue": "4-0"
+                }
+              ],
+              "logo": [
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/195.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "default"
+                  ],
+                  "lastUpdated": "2026-07-01T04:35Z"
+                },
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/195.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "dark"
+                  ],
+                  "lastUpdated": "2026-07-01T04:34Z"
+                }
+              ]
+            },
+            {
+              "team": "Toledo",
+              "link": "https://www.espn.com/college-football/team/_/id/2649/toledo-rockets",
+              "id": "2649",
+              "uid": "s:20~l:23~t:2649",
+              "stats": [
+                {
+                  "id": "0",
+                  "name": "overall",
+                  "abbreviation": "overall",
+                  "displayName": "Overall",
+                  "shortDisplayName": "OVER",
+                  "description": "Overall Record",
+                  "type": "total",
+                  "summary": "6-2",
+                  "displayValue": "6-2"
+                },
+                {
+                  "id": "9",
+                  "name": "vs. Conf.",
+                  "abbreviation": "CONF",
+                  "displayName": "vs. Conference",
+                  "shortDisplayName": "CONF",
+                  "description": "Conference Record",
+                  "type": "vsconf",
+                  "summary": "3-1",
+                  "displayValue": "3-1"
+                }
+              ],
+              "logo": [
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2649.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "default"
+                  ],
+                  "lastUpdated": "2025-12-24T20:19Z"
+                },
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2649.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "dark"
+                  ],
+                  "lastUpdated": "2025-12-24T20:18Z"
+                }
+              ]
+            },
+            {
+              "team": "Western Michigan",
+              "link": "https://www.espn.com/college-football/team/_/id/2711/western-michigan-broncos",
+              "id": "2711",
+              "uid": "s:20~l:23~t:2711",
+              "stats": [
+                {
+                  "id": "0",
+                  "name": "overall",
+                  "abbreviation": "overall",
+                  "displayName": "Overall",
+                  "shortDisplayName": "OVER",
+                  "description": "Overall Record",
+                  "type": "total",
+                  "summary": "5-3",
+                  "displayValue": "5-3"
+                },
+                {
+                  "id": "9",
+                  "name": "vs. Conf.",
+                  "abbreviation": "CONF",
+                  "displayName": "vs. Conference",
+                  "shortDisplayName": "CONF",
+                  "description": "Conference Record",
+                  "type": "vsconf",
+                  "summary": "3-1",
+                  "displayValue": "3-1"
+                }
+              ],
+              "logo": [
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2711.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "default"
+                  ],
+                  "lastUpdated": "2025-12-24T20:19Z"
+                },
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2711.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "dark"
+                  ],
+                  "lastUpdated": "2025-12-24T20:19Z"
+                }
+              ]
+            },
+            {
+              "team": "Buffalo",
+              "link": "https://www.espn.com/college-football/team/_/id/2084/buffalo-bulls",
+              "id": "2084",
+              "uid": "s:20~l:23~t:2084",
+              "stats": [
+                {
+                  "id": "0",
+                  "name": "overall",
+                  "abbreviation": "overall",
+                  "displayName": "Overall",
+                  "shortDisplayName": "OVER",
+                  "description": "Overall Record",
+                  "type": "total",
+                  "summary": "5-3",
+                  "displayValue": "5-3"
+                },
+                {
+                  "id": "9",
+                  "name": "vs. Conf.",
+                  "abbreviation": "CONF",
+                  "displayName": "vs. Conference",
+                  "shortDisplayName": "CONF",
+                  "description": "Conference Record",
+                  "type": "vsconf",
+                  "summary": "3-1",
+                  "displayValue": "3-1"
+                }
+              ],
+              "logo": [
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2084.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "default"
+                  ],
+                  "lastUpdated": "2025-12-24T20:19Z"
+                },
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2084.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "dark"
+                  ],
+                  "lastUpdated": "2026-01-07T21:56Z"
+                }
+              ]
+            },
+            {
+              "team": "Miami (OH)",
+              "link": "https://www.espn.com/college-football/team/_/id/193/miami-oh-redhawks",
+              "id": "193",
+              "uid": "s:20~l:23~t:193",
+              "stats": [
+                {
+                  "id": "0",
+                  "name": "overall",
+                  "abbreviation": "overall",
+                  "displayName": "Overall",
+                  "shortDisplayName": "OVER",
+                  "description": "Overall Record",
+                  "type": "total",
+                  "summary": "5-3",
+                  "displayValue": "5-3"
+                },
+                {
+                  "id": "9",
+                  "name": "vs. Conf.",
+                  "abbreviation": "CONF",
+                  "displayName": "vs. Conference",
+                  "shortDisplayName": "CONF",
+                  "description": "Conference Record",
+                  "type": "vsconf",
+                  "summary": "3-1",
+                  "displayValue": "3-1"
+                }
+              ],
+              "logo": [
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/193.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "default"
+                  ],
+                  "lastUpdated": "2025-12-24T20:19Z"
+                },
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/193.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "dark"
+                  ],
+                  "lastUpdated": "2025-12-24T20:18Z"
+                }
+              ]
+            },
+            {
+              "team": "Eastern Michigan",
+              "link": "https://www.espn.com/college-football/team/_/id/2199/eastern-michigan-eagles",
+              "id": "2199",
+              "uid": "s:20~l:23~t:2199",
+              "stats": [
+                {
+                  "id": "0",
+                  "name": "overall",
+                  "abbreviation": "overall",
+                  "displayName": "Overall",
+                  "shortDisplayName": "OVER",
+                  "description": "Overall Record",
+                  "type": "total",
+                  "summary": "4-5",
+                  "displayValue": "4-5"
+                },
+                {
+                  "id": "9",
+                  "name": "vs. Conf.",
+                  "abbreviation": "CONF",
+                  "displayName": "vs. Conference",
+                  "shortDisplayName": "CONF",
+                  "description": "Conference Record",
+                  "type": "vsconf",
+                  "summary": "3-2",
+                  "displayValue": "3-2"
+                }
+              ],
+              "logo": [
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2199.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "default"
+                  ],
+                  "lastUpdated": "2026-07-01T04:35Z"
+                },
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2199.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "dark"
+                  ],
+                  "lastUpdated": "2026-07-01T04:34Z"
+                }
+              ]
+            },
+            {
+              "team": "Ball State",
+              "link": "https://www.espn.com/college-football/team/_/id/2050/ball-state-cardinals",
+              "id": "2050",
+              "uid": "s:20~l:23~t:2050",
+              "stats": [
+                {
+                  "id": "0",
+                  "name": "overall",
+                  "abbreviation": "overall",
+                  "displayName": "Overall",
+                  "shortDisplayName": "OVER",
+                  "description": "Overall Record",
+                  "type": "total",
+                  "summary": "3-5",
+                  "displayValue": "3-5"
+                },
+                {
+                  "id": "9",
+                  "name": "vs. Conf.",
+                  "abbreviation": "CONF",
+                  "displayName": "vs. Conference",
+                  "shortDisplayName": "CONF",
+                  "description": "Conference Record",
+                  "type": "vsconf",
+                  "summary": "2-2",
+                  "displayValue": "2-2"
+                }
+              ],
+              "logo": [
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2050.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "default"
+                  ],
+                  "lastUpdated": "2025-12-24T20:19Z"
+                },
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2050.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "dark"
+                  ],
+                  "lastUpdated": "2025-12-24T20:18Z"
+                }
+              ]
+            },
+            {
+              "team": "Bowling Green",
+              "link": "https://www.espn.com/college-football/team/_/id/189/bowling-green-falcons",
+              "id": "189",
+              "uid": "s:20~l:23~t:189",
+              "stats": [
+                {
+                  "id": "0",
+                  "name": "overall",
+                  "abbreviation": "overall",
+                  "displayName": "Overall",
+                  "shortDisplayName": "OVER",
+                  "description": "Overall Record",
+                  "type": "total",
+                  "summary": "2-6",
+                  "displayValue": "2-6"
+                },
+                {
+                  "id": "9",
+                  "name": "vs. Conf.",
+                  "abbreviation": "CONF",
+                  "displayName": "vs. Conference",
+                  "shortDisplayName": "CONF",
+                  "description": "Conference Record",
+                  "type": "vsconf",
+                  "summary": "2-2",
+                  "displayValue": "2-2"
+                }
+              ],
+              "logo": [
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/189.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "default"
+                  ],
+                  "lastUpdated": "2025-12-24T20:19Z"
+                },
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/189.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "dark"
+                  ],
+                  "lastUpdated": "2025-12-24T20:18Z"
+                }
+              ]
+            },
+            {
+              "team": "Kent State",
+              "link": "https://www.espn.com/college-football/team/_/id/2309/kent-state-golden-flashes",
+              "id": "2309",
+              "uid": "s:20~l:23~t:2309",
+              "stats": [
+                {
+                  "id": "0",
+                  "name": "overall",
+                  "abbreviation": "overall",
+                  "displayName": "Overall",
+                  "shortDisplayName": "OVER",
+                  "description": "Overall Record",
+                  "type": "total",
+                  "summary": "3-6",
+                  "displayValue": "3-6"
+                },
+                {
+                  "id": "9",
+                  "name": "vs. Conf.",
+                  "abbreviation": "CONF",
+                  "displayName": "vs. Conference",
+                  "shortDisplayName": "CONF",
+                  "description": "Conference Record",
+                  "type": "vsconf",
+                  "summary": "2-3",
+                  "displayValue": "2-3"
+                }
+              ],
+              "logo": [
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2309.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "default"
+                  ],
+                  "lastUpdated": "2025-12-24T20:19Z"
+                },
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2309.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "dark"
+                  ],
+                  "lastUpdated": "2025-12-24T20:18Z"
+                }
+              ]
+            },
+            {
+              "team": "Massachusetts",
+              "link": "https://www.espn.com/college-football/team/_/id/113/massachusetts-minutemen",
+              "id": "113",
+              "uid": "s:20~l:23~t:113",
+              "stats": [
+                {
+                  "id": "0",
+                  "name": "overall",
+                  "abbreviation": "overall",
+                  "displayName": "Overall",
+                  "shortDisplayName": "OVER",
+                  "description": "Overall Record",
+                  "type": "total",
+                  "summary": "4-4",
+                  "displayValue": "4-4"
+                },
+                {
+                  "id": "9",
+                  "name": "vs. Conf.",
+                  "abbreviation": "CONF",
+                  "displayName": "vs. Conference",
+                  "shortDisplayName": "CONF",
+                  "description": "Conference Record",
+                  "type": "vsconf",
+                  "summary": "1-3",
+                  "displayValue": "1-3"
+                }
+              ],
+              "logo": [
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/113.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "default"
+                  ],
+                  "lastUpdated": "2025-12-24T20:19Z"
+                },
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/113.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "dark"
+                  ],
+                  "lastUpdated": "2025-12-24T20:18Z"
+                }
+              ]
+            },
+            {
+              "team": "Central Michigan",
+              "link": "https://www.espn.com/college-football/team/_/id/2117/central-michigan-chippewas",
+              "id": "2117",
+              "uid": "s:20~l:23~t:2117",
+              "stats": [
+                {
+                  "id": "0",
+                  "name": "overall",
+                  "abbreviation": "overall",
+                  "displayName": "Overall",
+                  "shortDisplayName": "OVER",
+                  "description": "Overall Record",
+                  "type": "total",
+                  "summary": "3-5",
+                  "displayValue": "3-5"
+                },
+                {
+                  "id": "9",
+                  "name": "vs. Conf.",
+                  "abbreviation": "CONF",
+                  "displayName": "vs. Conference",
+                  "shortDisplayName": "CONF",
+                  "description": "Conference Record",
+                  "type": "vsconf",
+                  "summary": "1-3",
+                  "displayValue": "1-3"
+                }
+              ],
+              "logo": [
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2117.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "default"
+                  ],
+                  "lastUpdated": "2025-12-24T20:19Z"
+                },
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2117.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "dark"
+                  ],
+                  "lastUpdated": "2025-12-24T20:18Z"
+                }
+              ]
+            },
+            {
+              "team": "Sacramento State",
+              "link": "https://www.espn.com/college-football/team/_/id/16/sacramento-state-hornets",
+              "id": "16",
+              "uid": "s:20~l:23~t:16",
+              "stats": [
+                {
+                  "id": "0",
+                  "name": "overall",
+                  "abbreviation": "overall",
+                  "displayName": "Overall",
+                  "shortDisplayName": "OVER",
+                  "description": "Overall Record",
+                  "type": "total",
+                  "summary": "2-7",
+                  "displayValue": "2-7"
+                },
+                {
+                  "id": "9",
+                  "name": "vs. Conf.",
+                  "abbreviation": "CONF",
+                  "displayName": "vs. Conference",
+                  "shortDisplayName": "CONF",
+                  "description": "Conference Record",
+                  "type": "vsconf",
+                  "summary": "1-5",
+                  "displayValue": "1-5"
+                }
+              ],
+              "logo": [
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/16.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "default"
+                  ],
+                  "lastUpdated": "2018-06-05T12:08Z"
+                },
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/16.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "dark"
+                  ],
+                  "lastUpdated": "2018-06-05T12:08Z"
+                }
+              ]
+            },
+            {
+              "team": "Akron",
+              "link": "https://www.espn.com/college-football/team/_/id/2006/akron-zips",
+              "id": "2006",
+              "uid": "s:20~l:23~t:2006",
+              "stats": [
+                {
+                  "id": "0",
+                  "name": "overall",
+                  "abbreviation": "overall",
+                  "displayName": "Overall",
+                  "shortDisplayName": "OVER",
+                  "description": "Overall Record",
+                  "type": "total",
+                  "summary": "1-7",
+                  "displayValue": "1-7"
+                },
+                {
+                  "id": "9",
+                  "name": "vs. Conf.",
+                  "abbreviation": "CONF",
+                  "displayName": "vs. Conference",
+                  "shortDisplayName": "CONF",
+                  "description": "Conference Record",
+                  "type": "vsconf",
+                  "summary": "0-4",
+                  "displayValue": "0-4"
+                }
+              ],
+              "logo": [
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2006.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "default"
+                  ],
+                  "lastUpdated": "2025-12-24T20:19Z"
+                },
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2006.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "dark"
+                  ],
+                  "lastUpdated": "2025-12-24T20:18Z"
+                }
+              ]
+            }
+          ]
+        },
+        "header": "2026 Mid-American Conference Standings",
+        "href": "https://www.espn.com/college-football/standings/_/group/15/view/fbs",
+        "conferenceHeader": "FBS",
+        "divisionHeader": "Mid-American Conference",
+        "shortDivisionHeader": "MAC"
+      }
+    ],
+    "isSameConference": true
+  }
+}
