@@ -295,7 +295,7 @@
                   "7.5",
                   "0",
                   "2",
-                  "53.6"
+                  "54.6"
                 ]
               }
             ],
@@ -2349,7 +2349,7 @@
                   "6.0",
                   "0",
                   "2",
-                  "38.6"
+                  "41.7"
                 ]
               }
             ],
@@ -21957,7 +21957,7 @@
     {
       "provider": {
         "id": "100",
-        "name": "Draft Kings",
+        "name": "DraftKings",
         "priority": 1,
         "logos": [
           {
@@ -22008,7 +22008,7 @@
             "home",
             "desktop",
             "bets",
-            "draft-kings"
+            "draftkings"
           ],
           "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34827182%3Foutcomes%3D0ML86731856_1",
           "text": "Home Bet",
@@ -22022,7 +22022,7 @@
             "away",
             "desktop",
             "bets",
-            "draft-kings"
+            "draftkings"
           ],
           "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34827182%3Foutcomes%3D0ML86731856_3",
           "text": "Away Bet",
@@ -22940,25 +22940,145 @@
     },
     "articles": [
       {
-        "id": 50547724,
-        "nowId": "1-50547724",
-        "contentKey": "50547724-1-21-1",
-        "dataSourceIdentifier": "2a852e7a856d8",
+        "id": 50561074,
+        "nowId": "1-50561074",
+        "contentKey": "50561074-1-5-1",
+        "dataSourceIdentifier": "ad0aee62a96f7",
+        "type": "HeadlineNews",
+        "headline": "Utah extends longest active winning streak in FBS, clinches Big 12 title bid",
+        "description": "Devon Dampier threw a 68-yard touchdown pass before halftime and an 85-yard clincher in the fourth quarter as No. 2 Utah beat TCU 38-17 for its 17th straight victory, clinching a spot in the Big 12 championship game.",
+        "lastModified": "2026-11-22T12:38:05Z",
+        "published": "2026-11-22T12:38:05Z",
+        "images": [
+          {
+            "dataSourceIdentifier": "4918b0cff6ee7",
+            "id": 50558811,
+            "type": "header",
+            "name": "Utah [1296x729]",
+            "caption": "Utah is now the nation's lone remaining unbeaten team.",
+            "credit": "Dustin Safranek/Imagn Images",
+            "height": 729,
+            "width": 1296,
+            "url": "https://a.espncdn.com/photo/2026/1122/r1749452_1296x729_16-9.jpg"
+          }
+        ],
+        "categories": [
+          {
+            "id": 9571,
+            "type": "league",
+            "uid": "s:20~l:23",
+            "guid": "0f8e3d42-fa27-3f60-9e8d-276e4892f50e",
+            "description": "NCAA Football",
+            "sportId": 23,
+            "leagueId": 23,
+            "league": {
+              "id": 23,
+              "description": "NCAA Football",
+              "abbreviation": "NCAAF",
+              "links": {
+                "mobile": {
+                  "leagues": {
+                    "href": "https://www.espn.com/college-football/"
+                  }
+                },
+                "web": {
+                  "leagues": {
+                    "href": "https://www.espn.com/college-football/"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "id": 1158,
+            "type": "team",
+            "uid": "s:20~l:23~t:254",
+            "guid": "8dbdf443-6ffa-7a66-b58f-c0a7484ead29",
+            "description": "Utah Utes",
+            "sportId": 23,
+            "teamId": 254,
+            "team": {
+              "id": 254,
+              "description": "Utah Utes",
+              "abbreviation": "UTAH",
+              "shortDisplayName": "Utah",
+              "links": {
+                "mobile": {
+                  "teams": {
+                    "href": "https://www.espn.com/college-football/team/_/id/254/utah-utes"
+                  }
+                },
+                "web": {
+                  "teams": {
+                    "href": "https://www.espn.com/college-football/team/_/id/254/utah-utes"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "id": 254,
+            "type": "team",
+            "guid": "9a038720-0f73-391f-91a4-00a582539a08",
+            "description": "University of Utah",
+            "sportId": 3170,
+            "teamId": 254,
+            "team": {
+              "id": 254,
+              "description": "University of Utah",
+              "abbreviation": "Utah",
+              "shortDisplayName": "Utah"
+            }
+          },
+          {
+            "id": 409224,
+            "type": "topic",
+            "guid": "52313677-19f8-b106-ec91-d8d17e6087fe",
+            "description": "news",
+            "sportId": 0,
+            "topicId": 781
+          }
+        ],
+        "links": {
+          "api": {
+            "self": {
+              "href": "https://content.core.api.espn.com/v1/sports/news/50561074"
+            }
+          },
+          "app": {
+            "sportscenter": {
+              "href": "sportscenter://x-callback-url/showStory?uid=50561074"
+            }
+          },
+          "mobile": {
+            "href": "http://m.espn.go.com/ncf/story?storyId=50561074"
+          },
+          "web": {
+            "href": "https://www.espn.com/college-football/story/_/id/50561074/no-2-utah-seals-spot-big-12-title-game-beating-tcu"
+          }
+        },
+        "premium": false
+      },
+      {
+        "id": 50560342,
+        "nowId": "1-50560342",
+        "contentKey": "50560342-1-21-1",
+        "dataSourceIdentifier": "5d8484696e67c",
         "type": "Recap",
-        "headline": "Richter throws TD pass to Dabbs, Griffith kicks 4 FGs for Toledo in 19-0 win over BGSU",
-        "description": "\u2014 John Alan Richter threw a 35-yard touchdown pass to Adjatay Dabbs, senior Reice Griffith kicked a career-high four field goals and Toledo beat Bowling Green 19-0 on Friday night for the Rockets' fifth consecutive win.",
-        "lastModified": "2026-11-21T06:41:32Z",
-        "published": "2026-11-21T06:41:32Z",
+        "headline": "Sam Keltner kicks 35-yard field goal in overtime, Oklahoma State rallies to beat Arizona State 30-27",
+        "description": "\u2014 Sam Keltner kicked a 35-yard field goal in overtime, Quinton Hammonds intercepted Jake Fette's first pass of the ensuing drive and Oklahoma State rallied from a 17-point halftime deficit to...",
+        "lastModified": "2026-11-22T08:06:32Z",
+        "published": "2026-11-22T08:06:32Z",
         "images": [
           {
             "type": "stitcher",
             "name": "espn.applewatch.awayhome.1",
-            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401866468.png?templateId=espn.applewatch.awayhome.1"
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401856870.png?templateId=espn.applewatch.awayhome.1"
           },
           {
             "type": "stitcher",
             "name": "espn.applewatch.homeaway.1",
-            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401866468.png?templateId=espn.applewatch.homeaway.1"
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401856870.png?templateId=espn.applewatch.homeaway.1"
           },
           {
             "type": "stitcher",
@@ -22966,7 +23086,7 @@
             "ratio": "16x9",
             "height": 173,
             "width": 308,
-            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401866468.png?templateId=espn.all.awayhome.16x9.1"
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401856870.png?templateId=espn.all.awayhome.16x9.1"
           },
           {
             "type": "stitcher",
@@ -22974,7 +23094,7 @@
             "ratio": "16x9",
             "height": 173,
             "width": 308,
-            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401866468.png?templateId=espn.all.homeaway.16x9.1"
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401856870.png?templateId=espn.all.homeaway.16x9.1"
           },
           {
             "type": "stitcher",
@@ -22982,7 +23102,7 @@
             "ratio": "1x1",
             "height": 308,
             "width": 308,
-            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401866468.png?templateId=espn.all.awayhome.1x1.1"
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401856870.png?templateId=espn.all.awayhome.1x1.1"
           },
           {
             "type": "stitcher",
@@ -22990,7 +23110,7 @@
             "ratio": "1x1",
             "height": 308,
             "width": 308,
-            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401866468.png?templateId=espn.all.homeaway.1x1.1"
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401856870.png?templateId=espn.all.homeaway.1x1.1"
           },
           {
             "type": "stitcher",
@@ -22998,7 +23118,7 @@
             "ratio": "5x2",
             "height": 124,
             "width": 308,
-            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401866468.png?templateId=espn.all.awayhome.5x2.1"
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401856870.png?templateId=espn.all.awayhome.5x2.1"
           },
           {
             "type": "stitcher",
@@ -23006,7 +23126,7 @@
             "ratio": "5x2",
             "height": 124,
             "width": 308,
-            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401866468.png?templateId=espn.all.homeaway.5x2.1"
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401856870.png?templateId=espn.all.homeaway.5x2.1"
           },
           {
             "type": "stitcher",
@@ -23014,7 +23134,7 @@
             "ratio": "16x9",
             "height": 353,
             "width": 628,
-            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401866468.png?templateId=espn.all.awayhome.16x9.2"
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401856870.png?templateId=espn.all.awayhome.16x9.2"
           },
           {
             "type": "stitcher",
@@ -23022,7 +23142,7 @@
             "ratio": "16x9",
             "height": 353,
             "width": 628,
-            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401866468.png?templateId=espn.all.homeaway.16x9.2"
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401856870.png?templateId=espn.all.homeaway.16x9.2"
           },
           {
             "type": "stitcher",
@@ -23030,7 +23150,7 @@
             "ratio": "5x2",
             "height": 251,
             "width": 628,
-            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401866468.png?templateId=espn.all.awayhome.5x2.2"
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401856870.png?templateId=espn.all.awayhome.5x2.2"
           },
           {
             "type": "stitcher",
@@ -23038,15 +23158,15 @@
             "ratio": "5x2",
             "height": 251,
             "width": 628,
-            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401866468.png?templateId=espn.all.homeaway.5x2.2"
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401856870.png?templateId=espn.all.homeaway.5x2.2"
           },
           {
             "type": "Media",
-            "name": "Bowling Green Falcons vs. Toledo Rockets: Full Highlights",
-            "caption": "Bowling Green Falcons vs. Toledo Rockets: Full Highlights",
+            "name": "Oklahoma State Picks off Arizona State to win it in OT",
+            "caption": "Oklahoma State Picks off Arizona State to win it in OT",
             "height": 324,
             "width": 576,
-            "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1121/d7ea1200-11ad-45a2-986b-4336de6d527b/d7ea1200-11ad-45a2-986b-4336de6d527b.jpg"
+            "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1122/15aede33-b1d8-4dfc-8708-b992632a3e1d/15aede33-b1d8-4dfc-8708-b992632a3e1d.jpg"
           }
         ],
         "categories": [
@@ -23077,107 +23197,107 @@
             }
           },
           {
-            "id": 1142,
+            "id": 1102,
             "type": "team",
-            "uid": "s:20~l:23~t:2649",
-            "guid": "fa2515be-1435-f76e-381c-1bde51bb4a64",
-            "description": "Toledo Rockets",
+            "uid": "s:20~l:23~t:9",
+            "guid": "d60a0d84-8fa8-2bdf-13ec-fb0f9deda94c",
+            "description": "Arizona State Sun Devils",
             "sportId": 23,
-            "teamId": 2649,
+            "teamId": 9,
             "team": {
-              "id": 2649,
-              "description": "Toledo Rockets",
-              "abbreviation": "TOL",
-              "shortDisplayName": "Toledo",
+              "id": 9,
+              "description": "Arizona State Sun Devils",
+              "abbreviation": "ASU",
+              "shortDisplayName": "Arizona St",
               "links": {
                 "mobile": {
                   "teams": {
-                    "href": "https://www.espn.com/college-football/team/_/id/2649/toledo-rockets"
+                    "href": "https://www.espn.com/college-football/team/_/id/9/arizona-state-sun-devils"
                   }
                 },
                 "web": {
                   "teams": {
-                    "href": "https://www.espn.com/college-football/team/_/id/2649/toledo-rockets"
+                    "href": "https://www.espn.com/college-football/team/_/id/9/arizona-state-sun-devils"
                   }
                 }
               }
             }
           },
           {
-            "id": 2649,
+            "id": 9,
             "type": "team",
-            "guid": "c8c40f10-3586-3acc-8c02-5877fa5d1f34",
-            "description": "University of Toledo",
+            "guid": "7f6c3121-857d-3096-a4f1-f841da598230",
+            "description": "Arizona State University",
             "sportId": 3170,
-            "teamId": 2649,
+            "teamId": 9,
             "team": {
-              "id": 2649,
-              "description": "University of Toledo",
-              "abbreviation": "Toledo",
-              "shortDisplayName": "Toledo"
+              "id": 9,
+              "description": "Arizona State University",
+              "abbreviation": "Arizona State",
+              "shortDisplayName": "Arizona State"
             }
           },
           {
-            "id": 1137,
+            "id": 1073,
             "type": "team",
-            "uid": "s:20~l:23~t:189",
-            "guid": "bd2c9085-0c46-7f7d-4b18-8ee8ae1bf970",
-            "description": "Bowling Green Falcons",
+            "uid": "s:20~l:23~t:197",
+            "guid": "556bcca7-0c38-f441-d76f-13bf46ff4042",
+            "description": "Oklahoma State Cowboys",
             "sportId": 23,
-            "teamId": 189,
+            "teamId": 197,
             "team": {
-              "id": 189,
-              "description": "Bowling Green Falcons",
-              "abbreviation": "BGSU",
-              "shortDisplayName": "Bowling Green",
+              "id": 197,
+              "description": "Oklahoma State Cowboys",
+              "abbreviation": "OKST",
+              "shortDisplayName": "Oklahoma St",
               "links": {
                 "mobile": {
                   "teams": {
-                    "href": "https://www.espn.com/college-football/team/_/id/189/bowling-green-falcons"
+                    "href": "https://www.espn.com/college-football/team/_/id/197/oklahoma-state-cowboys"
                   }
                 },
                 "web": {
                   "teams": {
-                    "href": "https://www.espn.com/college-football/team/_/id/189/bowling-green-falcons"
+                    "href": "https://www.espn.com/college-football/team/_/id/197/oklahoma-state-cowboys"
                   }
                 }
               }
             }
           },
           {
-            "id": 189,
+            "id": 197,
             "type": "team",
-            "guid": "bbb10e85-2db8-3d59-998f-901f6866a1a5",
-            "description": "Bowling Green State University",
+            "guid": "ba5533a9-b127-3f27-ac2e-747975564281",
+            "description": "Oklahoma State University",
             "sportId": 3170,
-            "teamId": 189,
+            "teamId": 197,
             "team": {
-              "id": 189,
-              "description": "Bowling Green State University",
-              "abbreviation": "Bowling Green",
-              "shortDisplayName": "Bowling Green"
+              "id": 197,
+              "description": "Oklahoma State University",
+              "abbreviation": "Oklahoma State",
+              "shortDisplayName": "Oklahoma State"
             }
           },
           {
             "type": "event",
-            "uid": "s:20~l:23~e:401866468",
-            "guid": "fd24422e-5a71-3c24-946b-fbe147d827f2",
-            "description": "Bowling Green Falcons @ Toledo Rockets",
-            "eventId": 401866468,
+            "uid": "s:20~l:23~e:401856870",
+            "guid": "38e76bb9-eff3-3431-ae92-99408a85dd74",
+            "description": "Oklahoma State Cowboys @ Arizona State Sun Devils",
+            "eventId": 401856870,
             "event": {
-              "id": 401866468,
+              "id": 401856870,
               "sport": "football",
               "league": "college-football",
-              "description": "Bowling Green Falcons @ Toledo Rockets",
+              "description": "Oklahoma State Cowboys @ Arizona State Sun Devils",
               "links": {
                 "mobile": {
                   "event": {
-                    "href": "https://www.espn.com/college-football/game/_/gameId/401866468"
+                    "href": "https://www.espn.com/college-football/game/_/gameId/401856870"
                   }
                 },
                 "web": {
                   "event": {
-                    "href": "https://www.espn.com/college-football/game/_/gameId/401866468"
+                    "href": "https://www.espn.com/college-football/game/_/gameId/401856870"
                   }
                 }
               }
@@ -23187,83 +23307,108 @@
         "links": {
           "api": {
             "self": {
-              "href": "https://content.core.api.espn.com/v1/sports/news/50547724"
+              "href": "https://content.core.api.espn.com/v1/sports/news/50560342"
             }
           },
           "app": {
             "sportscenter": {
-              "href": "sportscenter://x-callback-url/showStory?uid=50547724"
+              "href": "sportscenter://x-callback-url/showStory?uid=50560342"
             }
           },
           "mobile": {
-            "href": "http://m.espn.go.com/ncf/story?storyId=50547724"
+            "href": "http://m.espn.go.com/ncf/story?storyId=50560342"
           },
           "web": {
-            "href": "http://www.espn.com/ncf/recap?gameId=401866468"
+            "href": "http://www.espn.com/ncf/recap?gameId=401856870"
           }
         },
         "premium": false
       },
       {
-        "id": 50547212,
-        "nowId": "1-50547212",
-        "contentKey": "50547212-1-293-1",
-        "dataSourceIdentifier": "c5f04f1a178c6",
+        "id": 50560268,
+        "nowId": "1-50560268",
+        "contentKey": "50560268-1-293-1",
+        "dataSourceIdentifier": "000ed95ccbc75",
         "type": "Media",
-        "headline": "UGA's resilience, OU's efficiency highlight best of SEC Tournament first round",
-        "description": "SEC Network's Mary Wise and Shelby Coppedge highlight Georgia's resilience and Oklahoma's efficiency as the top performances from the SEC Volleyball Tournament's opening round.",
-        "lastModified": "2026-11-21T05:16:35Z",
-        "published": "2026-11-21T05:16:35Z",
+        "headline": "Oklahoma State Cowboys vs. Arizona State Sun Devils: Full Highlights",
+        "description": "Oklahoma State Cowboys vs. Arizona State Sun Devils: Full Highlights",
+        "lastModified": "2026-11-22T07:31:32Z",
+        "published": "2026-11-22T07:31:32Z",
         "images": [
           {
-            "name": "UGA's resilience, OU's efficiency highlight best of SEC Tournament first round",
-            "caption": "SEC Network's Mary Wise and Shelby Coppedge highlight Georgia's resilience and Oklahoma's efficiency as the top performances from the SEC Volleyball Tournament's opening round.",
+            "name": "Oklahoma State Cowboys vs. Arizona State Sun Devils: Full Highlights",
+            "caption": "Oklahoma State Cowboys vs. Arizona State Sun Devils: Full Highlights",
             "alt": "",
             "height": 324,
             "width": 576,
-            "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1120/dm_261120_SEC_WVOL_Analysis_Best_VB_Performance_261120/dm_261120_SEC_WVOL_Analysis_Best_VB_Performance_261120.jpg"
+            "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1122/c39b0d34-6481-44ae-9778-baf50587611f/c39b0d34-6481-44ae-9778-baf50587611f.jpg"
           }
         ],
         "categories": [
           {
-            "id": 1091,
-            "type": "team",
-            "uid": "s:20~l:23~t:61",
-            "guid": "4351fef8-fe69-53b1-ea57-72684b36ec35",
-            "description": "Georgia Bulldogs",
+            "id": 670714,
+            "type": "athlete",
+            "uid": "s:20~l:23~a:5219233",
+            "guid": "56cabee7-edc3-3e42-89f2-b99ffb1e5665",
+            "description": "Sam Keltner",
             "sportId": 23,
-            "teamId": 61,
-            "team": {
-              "id": 61,
-              "description": "Georgia Bulldogs",
-              "abbreviation": "UGA",
-              "shortDisplayName": "Georgia",
+            "athleteId": 5219233,
+            "athlete": {
+              "id": 5219233,
+              "description": "Sam Keltner",
               "links": {
                 "mobile": {
-                  "teams": {
-                    "href": "https://www.espn.com/college-football/team/_/id/61/georgia-bulldogs"
+                  "athletes": {
+                    "href": "https://www.espn.com/college-football/player/_/id/5219233/sam-keltner"
                   }
                 },
                 "web": {
-                  "teams": {
-                    "href": "https://www.espn.com/college-football/team/_/id/61/georgia-bulldogs"
+                  "athletes": {
+                    "href": "https://www.espn.com/college-football/player/_/id/5219233/sam-keltner"
                   }
                 }
               }
             }
           },
           {
-            "id": 61,
+            "id": 1073,
             "type": "team",
-            "guid": "429cd0c4-212a-3660-9508-9e74776b5442",
-            "description": "University of Georgia",
-            "sportId": 3170,
-            "teamId": 61,
+            "uid": "s:20~l:23~t:197",
+            "guid": "556bcca7-0c38-f441-d76f-13bf46ff4042",
+            "description": "Oklahoma State Cowboys",
+            "sportId": 23,
+            "teamId": 197,
             "team": {
-              "id": 61,
-              "description": "University of Georgia",
-              "abbreviation": "Georgia",
-              "shortDisplayName": "Georgia"
+              "id": 197,
+              "description": "Oklahoma State Cowboys",
+              "abbreviation": "OKST",
+              "shortDisplayName": "Oklahoma St",
+              "links": {
+                "mobile": {
+                  "teams": {
+                    "href": "https://www.espn.com/college-football/team/_/id/197/oklahoma-state-cowboys"
+                  }
+                },
+                "web": {
+                  "teams": {
+                    "href": "https://www.espn.com/college-football/team/_/id/197/oklahoma-state-cowboys"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "id": 197,
+            "type": "team",
+            "guid": "ba5533a9-b127-3f27-ac2e-747975564281",
+            "description": "Oklahoma State University",
+            "sportId": 3170,
+            "teamId": 197,
+            "team": {
+              "id": 197,
+              "description": "Oklahoma State University",
+              "abbreviation": "Oklahoma State",
+              "shortDisplayName": "Oklahoma State"
             }
           },
           {
@@ -23293,87 +23438,155 @@
             }
           },
           {
-            "id": 129588,
-            "type": "league",
-            "uid": "s:400~l:402",
-            "guid": "c977ce8a-abd5-3522-ad36-b7b496ab5f84",
-            "description": "NCAA Women's Volleyball",
-            "sportId": 402,
-            "leagueId": 402,
-            "league": {
-              "id": 402,
-              "description": "NCAA Women's Volleyball",
-              "abbreviation": "NCAA Women's Volleyball"
-            }
-          },
-          {
-            "id": 1074,
-            "type": "team",
-            "uid": "s:20~l:23~t:201",
-            "guid": "67d60bca-1b6b-8d78-81ae-6889e883bb96",
-            "description": "Oklahoma Sooners",
+            "id": 784876,
+            "type": "athlete",
+            "uid": "s:20~l:23~a:5209295",
+            "guid": "b2069eff-6a87-39af-bc0c-ec864d37b3d2",
+            "description": "Jake Fette",
             "sportId": 23,
-            "teamId": 201,
-            "team": {
-              "id": 201,
-              "description": "Oklahoma Sooners",
-              "abbreviation": "OU",
-              "shortDisplayName": "Oklahoma",
+            "athleteId": 5209295,
+            "athlete": {
+              "id": 5209295,
+              "description": "Jake Fette",
               "links": {
                 "mobile": {
-                  "teams": {
-                    "href": "https://www.espn.com/college-football/team/_/id/201/oklahoma-sooners"
+                  "athletes": {
+                    "href": "https://www.espn.com/college-football/player/_/id/5209295/jake-fette"
                   }
                 },
                 "web": {
-                  "teams": {
-                    "href": "https://www.espn.com/college-football/team/_/id/201/oklahoma-sooners"
+                  "athletes": {
+                    "href": "https://www.espn.com/college-football/player/_/id/5209295/jake-fette"
                   }
                 }
               }
             }
           },
           {
-            "id": 201,
+            "id": 711821,
+            "type": "editorialindicator",
+            "guid": "f3e05446-8d07-3064-a239-c10c32884ea2",
+            "description": "SC4U - Full Highlight"
+          },
+          {
+            "id": 711824,
+            "type": "editorialindicator",
+            "guid": "d348c764-47d9-3e31-bd75-d39dfde52c26",
+            "description": "SC4U  - Eligible"
+          },
+          {
+            "id": 1102,
             "type": "team",
-            "guid": "5c89e0cf-7ac7-3621-a83e-48a835ee34d1",
-            "description": "University of Oklahoma",
-            "sportId": 3170,
-            "teamId": 201,
+            "uid": "s:20~l:23~t:9",
+            "guid": "d60a0d84-8fa8-2bdf-13ec-fb0f9deda94c",
+            "description": "Arizona State Sun Devils",
+            "sportId": 23,
+            "teamId": 9,
             "team": {
-              "id": 201,
-              "description": "University of Oklahoma",
-              "abbreviation": "Oklahoma",
-              "shortDisplayName": "Oklahoma"
+              "id": 9,
+              "description": "Arizona State Sun Devils",
+              "abbreviation": "ASU",
+              "shortDisplayName": "Arizona St",
+              "links": {
+                "mobile": {
+                  "teams": {
+                    "href": "https://www.espn.com/college-football/team/_/id/9/arizona-state-sun-devils"
+                  }
+                },
+                "web": {
+                  "teams": {
+                    "href": "https://www.espn.com/college-football/team/_/id/9/arizona-state-sun-devils"
+                  }
+                }
+              }
             }
           },
           {
-            "id": 126329,
-            "type": "topic",
-            "guid": "78632891-79dd-a9ab-c720-008c86f843de",
-            "description": "sec network",
-            "sportId": 0,
-            "topicId": 89
+            "id": 9,
+            "type": "team",
+            "guid": "7f6c3121-857d-3096-a4f1-f841da598230",
+            "description": "Arizona State University",
+            "sportId": 3170,
+            "teamId": 9,
+            "team": {
+              "id": 9,
+              "description": "Arizona State University",
+              "abbreviation": "Arizona State",
+              "shortDisplayName": "Arizona State"
+            }
+          },
+          {
+            "id": 792834,
+            "type": "athlete",
+            "uid": "s:20~l:23~a:5390453",
+            "guid": "ca8aa240-a0bd-36a0-9d5b-95f4b7f1f74e",
+            "description": "William Mason",
+            "sportId": 23,
+            "athleteId": 5390453,
+            "athlete": {
+              "id": 5390453,
+              "description": "William Mason",
+              "links": {
+                "mobile": {
+                  "athletes": {
+                    "href": "https://www.espn.com/college-football/player/_/id/5390453/william-mason"
+                  }
+                },
+                "web": {
+                  "athletes": {
+                    "href": "https://www.espn.com/college-football/player/_/id/5390453/william-mason"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "id": 711828,
+            "type": "editorialindicator",
+            "guid": "b14f9e1f-2d2c-3b10-b39d-d781f4c4aba7",
+            "description": "4 Star Rating"
+          },
+          {
+            "type": "event",
+            "uid": "s:20~l:23~e:401856870",
+            "guid": "38e76bb9-eff3-3431-ae92-99408a85dd74",
+            "description": "Oklahoma State Cowboys @ Arizona State Sun Devils",
+            "eventId": 401856870,
+            "event": {
+              "id": 401856870,
+              "sport": "football",
+              "league": "college-football",
+              "description": "Oklahoma State Cowboys @ Arizona State Sun Devils",
+              "links": {
+                "mobile": {
+                  "event": {
+                    "href": "https://www.espn.com/college-football/game/_/gameId/401856870"
+                  }
+                },
+                "web": {
+                  "event": {
+                    "href": "https://www.espn.com/college-football/game/_/gameId/401856870"
+                  }
+                }
+              }
+            }
           }
         ],
         "links": {
           "api": {
-            "artwork": {
-              "href": "https://artwork.api.espn.com/artwork/collections/media/6a403b66-e8ff-4531-a24b-a866771366e2"
-            },
             "self": {
-              "href": "https://content.core.api.espn.com/v1/video/clips/50547212"
+              "href": "https://content.core.api.espn.com/v1/video/clips/50560268"
             }
           },
           "sportscenter": {
-            "href": "sportscenter://x-callback-url/showVideo?videoID=50547212&videoDSI=c5f04f1a178c6"
+            "href": "sportscenter://x-callback-url/showVideo?videoID=50560268&videoDSI=000ed95ccbc75"
           },
           "web": {
-            "href": "https://www.espn.com/video/clip/_/id/50547212/uga-resilience-ou-efficiency-highlight-best-sec-tournament-first-round",
+            "href": "https://www.espn.com/video/clip/_/id/50560268/full-highlights",
             "self": {
-              "href": "https://www.espn.com/video/clip/_/id/50547212/uga-resilience-ou-efficiency-highlight-best-sec-tournament-first-round",
+              "href": "https://www.espn.com/video/clip/_/id/50560268/full-highlights",
               "dsi": {
-                "href": "https://www.espn.com/video/clip?id=c5f04f1a178c6"
+                "href": "https://www.espn.com/video/clip?id=000ed95ccbc75"
               }
             }
           }
@@ -23381,25 +23594,25 @@
         "premium": false
       },
       {
-        "id": 50547192,
-        "nowId": "1-50547192",
-        "contentKey": "50547192-1-21-1",
-        "dataSourceIdentifier": "35d56fbab1ce9",
+        "id": 50560257,
+        "nowId": "1-50560257",
+        "contentKey": "50560257-1-21-1",
+        "dataSourceIdentifier": "37ee06b8f78ac",
         "type": "Recap",
-        "headline": "Air Force runs for 429 yards in 52-3 rout of UTEP",
-        "description": "\u2014 Evan Medders threw two touchdown passes, Air Force ran for 429 yards, and the Falcons swamped UTEP 52-3 on Friday night.",
-        "lastModified": "2026-11-21T05:03:32Z",
-        "published": "2026-11-21T05:03:32Z",
+        "headline": "Jake Reichle runs for 3 TDs as Oregon State rallies past Utah State 31-24 to become bowl eligible",
+        "description": "\u2014 Jake Reichle had three short touchdown runs, including a go-ahead 2-yard score with 3:41 remaining, and Oregon State scored the final 14 points and became bowl eligible with a 31-24 victory over Utah State on Saturday night.",
+        "lastModified": "2026-11-22T07:29:33Z",
+        "published": "2026-11-22T07:29:33Z",
         "images": [
           {
             "type": "stitcher",
             "name": "espn.applewatch.awayhome.1",
-            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401864545.png?templateId=espn.applewatch.awayhome.1"
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401860919.png?templateId=espn.applewatch.awayhome.1"
           },
           {
             "type": "stitcher",
             "name": "espn.applewatch.homeaway.1",
-            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401864545.png?templateId=espn.applewatch.homeaway.1"
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401860919.png?templateId=espn.applewatch.homeaway.1"
           },
           {
             "type": "stitcher",
@@ -23407,7 +23620,7 @@
             "ratio": "16x9",
             "height": 173,
             "width": 308,
-            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401864545.png?templateId=espn.all.awayhome.16x9.1"
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401860919.png?templateId=espn.all.awayhome.16x9.1"
           },
           {
             "type": "stitcher",
@@ -23415,7 +23628,7 @@
             "ratio": "16x9",
             "height": 173,
             "width": 308,
-            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401864545.png?templateId=espn.all.homeaway.16x9.1"
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401860919.png?templateId=espn.all.homeaway.16x9.1"
           },
           {
             "type": "stitcher",
@@ -23423,7 +23636,7 @@
             "ratio": "1x1",
             "height": 308,
             "width": 308,
-            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401864545.png?templateId=espn.all.awayhome.1x1.1"
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401860919.png?templateId=espn.all.awayhome.1x1.1"
           },
           {
             "type": "stitcher",
@@ -23431,7 +23644,7 @@
             "ratio": "1x1",
             "height": 308,
             "width": 308,
-            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401864545.png?templateId=espn.all.homeaway.1x1.1"
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401860919.png?templateId=espn.all.homeaway.1x1.1"
           },
           {
             "type": "stitcher",
@@ -23439,7 +23652,7 @@
             "ratio": "5x2",
             "height": 124,
             "width": 308,
-            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401864545.png?templateId=espn.all.awayhome.5x2.1"
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401860919.png?templateId=espn.all.awayhome.5x2.1"
           },
           {
             "type": "stitcher",
@@ -23447,7 +23660,7 @@
             "ratio": "5x2",
             "height": 124,
             "width": 308,
-            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401864545.png?templateId=espn.all.homeaway.5x2.1"
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401860919.png?templateId=espn.all.homeaway.5x2.1"
           },
           {
             "type": "stitcher",
@@ -23455,7 +23668,7 @@
             "ratio": "16x9",
             "height": 353,
             "width": 628,
-            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401864545.png?templateId=espn.all.awayhome.16x9.2"
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401860919.png?templateId=espn.all.awayhome.16x9.2"
           },
           {
             "type": "stitcher",
@@ -23463,7 +23676,7 @@
             "ratio": "16x9",
             "height": 353,
             "width": 628,
-            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401864545.png?templateId=espn.all.homeaway.16x9.2"
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401860919.png?templateId=espn.all.homeaway.16x9.2"
           },
           {
             "type": "stitcher",
@@ -23471,7 +23684,7 @@
             "ratio": "5x2",
             "height": 251,
             "width": 628,
-            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401864545.png?templateId=espn.all.awayhome.5x2.2"
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401860919.png?templateId=espn.all.awayhome.5x2.2"
           },
           {
             "type": "stitcher",
@@ -23479,15 +23692,15 @@
             "ratio": "5x2",
             "height": 251,
             "width": 628,
-            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401864545.png?templateId=espn.all.homeaway.5x2.2"
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401860919.png?templateId=espn.all.homeaway.5x2.2"
           },
           {
             "type": "Media",
-            "name": "Evan Medders throws a 77-yard TD pass for Air Force",
-            "caption": "Evan Medders throws a 77-yard TD pass for Air Force",
+            "name": "Utah State Aggies vs. Oregon State Beavers: Full Highlights",
+            "caption": "Utah State Aggies vs. Oregon State Beavers: Full Highlights",
             "height": 324,
             "width": 576,
-            "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1121/530041f3-7984-4fdf-893b-9080fb4e34b2/530041f3-7984-4fdf-893b-9080fb4e34b2.jpg"
+            "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1122/2ea717d1-a507-41ac-befa-66305a856001/2ea717d1-a507-41ac-befa-66305a856001.jpg"
           }
         ],
         "categories": [
@@ -23518,107 +23731,107 @@
             }
           },
           {
-            "id": 1159,
+            "id": 1108,
             "type": "team",
-            "uid": "s:20~l:23~t:2005",
-            "guid": "cc5175c1-38c8-8a98-39ad-99b2201c7db7",
-            "description": "Air Force Falcons",
+            "uid": "s:20~l:23~t:204",
+            "guid": "b6d75880-f28e-7a53-ae8a-bef390847086",
+            "description": "Oregon State Beavers",
             "sportId": 23,
-            "teamId": 2005,
+            "teamId": 204,
             "team": {
-              "id": 2005,
-              "description": "Air Force Falcons",
-              "abbreviation": "AFA",
-              "shortDisplayName": "Air Force",
+              "id": 204,
+              "description": "Oregon State Beavers",
+              "abbreviation": "ORST",
+              "shortDisplayName": "Oregon St",
               "links": {
                 "mobile": {
                   "teams": {
-                    "href": "https://www.espn.com/college-football/team/_/id/2005/air-force-falcons"
+                    "href": "https://www.espn.com/college-football/team/_/id/204/oregon-state-beavers"
                   }
                 },
                 "web": {
                   "teams": {
-                    "href": "https://www.espn.com/college-football/team/_/id/2005/air-force-falcons"
+                    "href": "https://www.espn.com/college-football/team/_/id/204/oregon-state-beavers"
                   }
                 }
               }
             }
           },
           {
-            "id": 2005,
+            "id": 204,
             "type": "team",
-            "guid": "2a33f8c8-e2b9-35d2-b8b1-925958dcbfa5",
-            "description": "United States Air Force Academy",
+            "guid": "41fda33a-d6a5-3594-ac8c-0ab5e8c1148b",
+            "description": "Oregon State University",
             "sportId": 3170,
-            "teamId": 2005,
+            "teamId": 204,
             "team": {
-              "id": 2005,
-              "description": "United States Air Force Academy",
-              "abbreviation": "Air Force",
-              "shortDisplayName": "Air Force"
+              "id": 204,
+              "description": "Oregon State University",
+              "abbreviation": "Oregon State",
+              "shortDisplayName": "Oregon State"
             }
           },
           {
-            "id": 1153,
+            "id": 7797,
             "type": "team",
-            "uid": "s:20~l:23~t:2638",
-            "guid": "20cb6c64-58b0-6c86-56f9-c86672e59106",
-            "description": "UTEP Miners",
+            "uid": "s:20~l:23~t:328",
+            "guid": "fa41bd5d-d79b-2fd4-e61e-78b7463de8e1",
+            "description": "Utah State Aggies",
             "sportId": 23,
-            "teamId": 2638,
+            "teamId": 328,
             "team": {
-              "id": 2638,
-              "description": "UTEP Miners",
-              "abbreviation": "UTEP",
-              "shortDisplayName": "UTEP",
+              "id": 328,
+              "description": "Utah State Aggies",
+              "abbreviation": "USU",
+              "shortDisplayName": "Utah State",
               "links": {
                 "mobile": {
                   "teams": {
-                    "href": "https://www.espn.com/college-football/team/_/id/2638/utep-miners"
+                    "href": "https://www.espn.com/college-football/team/_/id/328/utah-state-aggies"
                   }
                 },
                 "web": {
                   "teams": {
-                    "href": "https://www.espn.com/college-football/team/_/id/2638/utep-miners"
+                    "href": "https://www.espn.com/college-football/team/_/id/328/utah-state-aggies"
                   }
                 }
               }
             }
           },
           {
-            "id": 2638,
+            "id": 328,
             "type": "team",
-            "guid": "36421335-2664-386e-a8db-27a4cb4592e4",
-            "description": "University of Texas-El Paso",
+            "guid": "cf773792-39fa-342a-b67c-474e69e75bf8",
+            "description": "Utah State University",
             "sportId": 3170,
-            "teamId": 2638,
+            "teamId": 328,
             "team": {
-              "id": 2638,
-              "description": "University of Texas-El Paso",
-              "abbreviation": "UTEP",
-              "shortDisplayName": "UTEP"
+              "id": 328,
+              "description": "Utah State University",
+              "abbreviation": "Utah State",
+              "shortDisplayName": "Utah State"
             }
           },
           {
             "type": "event",
-            "uid": "s:20~l:23~e:401864545",
-            "guid": "bba7e5c1-cbcf-3955-a234-b77835d4ee63",
-            "description": "UTEP Miners @ Air Force Falcons",
-            "eventId": 401864545,
+            "uid": "s:20~l:23~e:401860919",
+            "guid": "20acfaaf-6f73-302e-807a-863fa42a914f",
+            "description": "Utah State Aggies @ Oregon State Beavers",
+            "eventId": 401860919,
             "event": {
-              "id": 401864545,
+              "id": 401860919,
               "sport": "football",
               "league": "college-football",
-              "description": "UTEP Miners @ Air Force Falcons",
+              "description": "Utah State Aggies @ Oregon State Beavers",
               "links": {
                 "mobile": {
                   "event": {
-                    "href": "https://www.espn.com/college-football/game/_/gameId/401864545"
+                    "href": "https://www.espn.com/college-football/game/_/gameId/401860919"
                   }
                 },
                 "web": {
                   "event": {
-                    "href": "https://www.espn.com/college-football/game/_/gameId/401864545"
+                    "href": "https://www.espn.com/college-football/game/_/gameId/401860919"
                   }
                 }
               }
@@ -23628,218 +23841,43 @@
         "links": {
           "api": {
             "self": {
-              "href": "https://content.core.api.espn.com/v1/sports/news/50547192"
+              "href": "https://content.core.api.espn.com/v1/sports/news/50560257"
             }
           },
           "app": {
             "sportscenter": {
-              "href": "sportscenter://x-callback-url/showStory?uid=50547192"
+              "href": "sportscenter://x-callback-url/showStory?uid=50560257"
             }
           },
           "mobile": {
-            "href": "http://m.espn.go.com/ncf/story?storyId=50547192"
+            "href": "http://m.espn.go.com/ncf/story?storyId=50560257"
           },
           "web": {
-            "href": "http://www.espn.com/ncf/recap?gameId=401864545"
+            "href": "http://www.espn.com/ncf/recap?gameId=401860919"
           }
         },
         "premium": false
       },
       {
-        "id": 50547172,
-        "nowId": "1-50547172",
-        "contentKey": "50547172-1-293-1",
-        "dataSourceIdentifier": "d8d72d68c4d66",
-        "type": "Media",
-        "headline": "No. 5 Texas' November dominance spells trouble for Arkansas",
-        "description": "Despite signs of improvement from the Razorbacks, the SEC Now crew breaks down why the Longhorns' impressive track record in November gives them the edge heading into Week 12.",
-        "lastModified": "2026-11-21T04:59:38Z",
-        "published": "2026-11-21T04:59:38Z",
-        "images": [
-          {
-            "name": "No. 5 Texas' November dominance spells trouble for Arkansas",
-            "caption": "Despite signs of improvement from the Razorbacks, the SEC Now crew breaks down why the Longhorns' impressive track record in November gives them the edge heading into Week 12.",
-            "alt": "",
-            "height": 324,
-            "width": 576,
-            "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1120/dm_261120_SEC_NCF_Analysis_Texas_vs_Arkansas_261120/dm_261120_SEC_NCF_Analysis_Texas_vs_Arkansas_261120.jpg"
-          }
-        ],
-        "categories": [
-          {
-            "id": 1097,
-            "type": "team",
-            "uid": "s:20~l:23~t:8",
-            "guid": "10e2d279-fb50-0b76-ba89-3dbe9d43fa2f",
-            "description": "Arkansas Razorbacks",
-            "sportId": 23,
-            "teamId": 8,
-            "team": {
-              "id": 8,
-              "description": "Arkansas Razorbacks",
-              "abbreviation": "ARK",
-              "shortDisplayName": "Arkansas",
-              "links": {
-                "mobile": {
-                  "teams": {
-                    "href": "https://www.espn.com/college-football/team/_/id/8/arkansas-razorbacks"
-                  }
-                },
-                "web": {
-                  "teams": {
-                    "href": "https://www.espn.com/college-football/team/_/id/8/arkansas-razorbacks"
-                  }
-                }
-              }
-            }
-          },
-          {
-            "id": 8,
-            "type": "team",
-            "guid": "54db9ad2-a897-3768-ae50-f0390c0b5f03",
-            "description": "University of Arkansas",
-            "sportId": 3170,
-            "teamId": 8,
-            "team": {
-              "id": 8,
-              "description": "University of Arkansas",
-              "abbreviation": "Arkansas",
-              "shortDisplayName": "Arkansas"
-            }
-          },
-          {
-            "id": 9571,
-            "type": "league",
-            "uid": "s:20~l:23",
-            "guid": "0f8e3d42-fa27-3f60-9e8d-276e4892f50e",
-            "description": "NCAA Football",
-            "sportId": 23,
-            "leagueId": 23,
-            "league": {
-              "id": 23,
-              "description": "NCAA Football",
-              "abbreviation": "NCAAF",
-              "links": {
-                "mobile": {
-                  "leagues": {
-                    "href": "https://www.espn.com/college-football/"
-                  }
-                },
-                "web": {
-                  "leagues": {
-                    "href": "https://www.espn.com/college-football/"
-                  }
-                }
-              }
-            }
-          },
-          {
-            "id": 126329,
-            "type": "topic",
-            "guid": "78632891-79dd-a9ab-c720-008c86f843de",
-            "description": "sec network",
-            "sportId": 0,
-            "topicId": 89
-          },
-          {
-            "id": 1077,
-            "type": "team",
-            "uid": "s:20~l:23~t:251",
-            "guid": "013a8bab-0dd5-f6a0-45e6-1128a124f34b",
-            "description": "Texas Longhorns",
-            "sportId": 23,
-            "teamId": 251,
-            "team": {
-              "id": 251,
-              "description": "Texas Longhorns",
-              "abbreviation": "TEX",
-              "shortDisplayName": "Texas",
-              "links": {
-                "mobile": {
-                  "teams": {
-                    "href": "https://www.espn.com/college-football/team/_/id/251/texas-longhorns"
-                  }
-                },
-                "web": {
-                  "teams": {
-                    "href": "https://www.espn.com/college-football/team/_/id/251/texas-longhorns"
-                  }
-                }
-              }
-            }
-          },
-          {
-            "id": 251,
-            "type": "team",
-            "guid": "a5881f63-e491-3e48-9064-916de4a4849a",
-            "description": "University of Texas",
-            "sportId": 3170,
-            "teamId": 251,
-            "team": {
-              "id": 251,
-              "description": "University of Texas",
-              "abbreviation": "Texas",
-              "shortDisplayName": "Texas"
-            }
-          },
-          {
-            "type": "event",
-            "uid": "s:20~l:23~e:401856755",
-            "guid": "0f78a2ea-0ef6-3166-9712-ea7f643e9b21",
-            "description": "Arkansas Razorbacks @ Texas Longhorns",
-            "eventId": 401856755,
-            "event": {
-              "id": 401856755,
-              "sport": "football",
-              "league": "college-football",
-              "description": "Arkansas Razorbacks @ Texas Longhorns"
-            }
-          }
-        ],
-        "links": {
-          "api": {
-            "artwork": {
-              "href": "https://artwork.api.espn.com/artwork/collections/media/09a49942-24f6-4611-b562-e9c35ad25daf"
-            },
-            "self": {
-              "href": "https://content.core.api.espn.com/v1/video/clips/50547172"
-            }
-          },
-          "sportscenter": {
-            "href": "sportscenter://x-callback-url/showVideo?videoID=50547172&videoDSI=d8d72d68c4d66"
-          },
-          "web": {
-            "href": "https://www.espn.com/video/clip/_/id/50547172/no-5-texas-november-dominance-spells-trouble-arkansas",
-            "self": {
-              "href": "https://www.espn.com/video/clip/_/id/50547172/no-5-texas-november-dominance-spells-trouble-arkansas",
-              "dsi": {
-                "href": "https://www.espn.com/video/clip?id=d8d72d68c4d66"
-              }
-            }
-          }
-        },
-        "premium": false
-      },
-      {
-        "id": 50547061,
-        "nowId": "1-50547061",
-        "contentKey": "50547061-1-21-1",
-        "dataSourceIdentifier": "2ee85066cceb1",
+        "id": 50560244,
+        "nowId": "1-50560244",
+        "contentKey": "50560244-1-21-1",
+        "dataSourceIdentifier": "f828d96b5770b",
         "type": "Recap",
-        "headline": "Smith runs for 121 yards and 2 TDs, No. 14 Oregon routs Michigan St 45-7 holding onto playoff hopes",
-        "description": "\u2014 No. 14 Oregon routed Michigan State 45-7 on Friday night, trying to show that they deserve a spot in the ",
-        "lastModified": "2026-11-21T05:25:32Z",
-        "published": "2026-11-21T05:25:32Z",
+        "headline": "AJ Bianco, Jacob Fernandez lead Nevada to 16-8 victory over Hawaii",
+        "description": "\u2014 AJ Bianco had a touchdown run and Jacob Fernandez kicked three field goals to lead Nevada to a 16-8 victory over Hawaii on Saturday night.",
+        "lastModified": "2026-11-22T07:27:32Z",
+        "published": "2026-11-22T07:27:32Z",
         "images": [
           {
             "type": "stitcher",
             "name": "espn.applewatch.awayhome.1",
-            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401858529.png?templateId=espn.applewatch.awayhome.1"
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401864541.png?templateId=espn.applewatch.awayhome.1"
           },
           {
             "type": "stitcher",
             "name": "espn.applewatch.homeaway.1",
-            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401858529.png?templateId=espn.applewatch.homeaway.1"
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401864541.png?templateId=espn.applewatch.homeaway.1"
           },
           {
             "type": "stitcher",
@@ -23847,7 +23885,7 @@
             "ratio": "16x9",
             "height": 173,
             "width": 308,
-            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401858529.png?templateId=espn.all.awayhome.16x9.1"
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401864541.png?templateId=espn.all.awayhome.16x9.1"
           },
           {
             "type": "stitcher",
@@ -23855,7 +23893,7 @@
             "ratio": "16x9",
             "height": 173,
             "width": 308,
-            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401858529.png?templateId=espn.all.homeaway.16x9.1"
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401864541.png?templateId=espn.all.homeaway.16x9.1"
           },
           {
             "type": "stitcher",
@@ -23863,7 +23901,7 @@
             "ratio": "1x1",
             "height": 308,
             "width": 308,
-            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401858529.png?templateId=espn.all.awayhome.1x1.1"
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401864541.png?templateId=espn.all.awayhome.1x1.1"
           },
           {
             "type": "stitcher",
@@ -23871,7 +23909,7 @@
             "ratio": "1x1",
             "height": 308,
             "width": 308,
-            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401858529.png?templateId=espn.all.homeaway.1x1.1"
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401864541.png?templateId=espn.all.homeaway.1x1.1"
           },
           {
             "type": "stitcher",
@@ -23879,7 +23917,7 @@
             "ratio": "5x2",
             "height": 124,
             "width": 308,
-            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401858529.png?templateId=espn.all.awayhome.5x2.1"
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401864541.png?templateId=espn.all.awayhome.5x2.1"
           },
           {
             "type": "stitcher",
@@ -23887,7 +23925,7 @@
             "ratio": "5x2",
             "height": 124,
             "width": 308,
-            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401858529.png?templateId=espn.all.homeaway.5x2.1"
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401864541.png?templateId=espn.all.homeaway.5x2.1"
           },
           {
             "type": "stitcher",
@@ -23895,7 +23933,7 @@
             "ratio": "16x9",
             "height": 353,
             "width": 628,
-            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401858529.png?templateId=espn.all.awayhome.16x9.2"
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401864541.png?templateId=espn.all.awayhome.16x9.2"
           },
           {
             "type": "stitcher",
@@ -23903,7 +23941,7 @@
             "ratio": "16x9",
             "height": 353,
             "width": 628,
-            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401858529.png?templateId=espn.all.homeaway.16x9.2"
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401864541.png?templateId=espn.all.homeaway.16x9.2"
           },
           {
             "type": "stitcher",
@@ -23911,7 +23949,7 @@
             "ratio": "5x2",
             "height": 251,
             "width": 628,
-            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401858529.png?templateId=espn.all.awayhome.5x2.2"
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401864541.png?templateId=espn.all.awayhome.5x2.2"
           },
           {
             "type": "stitcher",
@@ -23919,7 +23957,7 @@
             "ratio": "5x2",
             "height": 251,
             "width": 628,
-            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401858529.png?templateId=espn.all.homeaway.5x2.2"
+            "url": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401864541.png?templateId=espn.all.homeaway.5x2.2"
           }
         ],
         "categories": [
@@ -23950,107 +23988,107 @@
             }
           },
           {
-            "id": 1081,
+            "id": 1151,
             "type": "team",
-            "uid": "s:20~l:23~t:127",
-            "guid": "832ac71d-f1e2-6069-3386-0251865c339e",
-            "description": "Michigan State Spartans",
+            "uid": "s:20~l:23~t:2440",
+            "guid": "ed53380d-a53d-08d0-d5a4-53e0d61561eb",
+            "description": "Nevada Wolf Pack",
             "sportId": 23,
-            "teamId": 127,
+            "teamId": 2440,
             "team": {
-              "id": 127,
-              "description": "Michigan State Spartans",
-              "abbreviation": "MSU",
-              "shortDisplayName": "Michigan St",
+              "id": 2440,
+              "description": "Nevada Wolf Pack",
+              "abbreviation": "NEV",
+              "shortDisplayName": "Nevada",
               "links": {
                 "mobile": {
                   "teams": {
-                    "href": "https://www.espn.com/college-football/team/_/id/127/michigan-state-spartans"
+                    "href": "https://www.espn.com/college-football/team/_/id/2440/nevada-wolf-pack"
                   }
                 },
                 "web": {
                   "teams": {
-                    "href": "https://www.espn.com/college-football/team/_/id/127/michigan-state-spartans"
+                    "href": "https://www.espn.com/college-football/team/_/id/2440/nevada-wolf-pack"
                   }
                 }
               }
             }
           },
           {
-            "id": 127,
+            "id": 2440,
             "type": "team",
-            "guid": "09d12526-1ba9-3567-8afe-2a79cd6ea331",
-            "description": "Michigan State University",
+            "guid": "36c8da5e-64d6-3106-862e-99c3d9d2ba06",
+            "description": "University of Nevada",
             "sportId": 3170,
-            "teamId": 127,
+            "teamId": 2440,
             "team": {
-              "id": 127,
-              "description": "Michigan State University",
-              "abbreviation": "Michigan State",
-              "shortDisplayName": "Michigan State"
+              "id": 2440,
+              "description": "University of Nevada",
+              "abbreviation": "Nevada",
+              "shortDisplayName": "Nevada"
             }
           },
           {
-            "id": 1111,
+            "id": 1145,
             "type": "team",
-            "uid": "s:20~l:23~t:2483",
-            "guid": "116d333f-cf1a-0c67-d450-36a834af56de",
-            "description": "Oregon Ducks",
+            "uid": "s:20~l:23~t:62",
+            "guid": "d50009ca-5143-9322-d577-17d7115a6c54",
+            "description": "Hawai'i Rainbow Warriors",
             "sportId": 23,
-            "teamId": 2483,
+            "teamId": 62,
             "team": {
-              "id": 2483,
-              "description": "Oregon Ducks",
-              "abbreviation": "ORE",
-              "shortDisplayName": "Oregon",
+              "id": 62,
+              "description": "Hawai'i Rainbow Warriors",
+              "abbreviation": "HAW",
+              "shortDisplayName": "Hawai'i",
               "links": {
                 "mobile": {
                   "teams": {
-                    "href": "https://www.espn.com/college-football/team/_/id/2483/oregon-ducks"
+                    "href": "https://www.espn.com/college-football/team/_/id/62/hawaii-rainbow-warriors"
                   }
                 },
                 "web": {
                   "teams": {
-                    "href": "https://www.espn.com/college-football/team/_/id/2483/oregon-ducks"
+                    "href": "https://www.espn.com/college-football/team/_/id/62/hawaii-rainbow-warriors"
                   }
                 }
               }
             }
           },
           {
-            "id": 2483,
+            "id": 62,
             "type": "team",
-            "guid": "94cc8326-138d-3d76-8f6e-65e8744e6d92",
-            "description": "University of Oregon",
+            "guid": "3516ec9a-f53c-360c-890e-1822c4f23492",
+            "description": "University of Hawai'i",
             "sportId": 3170,
-            "teamId": 2483,
+            "teamId": 62,
             "team": {
-              "id": 2483,
-              "description": "University of Oregon",
-              "abbreviation": "Oregon",
-              "shortDisplayName": "Oregon"
+              "id": 62,
+              "description": "University of Hawai'i",
+              "abbreviation": "Hawai'i",
+              "shortDisplayName": "Hawai'i"
             }
           },
           {
             "type": "event",
-            "uid": "s:20~l:23~e:401858529",
-            "guid": "b01bda24-daf7-32f5-be9f-3978f264ee11",
-            "description": "Oregon Ducks @ Michigan State Spartans",
-            "eventId": 401858529,
+            "uid": "s:20~l:23~e:401864541",
+            "guid": "485733f7-4273-3d3b-9b2c-09b1de7d2cde",
+            "description": "Hawai'i Rainbow Warriors @ Nevada Wolf Pack",
+            "eventId": 401864541,
             "event": {
-              "id": 401858529,
+              "id": 401864541,
               "sport": "football",
               "league": "college-football",
-              "description": "Oregon Ducks @ Michigan State Spartans",
+              "description": "Hawai'i Rainbow Warriors @ Nevada Wolf Pack",
               "links": {
                 "mobile": {
                   "event": {
-                    "href": "https://www.espn.com/college-football/game/_/gameId/401858529"
+                    "href": "https://www.espn.com/college-football/game/_/gameId/401864541"
                   }
                 },
                 "web": {
                   "event": {
-                    "href": "https://www.espn.com/college-football/game/_/gameId/401858529"
+                    "href": "https://www.espn.com/college-football/game/_/gameId/401864541"
                   }
                 }
               }
@@ -24060,83 +24098,67 @@
         "links": {
           "api": {
             "self": {
-              "href": "https://content.core.api.espn.com/v1/sports/news/50547061"
+              "href": "https://content.core.api.espn.com/v1/sports/news/50560244"
             }
           },
           "app": {
             "sportscenter": {
-              "href": "sportscenter://x-callback-url/showStory?uid=50547061"
+              "href": "sportscenter://x-callback-url/showStory?uid=50560244"
             }
           },
           "mobile": {
-            "href": "http://m.espn.go.com/ncf/story?storyId=50547061"
+            "href": "http://m.espn.go.com/ncf/story?storyId=50560244"
           },
           "web": {
-            "href": "http://www.espn.com/ncf/recap?gameId=401858529"
+            "href": "http://www.espn.com/ncf/recap?gameId=401864541"
           }
         },
         "premium": false
       },
       {
-        "id": 50547060,
-        "nowId": "1-50547060",
-        "contentKey": "50547060-1-293-1",
-        "dataSourceIdentifier": "2d716c17c7a92",
+        "id": 50560166,
+        "nowId": "1-50560166",
+        "contentKey": "50560166-1-293-1",
+        "dataSourceIdentifier": "e43f88336a717",
         "type": "Media",
-        "headline": "Why is LSU favored on the road against No. 9 Tennessee?",
-        "description": "Despite their four losses, the Tigers are being given the edge in Neyland Stadium as the SEC Now crew examines why the ninth-ranked Volunteers are being overlooked.",
-        "lastModified": "2026-11-21T04:50:33Z",
-        "published": "2026-11-21T04:50:33Z",
+        "headline": "Utah State Aggies vs. Oregon State Beavers: Full Highlights",
+        "description": "Utah State Aggies vs. Oregon State Beavers: Full Highlights",
+        "lastModified": "2026-11-22T07:14:51Z",
+        "published": "2026-11-22T07:14:51Z",
         "images": [
           {
-            "name": "Why is LSU favored on the road against No. 9 Tennessee?",
-            "caption": "Despite their four losses, the Tigers are being given the edge in Neyland Stadium as the SEC Now crew examines why the ninth-ranked Volunteers are being overlooked.",
+            "name": "Utah State Aggies vs. Oregon State Beavers: Full Highlights",
+            "caption": "Utah State Aggies vs. Oregon State Beavers: Full Highlights",
             "alt": "",
             "height": 324,
             "width": 576,
-            "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1120/dm_261120_SEC_NCF_Analysis_LSU_vs_Tenn_261120/dm_261120_SEC_NCF_Analysis_LSU_vs_Tenn_261120.jpg"
+            "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1122/2ea717d1-a507-41ac-befa-66305a856001/2ea717d1-a507-41ac-befa-66305a856001.jpg"
           }
         ],
         "categories": [
           {
-            "id": 1098,
-            "type": "team",
-            "uid": "s:20~l:23~t:99",
-            "guid": "b9a22bd6-7449-92bc-0e95-a6d8da673b3e",
-            "description": "LSU Tigers",
+            "id": 609851,
+            "type": "athlete",
+            "uid": "s:20~l:23~a:4923285",
+            "guid": "855d2902-a296-3245-82f5-9cabdc877175",
+            "description": "McCae Hillstead",
             "sportId": 23,
-            "teamId": 99,
-            "team": {
-              "id": 99,
-              "description": "LSU Tigers",
-              "abbreviation": "LSU",
-              "shortDisplayName": "LSU",
+            "athleteId": 4923285,
+            "athlete": {
+              "id": 4923285,
+              "description": "McCae Hillstead",
               "links": {
                 "mobile": {
-                  "teams": {
-                    "href": "https://www.espn.com/college-football/team/_/id/99/lsu-tigers"
+                  "athletes": {
+                    "href": "https://www.espn.com/college-football/player/_/id/4923285/mccae-hillstead"
                   }
                 },
                 "web": {
-                  "teams": {
-                    "href": "https://www.espn.com/college-football/team/_/id/99/lsu-tigers"
+                  "athletes": {
+                    "href": "https://www.espn.com/college-football/player/_/id/4923285/mccae-hillstead"
                   }
                 }
               }
-            }
-          },
-          {
-            "id": 99,
-            "type": "team",
-            "guid": "bb1fe57d-d53d-3f5d-a207-281ead34f543",
-            "description": "Louisiana State University",
-            "sportId": 3170,
-            "teamId": 99,
-            "team": {
-              "id": 99,
-              "description": "Louisiana State University",
-              "abbreviation": "LSU",
-              "shortDisplayName": "LSU"
             }
           },
           {
@@ -24166,86 +24188,224 @@
             }
           },
           {
-            "id": 126329,
-            "type": "topic",
-            "guid": "78632891-79dd-a9ab-c720-008c86f843de",
-            "description": "sec network",
-            "sportId": 0,
-            "topicId": 89
-          },
-          {
-            "id": 1095,
+            "id": 1108,
             "type": "team",
-            "uid": "s:20~l:23~t:2633",
-            "guid": "de276cc4-dc02-159f-0c1c-67ddaf02a9ea",
-            "description": "Tennessee Volunteers",
+            "uid": "s:20~l:23~t:204",
+            "guid": "b6d75880-f28e-7a53-ae8a-bef390847086",
+            "description": "Oregon State Beavers",
             "sportId": 23,
-            "teamId": 2633,
+            "teamId": 204,
             "team": {
-              "id": 2633,
-              "description": "Tennessee Volunteers",
-              "abbreviation": "TENN",
-              "shortDisplayName": "Tennessee",
+              "id": 204,
+              "description": "Oregon State Beavers",
+              "abbreviation": "ORST",
+              "shortDisplayName": "Oregon St",
               "links": {
                 "mobile": {
                   "teams": {
-                    "href": "https://www.espn.com/college-football/team/_/id/2633/tennessee-volunteers"
+                    "href": "https://www.espn.com/college-football/team/_/id/204/oregon-state-beavers"
                   }
                 },
                 "web": {
                   "teams": {
-                    "href": "https://www.espn.com/college-football/team/_/id/2633/tennessee-volunteers"
+                    "href": "https://www.espn.com/college-football/team/_/id/204/oregon-state-beavers"
                   }
                 }
               }
             }
           },
           {
-            "id": 2633,
+            "id": 204,
             "type": "team",
-            "guid": "ff43c27b-3b2b-3a29-b1b9-4920b47b1c69",
-            "description": "University of Tennessee",
+            "guid": "41fda33a-d6a5-3594-ac8c-0ab5e8c1148b",
+            "description": "Oregon State University",
             "sportId": 3170,
-            "teamId": 2633,
+            "teamId": 204,
             "team": {
-              "id": 2633,
-              "description": "University of Tennessee",
-              "abbreviation": "Tennessee",
-              "shortDisplayName": "Tennessee"
+              "id": 204,
+              "description": "Oregon State University",
+              "abbreviation": "Oregon State",
+              "shortDisplayName": "Oregon State"
             }
           },
           {
+            "id": 607421,
+            "type": "athlete",
+            "uid": "s:20~l:23~a:5151339",
+            "guid": "a69e5eb8-fdae-3764-ae3c-44f92a76a4be",
+            "description": "Anthony Garcia",
+            "sportId": 23,
+            "athleteId": 5151339,
+            "athlete": {
+              "id": 5151339,
+              "description": "Anthony Garcia",
+              "links": {
+                "mobile": {
+                  "athletes": {
+                    "href": "https://www.espn.com/college-football/player/_/id/5151339/anthony-garcia"
+                  }
+                },
+                "web": {
+                  "athletes": {
+                    "href": "https://www.espn.com/college-football/player/_/id/5151339/anthony-garcia"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "id": 7797,
+            "type": "team",
+            "uid": "s:20~l:23~t:328",
+            "guid": "fa41bd5d-d79b-2fd4-e61e-78b7463de8e1",
+            "description": "Utah State Aggies",
+            "sportId": 23,
+            "teamId": 328,
+            "team": {
+              "id": 328,
+              "description": "Utah State Aggies",
+              "abbreviation": "USU",
+              "shortDisplayName": "Utah State",
+              "links": {
+                "mobile": {
+                  "teams": {
+                    "href": "https://www.espn.com/college-football/team/_/id/328/utah-state-aggies"
+                  }
+                },
+                "web": {
+                  "teams": {
+                    "href": "https://www.espn.com/college-football/team/_/id/328/utah-state-aggies"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "id": 328,
+            "type": "team",
+            "guid": "cf773792-39fa-342a-b67c-474e69e75bf8",
+            "description": "Utah State University",
+            "sportId": 3170,
+            "teamId": 328,
+            "team": {
+              "id": 328,
+              "description": "Utah State University",
+              "abbreviation": "Utah State",
+              "shortDisplayName": "Utah State"
+            }
+          },
+          {
+            "id": 711821,
+            "type": "editorialindicator",
+            "guid": "f3e05446-8d07-3064-a239-c10c32884ea2",
+            "description": "SC4U - Full Highlight"
+          },
+          {
+            "id": 538577,
+            "type": "athlete",
+            "uid": "s:20~l:23~a:4685497",
+            "guid": "ca31b114-a1c1-3817-a931-aec157ad92f6",
+            "description": "Maalik Murphy",
+            "sportId": 23,
+            "athleteId": 4685497,
+            "athlete": {
+              "id": 4685497,
+              "description": "Maalik Murphy",
+              "links": {
+                "mobile": {
+                  "athletes": {
+                    "href": "https://www.espn.com/college-football/player/_/id/4685497/maalik-murphy"
+                  }
+                },
+                "web": {
+                  "athletes": {
+                    "href": "https://www.espn.com/college-football/player/_/id/4685497/maalik-murphy"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "id": 543169,
+            "type": "athlete",
+            "uid": "s:20~l:23~a:5085883",
+            "guid": "8a71f74e-11b2-3ce2-95ca-e8d5a7aaac9b",
+            "description": "Jake Reichle",
+            "sportId": 23,
+            "athleteId": 5085883,
+            "athlete": {
+              "id": 5085883,
+              "description": "Jake Reichle",
+              "links": {
+                "mobile": {
+                  "athletes": {
+                    "href": "https://www.espn.com/college-football/player/_/id/5085883/jake-reichle"
+                  }
+                },
+                "web": {
+                  "athletes": {
+                    "href": "https://www.espn.com/college-football/player/_/id/5085883/jake-reichle"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "id": 711827,
+            "type": "editorialindicator",
+            "guid": "26380a67-7938-32a0-9c82-33abab9f7ad4",
+            "description": "3 Star Rating"
+          },
+          {
+            "id": 711824,
+            "type": "editorialindicator",
+            "guid": "d348c764-47d9-3e31-bd75-d39dfde52c26",
+            "description": "SC4U  - Eligible"
+          },
+          {
             "type": "event",
-            "uid": "s:20~l:23~e:401856754",
-            "guid": "f2935977-ee85-3025-b5a7-79358f71b4cc",
-            "description": "LSU Tigers @ Tennessee Volunteers",
-            "eventId": 401856754,
+            "uid": "s:20~l:23~e:401860919",
+            "guid": "20acfaaf-6f73-302e-807a-863fa42a914f",
+            "description": "Utah State Aggies @ Oregon State Beavers",
+            "eventId": 401860919,
             "event": {
-              "id": 401856754,
+              "id": 401860919,
               "sport": "football",
               "league": "college-football",
-              "description": "LSU Tigers @ Tennessee Volunteers"
+              "description": "Utah State Aggies @ Oregon State Beavers",
+              "links": {
+                "mobile": {
+                  "event": {
+                    "href": "https://www.espn.com/college-football/game/_/gameId/401860919"
+                  }
+                },
+                "web": {
+                  "event": {
+                    "href": "https://www.espn.com/college-football/game/_/gameId/401860919"
+                  }
+                }
+              }
             }
           }
         ],
         "links": {
           "api": {
             "artwork": {
-              "href": "https://artwork.api.espn.com/artwork/collections/media/24126341-f377-4661-9e66-98743c8a3413"
+              "href": "https://artwork.api.espn.com/artwork/collections/media/21ec5d20-fd5e-4078-9e64-14a93bb13569"
             },
             "self": {
-              "href": "https://content.core.api.espn.com/v1/video/clips/50547060"
+              "href": "https://content.core.api.espn.com/v1/video/clips/50560166"
             }
           },
           "sportscenter": {
-            "href": "sportscenter://x-callback-url/showVideo?videoID=50547060&videoDSI=2d716c17c7a92"
+            "href": "sportscenter://x-callback-url/showVideo?videoID=50560166&videoDSI=e43f88336a717"
           },
           "web": {
-            "href": "https://www.espn.com/video/clip/_/id/50547060/why-lsu-favored-road-no-9-tennessee",
+            "href": "https://www.espn.com/video/clip/_/id/50560166/full-highlights",
             "self": {
-              "href": "https://www.espn.com/video/clip/_/id/50547060/why-lsu-favored-road-no-9-tennessee",
+              "href": "https://www.espn.com/video/clip/_/id/50560166/full-highlights",
               "dsi": {
-                "href": "https://www.espn.com/video/clip?id=2d716c17c7a92"
+                "href": "https://www.espn.com/video/clip?id=e43f88336a717"
               }
             }
           }
@@ -27702,8 +27862,8 @@
                   "shortDisplayName": "OVER",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "8-2",
-                  "displayValue": "8-2"
+                  "summary": "9-2",
+                  "displayValue": "9-2"
                 },
                 {
                   "id": "9",
@@ -27713,8 +27873,8 @@
                   "shortDisplayName": "CONF",
                   "description": "Conference Record",
                   "type": "vsconf",
-                  "summary": "5-1",
-                  "displayValue": "5-1"
+                  "summary": "6-1",
+                  "displayValue": "6-1"
                 }
               ],
               "logo": [
@@ -27756,8 +27916,8 @@
                   "shortDisplayName": "OVER",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "8-2",
-                  "displayValue": "8-2"
+                  "summary": "8-3",
+                  "displayValue": "8-3"
                 },
                 {
                   "id": "9",
@@ -27767,8 +27927,8 @@
                   "shortDisplayName": "CONF",
                   "description": "Conference Record",
                   "type": "vsconf",
-                  "summary": "5-1",
-                  "displayValue": "5-1"
+                  "summary": "5-2",
+                  "displayValue": "5-2"
                 }
               ],
               "logo": [
@@ -27797,114 +27957,6 @@
               ]
             },
             {
-              "team": "North Texas",
-              "link": "https://www.espn.com/college-football/team/_/id/249/north-texas-mean-green",
-              "id": "249",
-              "uid": "s:20~l:23~t:249",
-              "stats": [
-                {
-                  "id": "0",
-                  "name": "overall",
-                  "abbreviation": "overall",
-                  "displayName": "Overall",
-                  "shortDisplayName": "OVER",
-                  "description": "Overall Record",
-                  "type": "total",
-                  "summary": "7-3",
-                  "displayValue": "7-3"
-                },
-                {
-                  "id": "9",
-                  "name": "vs. Conf.",
-                  "abbreviation": "CONF",
-                  "displayName": "vs. Conference",
-                  "shortDisplayName": "CONF",
-                  "description": "Conference Record",
-                  "type": "vsconf",
-                  "summary": "5-1",
-                  "displayValue": "5-1"
-                }
-              ],
-              "logo": [
-                {
-                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/249.png",
-                  "width": 500,
-                  "height": 500,
-                  "alt": "",
-                  "rel": [
-                    "full",
-                    "default"
-                  ],
-                  "lastUpdated": "2025-12-23T22:08Z"
-                },
-                {
-                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/249.png",
-                  "width": 500,
-                  "height": 500,
-                  "alt": "",
-                  "rel": [
-                    "full",
-                    "dark"
-                  ],
-                  "lastUpdated": "2026-01-05T21:17Z"
-                }
-              ]
-            },
-            {
-              "team": "UAB",
-              "link": "https://www.espn.com/college-football/team/_/id/5/uab-blazers",
-              "id": "5",
-              "uid": "s:20~l:23~t:5",
-              "stats": [
-                {
-                  "id": "0",
-                  "name": "overall",
-                  "abbreviation": "overall",
-                  "displayName": "Overall",
-                  "shortDisplayName": "OVER",
-                  "description": "Overall Record",
-                  "type": "total",
-                  "summary": "6-4",
-                  "displayValue": "6-4"
-                },
-                {
-                  "id": "9",
-                  "name": "vs. Conf.",
-                  "abbreviation": "CONF",
-                  "displayName": "vs. Conference",
-                  "shortDisplayName": "CONF",
-                  "description": "Conference Record",
-                  "type": "vsconf",
-                  "summary": "4-2",
-                  "displayValue": "4-2"
-                }
-              ],
-              "logo": [
-                {
-                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/5.png",
-                  "width": 500,
-                  "height": 500,
-                  "alt": "",
-                  "rel": [
-                    "full",
-                    "default"
-                  ],
-                  "lastUpdated": "2026-07-01T04:35Z"
-                },
-                {
-                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/5.png",
-                  "width": 500,
-                  "height": 500,
-                  "alt": "",
-                  "rel": [
-                    "full",
-                    "dark"
-                  ],
-                  "lastUpdated": "2026-07-01T04:34Z"
-                }
-              ]
-            },
-            {
               "team": "East Carolina",
               "link": "https://www.espn.com/college-football/team/_/id/151/east-carolina-pirates",
               "id": "151",
@@ -27918,8 +27970,8 @@
                   "shortDisplayName": "OVER",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "6-4",
-                  "displayValue": "6-4"
+                  "summary": "7-4",
+                  "displayValue": "7-4"
                 },
                 {
                   "id": "9",
@@ -27929,8 +27981,8 @@
                   "shortDisplayName": "CONF",
                   "description": "Conference Record",
                   "type": "vsconf",
-                  "summary": "4-2",
-                  "displayValue": "4-2"
+                  "summary": "5-2",
+                  "displayValue": "5-2"
                 }
               ],
               "logo": [
@@ -27959,6 +28011,60 @@
               ]
             },
             {
+              "team": "North Texas",
+              "link": "https://www.espn.com/college-football/team/_/id/249/north-texas-mean-green",
+              "id": "249",
+              "uid": "s:20~l:23~t:249",
+              "stats": [
+                {
+                  "id": "0",
+                  "name": "overall",
+                  "abbreviation": "overall",
+                  "displayName": "Overall",
+                  "shortDisplayName": "OVER",
+                  "description": "Overall Record",
+                  "type": "total",
+                  "summary": "7-4",
+                  "displayValue": "7-4"
+                },
+                {
+                  "id": "9",
+                  "name": "vs. Conf.",
+                  "abbreviation": "CONF",
+                  "displayName": "vs. Conference",
+                  "shortDisplayName": "CONF",
+                  "description": "Conference Record",
+                  "type": "vsconf",
+                  "summary": "5-2",
+                  "displayValue": "5-2"
+                }
+              ],
+              "logo": [
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/249.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "default"
+                  ],
+                  "lastUpdated": "2025-12-23T22:08Z"
+                },
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/249.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "dark"
+                  ],
+                  "lastUpdated": "2026-01-05T21:17Z"
+                }
+              ]
+            },
+            {
               "team": "Army",
               "link": "https://www.espn.com/college-football/team/_/id/349/army-black-knights",
               "id": "349",
@@ -27972,8 +28078,8 @@
                   "shortDisplayName": "OVER",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "5-4",
-                  "displayValue": "5-4"
+                  "summary": "5-5",
+                  "displayValue": "5-5"
                 },
                 {
                   "id": "9",
@@ -27983,8 +28089,8 @@
                   "shortDisplayName": "CONF",
                   "description": "Conference Record",
                   "type": "vsconf",
-                  "summary": "4-2",
-                  "displayValue": "4-2"
+                  "summary": "4-3",
+                  "displayValue": "4-3"
                 }
               ],
               "logo": [
@@ -28026,8 +28132,8 @@
                   "shortDisplayName": "OVER",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "6-4",
-                  "displayValue": "6-4"
+                  "summary": "7-4",
+                  "displayValue": "7-4"
                 },
                 {
                   "id": "9",
@@ -28037,8 +28143,8 @@
                   "shortDisplayName": "CONF",
                   "description": "Conference Record",
                   "type": "vsconf",
-                  "summary": "3-3",
-                  "displayValue": "3-3"
+                  "summary": "4-3",
+                  "displayValue": "4-3"
                 }
               ],
               "logo": [
@@ -28080,8 +28186,8 @@
                   "shortDisplayName": "OVER",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "6-4",
-                  "displayValue": "6-4"
+                  "summary": "7-4",
+                  "displayValue": "7-4"
                 },
                 {
                   "id": "9",
@@ -28091,8 +28197,8 @@
                   "shortDisplayName": "CONF",
                   "description": "Conference Record",
                   "type": "vsconf",
-                  "summary": "3-3",
-                  "displayValue": "3-3"
+                  "summary": "4-3",
+                  "displayValue": "4-3"
                 }
               ],
               "logo": [
@@ -28134,8 +28240,8 @@
                   "shortDisplayName": "OVER",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "5-5",
-                  "displayValue": "5-5"
+                  "summary": "6-5",
+                  "displayValue": "6-5"
                 },
                 {
                   "id": "9",
@@ -28145,8 +28251,8 @@
                   "shortDisplayName": "CONF",
                   "description": "Conference Record",
                   "type": "vsconf",
-                  "summary": "3-3",
-                  "displayValue": "3-3"
+                  "summary": "4-3",
+                  "displayValue": "4-3"
                 }
               ],
               "logo": [
@@ -28175,10 +28281,10 @@
               ]
             },
             {
-              "team": "South Florida",
-              "link": "https://www.espn.com/college-football/team/_/id/58/south-florida-bulls",
-              "id": "58",
-              "uid": "s:20~l:23~t:58",
+              "team": "UAB",
+              "link": "https://www.espn.com/college-football/team/_/id/5/uab-blazers",
+              "id": "5",
+              "uid": "s:20~l:23~t:5",
               "stats": [
                 {
                   "id": "0",
@@ -28188,8 +28294,8 @@
                   "shortDisplayName": "OVER",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "6-4",
-                  "displayValue": "6-4"
+                  "summary": "6-5",
+                  "displayValue": "6-5"
                 },
                 {
                   "id": "9",
@@ -28199,13 +28305,13 @@
                   "shortDisplayName": "CONF",
                   "description": "Conference Record",
                   "type": "vsconf",
-                  "summary": "2-4",
-                  "displayValue": "2-4"
+                  "summary": "4-3",
+                  "displayValue": "4-3"
                 }
               ],
               "logo": [
                 {
-                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/58.png",
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/5.png",
                   "width": 500,
                   "height": 500,
                   "alt": "",
@@ -28216,7 +28322,7 @@
                   "lastUpdated": "2026-07-01T04:35Z"
                 },
                 {
-                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/58.png",
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/5.png",
                   "width": 500,
                   "height": 500,
                   "alt": "",
@@ -28242,8 +28348,8 @@
                   "shortDisplayName": "OVER",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "3-6",
-                  "displayValue": "3-6"
+                  "summary": "4-6",
+                  "displayValue": "4-6"
                 },
                 {
                   "id": "9",
@@ -28253,8 +28359,8 @@
                   "shortDisplayName": "CONF",
                   "description": "Conference Record",
                   "type": "vsconf",
-                  "summary": "2-4",
-                  "displayValue": "2-4"
+                  "summary": "3-4",
+                  "displayValue": "3-4"
                 }
               ],
               "logo": [
@@ -28283,10 +28389,10 @@
               ]
             },
             {
-              "team": "Charlotte",
-              "link": "https://www.espn.com/college-football/team/_/id/2429/charlotte-49ers",
-              "id": "2429",
-              "uid": "s:20~l:23~t:2429",
+              "team": "South Florida",
+              "link": "https://www.espn.com/college-football/team/_/id/58/south-florida-bulls",
+              "id": "58",
+              "uid": "s:20~l:23~t:58",
               "stats": [
                 {
                   "id": "0",
@@ -28296,8 +28402,8 @@
                   "shortDisplayName": "OVER",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "1-9",
-                  "displayValue": "1-9"
+                  "summary": "6-5",
+                  "displayValue": "6-5"
                 },
                 {
                   "id": "9",
@@ -28307,13 +28413,13 @@
                   "shortDisplayName": "CONF",
                   "description": "Conference Record",
                   "type": "vsconf",
-                  "summary": "1-5",
-                  "displayValue": "1-5"
+                  "summary": "2-5",
+                  "displayValue": "2-5"
                 }
               ],
               "logo": [
                 {
-                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2429.png",
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/58.png",
                   "width": 500,
                   "height": 500,
                   "alt": "",
@@ -28324,7 +28430,7 @@
                   "lastUpdated": "2026-07-01T04:35Z"
                 },
                 {
-                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2429.png",
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/58.png",
                   "width": 500,
                   "height": 500,
                   "alt": "",
@@ -28379,6 +28485,60 @@
                 },
                 {
                   "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/242.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "dark"
+                  ],
+                  "lastUpdated": "2026-07-01T04:34Z"
+                }
+              ]
+            },
+            {
+              "team": "Charlotte",
+              "link": "https://www.espn.com/college-football/team/_/id/2429/charlotte-49ers",
+              "id": "2429",
+              "uid": "s:20~l:23~t:2429",
+              "stats": [
+                {
+                  "id": "0",
+                  "name": "overall",
+                  "abbreviation": "overall",
+                  "displayName": "Overall",
+                  "shortDisplayName": "OVER",
+                  "description": "Overall Record",
+                  "type": "total",
+                  "summary": "1-10",
+                  "displayValue": "1-10"
+                },
+                {
+                  "id": "9",
+                  "name": "vs. Conf.",
+                  "abbreviation": "CONF",
+                  "displayName": "vs. Conference",
+                  "shortDisplayName": "CONF",
+                  "description": "Conference Record",
+                  "type": "vsconf",
+                  "summary": "1-6",
+                  "displayValue": "1-6"
+                }
+              ],
+              "logo": [
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2429.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "default"
+                  ],
+                  "lastUpdated": "2026-07-01T04:35Z"
+                },
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2429.png",
                   "width": 500,
                   "height": 500,
                   "alt": "",
